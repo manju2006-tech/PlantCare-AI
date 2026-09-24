@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block title %}Upload &amp; Scan{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+  <div class="section-heading mb-4">
+    <h2>Scan a Leaf</h2>
+    <p>Upload a clear photo of a single leaf and get an instant AI diagnosis.</p>
+  </div>
+
+  {% if not model_ready %}
+    <div class="alert alert-warning alert-glass mb-4">
+      <i class="bi bi-exclamation-triangle-fill me-2"></i>
+      The AI model hasn't been trained yet, so scanning is temporarily unavailable.
+      Run <code>python models/train_model.py --dataset_dir dataset/PlantVillage</code> and restart the app.
+    </div>
+  {% endif %}
+
+  <div class="row g-4 justify-content-center">
+    <div class="col-lg-7">
+      <div class="glass-card p-4">
+        <div id="uploadError" class="alert alert-danger alert-glass d-none" role="alert"></div>
+
+        <form id="uploadForm" novalidate>
+          <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+          <input type="file" id="fileInput" name="image" accept="image/png, image/jpeg" class="d-none">
+
+          <div id="dropzone" class="dropzone" tabindex="0" role="button" aria-label="Upload a leaf image">
+            <div class="dropzone-icon"><i class="bi bi-cloud-arrow-up fs-2"></i></div>
+            <h5>Drag &amp; drop your leaf photo here</h5>
+            <p>or click to browse &middot; PNG or JPG &middot; up to 8 MB</p>
+          </div>
+
+          <div id="previewWrap" class="preview-wrap d-none">
+            <img id="previewImage" src="" alt="Selected leaf preview" class="preview-image mb-3">
+            <div>
+              <button type="button" id="changeImageBtn" class="btn btn-plant-outline btn-sm">
+                <i class="bi bi-arrow-repeat me-1"></i>Choose a different photo
+              </button>
+            </div>
+          </div>
+
+          <div id="progressWrap" class="d-none mt-4">
+            <div class="d-flex justify-content-between mb-1">
+              <span id="progressLabel" class="small text-muted-custom">Uploading...</span>
+            </div>
+            <div class="progress-glass">
+              <div id="progressBar" class="progress-bar-plant" style="width: 0%;"></div>
+            </div>
+          </div>
+
+          <button type="submit" id="analyzeBtn" class="btn btn-plant w-100 mt-4" disabled {{ 'disabled' if not model_ready }}>
+            <i class="bi bi-stars me-2"></i>Analyze with AI
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+      <div class="glass-card p-4">
+        <h6 class="text-uppercase font-mono small fw-bold text-muted-custom mb-3">Tips for best results</h6>
+        <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
+          <li class="d-flex gap-2"><i class="bi bi-brightness-high text-body-emphasis"></i><span class="small">Use natural daylight, avoid harsh shadows.</span></li>
+          <li class="d-flex gap-2"><i class="bi bi-crop text-body-emphasis"></i><span class="small">Fill the frame with a single leaf.</span></li>
+          <li class="d-flex gap-2"><i class="bi bi-camera text-body-emphasis"></i><span class="small">Keep the camera steady to avoid blur.</span></li>
+          <li class="d-flex gap-2"><i class="bi bi-droplet text-body-emphasis"></i><span class="small">Photograph both healthy and affected areas if visible.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

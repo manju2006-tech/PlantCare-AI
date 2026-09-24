@@ -1,0 +1,24 @@
+# Core web framework
+Flask==3.0.3
+Flask-Login==0.6.3
+Flask-SQLAlchemy==3.1.1
+Flask-WTF==1.2.1
+Werkzeug==3.0.4
+python-dotenv==1.0.1
+
+# Database driver (only needed if you switch from SQLite to MySQL)
+PyMySQL==1.1.1
+
+# AI / Machine Learning
+# tensorflow==2.21.0
+tensorflow
+numpy==1.26.4
+Pillow==10.4.0
+scikit-learn==1.5.2
+matplotlib==3.9.2
+
+# PDF report generation
+reportlab==4.2.5
+
+# Production WSGI server (optional, for deployment)
+gunicorn==23.0.0

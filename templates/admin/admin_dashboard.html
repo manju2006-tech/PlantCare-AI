@@ -1,0 +1,97 @@
+<!-- templates/admin/admin_dashboard.html -->
+{% extends "base.html" %} {% block title %}Admin Dashboard{% endblock %} {%
+block content %}
+<div class="container py-4">
+  <div class="row g-4">
+    <div class="col-lg-3">{% include "admin/_sidebar.html" %}</div>
+
+    <div class="col-lg-9">
+      <h2 class="mb-4">Admin Dashboard</h2>
+
+      <div class="row g-3 mb-4">
+        <div class="col-sm-6 col-xl-3">
+          <div class="glass-card stat-card">
+            <div class="stat-icon icon-primary">
+              <i class="bi bi-people fs-5"></i>
+            </div>
+            <div>
+              <div class="stat-value">{{ stats.total_users }}</div>
+              <div class="stat-label">Total Users</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-xl-3">
+          <div class="glass-card stat-card">
+            <div class="stat-icon icon-primary">
+              <i class="bi bi-images fs-5"></i>
+            </div>
+            <div>
+              <div class="stat-value">{{ stats.total_scans }}</div>
+              <div class="stat-label">Total Scans</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-xl-3">
+          <div class="glass-card stat-card">
+            <div class="stat-icon icon-healthy">
+              <i class="bi bi-check-circle fs-5"></i>
+            </div>
+            <div>
+              <div class="stat-value">{{ stats.healthy_scans }}</div>
+              <div class="stat-label">Healthy</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-xl-3">
+          <div class="glass-card stat-card">
+            <div class="stat-icon icon-disease">
+              <i class="bi bi-exclamation-triangle fs-5"></i>
+            </div>
+            <div>
+              <div class="stat-value">{{ stats.diseased_scans }}</div>
+              <div class="stat-label">Diseased</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <div class="glass-card chart-card">
+            <h6>Healthy vs Diseased</h6>
+            {% if stats.total_scans > 0 %}
+            <canvas id="adminSplitChart" height="220"></canvas>
+            {% else %}
+            <p class="text-muted-custom small">No scans yet.</p>
+            {% endif %}
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="glass-card chart-card">
+            <h6>Scans - Last 7 Days</h6>
+            {% if stats.daily_counts %}
+            <canvas id="adminDailyChart" height="220"></canvas>
+            {% else %}
+            <p class="text-muted-custom small">No recent scan activity.</p>
+            {% endif %}
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="glass-card chart-card">
+            <h6>Top Detected Diseases</h6>
+            {% if stats.top_diseases %}
+            <canvas id="adminTopDiseasesChart" height="180"></canvas>
+            {% else %}
+            <p class="text-muted-custom small">No diseases detected yet.</p>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script id="adminStatsData" type="application/json">
+  {{ stats|tojson }}
+</script>
+{% endblock %}

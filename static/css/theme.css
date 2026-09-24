@@ -1,0 +1,166 @@
+/* ============================================================================
+   THEMES.CSS
+   Design tokens (CSS custom properties) for light + dark mode.
+
+   Palette rationale: this is a plant-pathology tool, so the palette is
+   drawn from the subject itself rather than a generic brand kit -
+   chlorophyll green for "healthy", a rust/blight orange-red for "diseased"
+   (named diseases in the dataset are literally "rust", "blight", "scab"),
+   and a soil-dark near-black for dark mode instead of pure black.
+   ============================================================================ */
+
+:root {
+  /* --- Typography --- */
+  --font-display: 'Bricolage Grotesque', 'Segoe UI', sans-serif;
+  --font-body: 'Plus Jakarta Sans', 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+
+  /* --- Radii --- */
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-full: 999px;
+
+  /* --- Motion --- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 0.18s;
+  --dur-med: 0.35s;
+  --dur-slow: 0.6s;
+
+  /* --- Light mode (default) --- */
+  --color-bg: #F3F7F1;
+  --color-bg-alt: #E9F1E5;
+  --color-bg-gradient: radial-gradient(circle at 15% 10%, #DCF0DE 0%, transparent 45%),
+                        radial-gradient(circle at 85% 30%, #E7F4E0 0%, transparent 40%),
+                        linear-gradient(180deg, #F3F7F1 0%, #EDF4EA 100%);
+
+  --color-surface: rgba(255, 255, 255, 0.58);
+  --color-surface-strong: rgba(255, 255, 255, 0.78);
+  --color-surface-solid: #FFFFFF;
+  --color-border: rgba(18, 39, 26, 0.10);
+  --color-border-strong: rgba(18, 39, 26, 0.18);
+
+  --color-text: #12271A;
+  --color-text-muted: #52685B;
+  --color-text-faint: #7C9084;
+
+  --color-primary: #1F7A4D;
+  --color-primary-dark: #145C39;
+  --color-primary-light: #4FAE79;
+  --color-primary-glow: rgba(31, 122, 77, 0.25);
+
+  --color-healthy: #1E9E52;
+  --color-healthy-bg: rgba(30, 158, 82, 0.12);
+  --color-disease: #D9502F;
+  --color-disease-dark: #B23D22;
+  --color-disease-bg: rgba(217, 80, 47, 0.12);
+
+  --shadow-glass: 0 8px 32px rgba(18, 39, 26, 0.10), 0 1px 2px rgba(18, 39, 26, 0.06);
+  --shadow-glass-hover: 0 16px 44px rgba(18, 39, 26, 0.16), 0 2px 4px rgba(18, 39, 26, 0.08);
+  --blur-amount: 18px;
+
+  --scrollbar-thumb: rgba(31, 122, 77, 0.35);
+}
+
+[data-theme="dark"] {
+  --color-bg: #0A130D;
+  --color-bg-alt: #0E1913;
+  --color-bg-gradient: radial-gradient(circle at 12% 8%, rgba(31, 122, 77, 0.28) 0%, transparent 42%),
+                        radial-gradient(circle at 88% 25%, rgba(217, 80, 47, 0.10) 0%, transparent 38%),
+                        linear-gradient(180deg, #0A130D 0%, #0D1710 100%);
+
+  --color-surface: rgba(20, 36, 27, 0.55);
+  --color-surface-strong: rgba(24, 42, 32, 0.72);
+  --color-surface-solid: #102016;
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-border-strong: rgba(255, 255, 255, 0.14);
+
+  --color-text: #EAF3EC;
+  --color-text-muted: #A7BDAE;
+  --color-text-faint: #6F8579;
+
+  --color-primary: #4ADE80;
+  --color-primary-dark: #22B061;
+  --color-primary-light: #86EFAC;
+  --color-primary-glow: rgba(74, 222, 128, 0.30);
+
+  --color-healthy: #4ADE80;
+  --color-healthy-bg: rgba(74, 222, 128, 0.14);
+  --color-disease: #FF7A5C;
+  --color-disease-dark: #E8563A;
+  --color-disease-bg: rgba(255, 122, 92, 0.14);
+
+  --shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.45), 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-glass-hover: 0 20px 50px rgba(0, 0, 0, 0.55), 0 2px 4px rgba(0, 0, 0, 0.3);
+  --blur-amount: 20px;
+
+  --scrollbar-thumb: rgba(74, 222, 128, 0.35);
+}
+
+/* Smooth theme-switch transition, applied only after first paint (see theme.js)
+   so the page doesn't animate on initial load. */
+.theme-transition,
+.theme-transition * {
+  transition: background-color var(--dur-med) var(--ease-out),
+              color var(--dur-med) var(--ease-out),
+              border-color var(--dur-med) var(--ease-out),
+              box-shadow var(--dur-med) var(--ease-out) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* =========================================================
+   ACTIVE NAVIGATION LINK
+   ========================================================= */
+
+.navbar .nav-link-custom {
+    position: relative;
+    transition:
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+/* Active page text */
+.navbar .nav-link-custom.active {
+    color: var(--color-primary) !important;
+}
+
+/* Animated underline */
+.navbar .nav-link-custom.active::after {
+    content: "";
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    bottom: 2px;
+    height: 2px;
+    background: var(--color-primary);
+    border-radius: 999px;
+    transform: scaleX(0);
+    transform-origin: center;
+    animation: navActiveLine 0.35s ease forwards;
+}
+
+/* Small hover movement */
+.navbar .nav-link-custom:hover {
+    transform: translateY(-1px);
+}
+
+@keyframes navActiveLine {
+    from {
+        transform: scaleX(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,30 @@
+<!-- templates/admin/_sidebar.html -->
+<div class="glass-card admin-sidebar">
+  <h6
+    class="text-uppercase font-mono small fw-bold text-muted-custom mb-3 px-2"
+  >
+    Admin Panel
+  </h6>
+  <a
+    href="{{ url_for('admin.dashboard') }}"
+    class="nav-link nav-link-custom {{ 'active' if request.endpoint == 'admin.dashboard' }}"
+  >
+    <i class="bi bi-speedometer2"></i> Dashboard
+  </a>
+  <a
+    href="{{ url_for('admin.users') }}"
+    class="nav-link nav-link-custom {{ 'active' if request.endpoint == 'admin.users' }}"
+  >
+    <i class="bi bi-people"></i> Users
+  </a>
+  <a
+    href="{{ url_for('admin.all_history') }}"
+    class="nav-link nav-link-custom {{ 'active' if request.endpoint == 'admin.all_history' }}"
+  >
+    <i class="bi bi-clock-history"></i> All Scans
+  </a>
+  <hr class="my-3" style="border-color: var(--color-border)" />
+  <a href="{{ url_for('main.dashboard') }}" class="nav-link nav-link-custom">
+    <i class="bi bi-arrow-left"></i> Back to Site
+  </a>
+</div>

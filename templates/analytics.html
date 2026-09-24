@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+{% block title %}Plant Health Analytics{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+  <div class="section-heading mb-4" style="max-width: none; text-align: left; margin: 0 0 1.5rem;">
+    <h2>Plant Health Analytics</h2>
+    <p class="mb-0">A breakdown of your own scan history - counts, trends, and the diseases you've encountered most.</p>
+  </div>
+
+  {% if analytics.total_scans == 0 %}
+    <div class="glass-card empty-state">
+      <div class="empty-icon"><i class="bi bi-bar-chart fs-3"></i></div>
+      <h5>No analytics yet</h5>
+      <p class="text-muted-custom mb-3">Run your first scan to start building your plant health analytics.</p>
+      <a href="{{ url_for('prediction.upload_page') }}" class="btn btn-plant btn-sm">Scan a Leaf</a>
+    </div>
+  {% else %}
+
+    <div class="row g-3 mb-4">
+      <div class="col-sm-6 col-xl-3">
+        <div class="glass-card stat-card">
+          <div class="stat-icon icon-primary"><i class="bi bi-images fs-5"></i></div>
+          <div>
+            <div class="stat-value">{{ analytics.total_scans }}</div>
+            <div class="stat-label">Total Scans</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-xl-3">
+        <div class="glass-card stat-card">
+          <div class="stat-icon icon-healthy"><i class="bi bi-check-circle fs-5"></i></div>
+          <div>
+            <div class="stat-value">{{ analytics.healthy_count }} <span class="fs-6 text-muted-custom">({{ analytics.healthy_percentage }}%)</span></div>
+            <div class="stat-label">Healthy Results</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-xl-3">
+        <div class="glass-card stat-card">
+          <div class="stat-icon icon-disease"><i class="bi bi-exclamation-triangle fs-5"></i></div>
+          <div>
+            <div class="stat-value">{{ analytics.diseased_count }} <span class="fs-6 text-muted-custom">({{ analytics.diseased_percentage }}%)</span></div>
+            <div class="stat-label">Diseases Detected</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-xl-3">
+        <div class="glass-card stat-card">
+          <div class="stat-icon icon-disease"><i class="bi bi-bug fs-5"></i></div>
+          <div>
+            <div class="stat-value" style="font-size: 1.05rem;">{{ analytics.most_common_disease or 'None' }}</div>
+            <div class="stat-label">Most Frequent Disease</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-4 mb-4">
+      <div class="col-lg-5">
+        <div class="glass-card chart-card">
+          <h6>Healthy vs Diseased</h6>
+          <canvas id="analyticsSplitChart" height="220"></canvas>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="glass-card chart-card">
+          <h6>Disease Distribution</h6>
+          {% if analytics.disease_distribution %}
+            <canvas id="analyticsDistributionChart" height="220"></canvas>
+          {% else %}
+            <p class="text-muted-custom small mb-0">No diseases detected yet - every scan so far has been healthy.</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+
+    <div class="glass-card p-4">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h5 class="mb-0">Recent Scans</h5>
+        <a href="{{ url_for('history.history_page') }}" class="small fw-bold">View full history &rarr;</a>
+      </div>
+      {% for item in analytics.recent %}
+        <a href="{{ url_for('prediction.result', prediction_id=item.id) }}" class="text-decoration-none text-reset">
+          <div class="recent-scan-row">
+            <img src="{{ url_for('prediction.uploaded_file', filename=item.image_filename) }}" class="recent-scan-thumb" alt="{{ item.plant_name }}">
+            <div class="flex-grow-1 min-width-0">
+              <div class="fw-bold small text-truncate">{{ item.disease_name }}</div>
+              <div class="text-faint" style="font-size:.78rem;">{{ item.plant_name }} &middot; {{ item.created_at }}</div>
+            </div>
+            {% if item.is_healthy %}
+              <span class="status-badge healthy"><i class="bi bi-check-circle-fill"></i></span>
+            {% else %}
+              <span class="status-badge diseased"><i class="bi bi-exclamation-triangle-fill"></i></span>
+            {% endif %}
+          </div>
+        </a>
+      {% endfor %}
+    </div>
+
+  {% endif %}
+</div>
+
+<script id="analyticsData" type="application/json">{{ analytics|tojson }}</script>
+{% endblock %}

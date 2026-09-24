@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Local Python environment
+.python-version
+
+# VS Code
+.vscode/
+
+# Dataset - not needed for deployment
+dataset/
+
+# User uploaded images
+uploads/
+
+# Generated PDF reports
+reports/
+
+# Local SQLite database
+database/*.db
+
+# Environment/secrets
+.env
+.env.*
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% block title %}Detection History{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+  <div class="section-heading mb-4" style="max-width: none; text-align: left; margin: 0 0 1.5rem;">
+    <h2>Detection History</h2>
+    <p class="mb-0">Every scan you've run, searchable and filterable.</p>
+  </div>
+
+  <div class="glass-card history-toolbar d-flex flex-wrap gap-3 align-items-center">
+    <div class="flex-grow-1">
+      <input type="text" id="historySearch" class="form-control form-control-glass"
+             placeholder="Search by disease or plant name..." value="{{ search }}">
+    </div>
+    <div>
+      <select id="historyFilter" class="form-select form-control-glass" style="min-width: 160px;">
+        <option value="all" {{ 'selected' if filter_type == 'all' }}>All Results</option>
+        <option value="healthy" {{ 'selected' if filter_type == 'healthy' }}>Healthy Only</option>
+        <option value="diseased" {{ 'selected' if filter_type == 'diseased' }}>Diseased Only</option>
+      </select>
+    </div>
+  </div>
+
+  <div id="historyResults" class="row g-4">
+    {% for item in predictions %}
+      <div class="col-md-6 col-lg-4" data-history-item="{{ item.id }}">
+        <div class="glass-card glass-card--hover history-card">
+          <img src="{{ url_for('prediction.uploaded_file', filename=item.image_filename) }}"
+               alt="{{ item.plant_name }}" class="history-thumb" loading="lazy">
+          <div class="history-meta">
+            <h6>{{ item.disease_name }}</h6>
+            <div class="history-date">{{ item.plant_name }} &middot; {{ item.created_at.strftime('%Y-%m-%d %H:%M') }}</div>
+            <div class="mt-2 d-flex align-items-center gap-2 flex-wrap">
+              {% if item.is_healthy %}
+                <span class="status-badge healthy"><i class="bi bi-check-circle-fill"></i> Healthy</span>
+              {% else %}
+                <span class="status-badge diseased"><i class="bi bi-exclamation-triangle-fill"></i> Diseased</span>
+              {% endif %}
+              <span class="font-mono text-muted-custom small">{{ '%.2f'|format(item.confidence) }}%</span>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex gap-2 mt-2">
+          <a href="{{ url_for('prediction.result', prediction_id=item.id) }}" class="btn btn-plant-outline btn-sm flex-fill">View Report</a>
+          <button type="button" class="btn btn-danger-soft btn-sm" data-delete-id="{{ item.id }}" aria-label="Delete this scan">
+            <i class="bi bi-trash3"></i>
+          </button>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
+  <div id="historyEmptyState" class="empty-state {% if predictions %}d-none{% endif %}">
+    <div class="empty-icon"><i class="bi bi-clock-history fs-3"></i></div>
+    <h5>No scans found</h5>
+    <p class="text-muted-custom mb-3">
+      {% if search or filter_type != 'all' %}
+        Try adjusting your search or filter.
+      {% else %}
+        Your scan history will appear here once you analyze a leaf.
+      {% endif %}
+    </p>
+    <a href="{{ url_for('prediction.upload_page') }}" class="btn btn-plant btn-sm">Scan a Leaf</a>
+  </div>
+
+  <div id="historyPagination" class="mt-4">
+    {% if pagination.pages > 1 %}
+      <nav aria-label="History pagination">
+        <ul class="pagination justify-content-center">
+          {% for p in range(1, pagination.pages + 1) %}
+            <li class="page-item {{ 'active' if p == pagination.page }}">
+              <a class="page-link" href="{{ url_for('history.history_page', page=p, search=search, filter=filter_type) }}">{{ p }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
+    {% endif %}
+  </div>
+
+</div>
+{% endblock %}

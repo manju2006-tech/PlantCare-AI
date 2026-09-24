@@ -1,0 +1,146 @@
+{% extends "base.html" %} {% block title %}Dashboard{% endblock %} {% block
+content %}
+<div class="container py-4">
+  <div
+    class="d-flex flex-wrap justify-content-between align-items-center mb-4 gap-3"
+  >
+    <div>
+      <h2 class="mb-1">
+        Welcome back, {{ current_user.full_name or current_user.username }} 👋
+      </h2>
+      <p class="text-muted-custom mb-0">
+        Here's a snapshot of your plant health activity.
+      </p>
+    </div>
+    <a href="{{ url_for('prediction.upload_page') }}" class="btn btn-plant"
+      ><i class="bi bi-camera me-2"></i>New Scan</a
+    >
+  </div>
+
+  {% if not model_ready %}
+  <div class="alert alert-warning alert-glass mb-4">
+    <i class="bi bi-exclamation-triangle-fill me-2"></i>
+    The AI model hasn't been trained yet. Run
+    <code>python models/train_model.py</code> to enable scanning.
+  </div>
+  {% endif %}
+
+  <div class="row g-3 mb-4">
+    <div class="col-md-4">
+      <div class="glass-card stat-card">
+        <div class="stat-icon icon-primary">
+          <i class="bi bi-images fs-5"></i>
+        </div>
+        <div>
+          <div class="stat-value" data-count-to="{{ stats.total_scans }}">
+            0
+          </div>
+          <div class="stat-label">Total Scans</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="glass-card stat-card">
+        <div class="stat-icon icon-healthy">
+          <i class="bi bi-check-circle fs-5"></i>
+        </div>
+        <div>
+          <div class="stat-value" data-count-to="{{ stats.healthy_count }}">
+            0
+          </div>
+          <div class="stat-label">Healthy Results</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="glass-card stat-card">
+        <div class="stat-icon icon-disease">
+          <i class="bi bi-exclamation-triangle fs-5"></i>
+        </div>
+        <div>
+          <div class="stat-value" data-count-to="{{ stats.diseased_count }}">
+            0
+          </div>
+          <div class="stat-label">Diseases Detected</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-4">
+    <div class="col-lg-7">
+      <div class="glass-card p-4 h-100">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h5 class="mb-0">Recent Scans</h5>
+          <a href="{{ url_for('history.history_page') }}" class="small fw-bold"
+            >View all &rarr;</a
+          >
+        </div>
+
+        {% if stats.recent %} {% for item in stats.recent %}
+        <a
+          href="{{ url_for('prediction.result', prediction_id=item.id) }}"
+          class="text-decoration-none text-reset"
+        >
+          <div class="recent-scan-row">
+            <img
+              src="{{ url_for('prediction.uploaded_file', filename=item.image_filename) }}"
+              class="recent-scan-thumb"
+              alt="{{ item.plant_name }}"
+            />
+            <div class="flex-grow-1 min-width-0">
+              <div class="fw-bold small text-truncate">
+                {{ item.disease_name }}
+              </div>
+              <div class="text-faint" style="font-size: 0.78rem">
+                {{ item.plant_name }} &middot; {{ item.created_at }}
+              </div>
+            </div>
+            {% if item.is_healthy %}
+            <span class="status-badge healthy"
+              ><i class="bi bi-check-circle-fill"></i
+            ></span>
+            {% else %}
+            <span class="status-badge diseased"
+              ><i class="bi bi-exclamation-triangle-fill"></i
+            ></span>
+            {% endif %}
+          </div>
+        </a>
+        {% endfor %} {% else %}
+        <div class="empty-state py-4">
+          <div class="empty-icon"><i class="bi bi-camera fs-3"></i></div>
+          <p class="text-muted-custom mb-3">
+            No scans yet. Upload your first leaf photo to get started.
+          </p>
+          <a
+            href="{{ url_for('prediction.upload_page') }}"
+            class="btn btn-plant btn-sm"
+            >Scan a Leaf</a
+          >
+        </div>
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="col-lg-5">
+      <div class="glass-card p-4 h-100">
+        <h5 class="mb-3">Health Overview</h5>
+        {% if stats.total_scans > 0 %}
+        <canvas
+          id="dashboardSplitChart"
+          data-healthy="{{ stats.healthy_count }}"
+          data-diseased="{{ stats.diseased_count }}"
+          height="220"
+        ></canvas>
+        {% else %}
+        <p class="text-muted-custom small">
+          Your healthy vs. diseased breakdown will appear here after your first
+          scan.
+        </p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,252 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+%}
+
+<section class="hero-section">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <span class="eyebrow"
+          ><span class="dot"></span> AI-Powered Plant Diagnosis</span
+        >
+        <h1 class="hero-title">
+          Know what's wrong with your plant
+          <span class="accent">in seconds</span>
+        </h1>
+        <p class="hero-lead">
+          Upload a photo of any leaf and our CNN model instantly detects
+          diseases across 23+ crop conditions - complete with confidence scores,
+          treatment plans, and fertilizer &amp; pesticide recommendations.
+        </p>
+        <div class="d-flex flex-wrap gap-3">
+          {% if current_user.is_authenticated %}
+          <a
+            href="{{ url_for('prediction.upload_page') }}"
+            class="btn btn-plant btn-lg"
+            ><i class="bi bi-camera me-2"></i>Scan a Leaf</a
+          >
+          {% else %}
+          <a href="{{ url_for('auth.register') }}" class="btn btn-plant btn-lg"
+            ><i class="bi bi-arrow-right-circle me-2"></i>Get Started Free</a
+          >
+          <a
+            href="{{ url_for('auth.login') }}"
+            class="btn btn-plant-outline btn-lg"
+            >Log In</a
+          >
+          {% endif %}
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="scan-visual">
+          <div class="leaf-wrap">
+            <svg
+              class="leaf-svg"
+              viewBox="0 0 200 200"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M100 20 C40 40 20 100 40 150 C60 190 100 190 100 190 C100 190 140 190 160 150 C180 100 160 40 100 20 Z"
+                fill="var(--color-primary)"
+                opacity="0.9"
+              />
+              <path
+                d="M100 30 L100 180"
+                stroke="var(--color-primary-dark)"
+                stroke-width="3"
+                stroke-linecap="round"
+                opacity="0.6"
+              />
+              <path
+                d="M100 60 L70 45 M100 60 L130 45 M100 90 L65 75 M100 90 L135 75 M100 120 L70 108 M100 120 L130 108 M100 150 L80 140 M100 150 L120 140"
+                stroke="var(--color-primary-dark)"
+                stroke-width="2"
+                stroke-linecap="round"
+                opacity="0.5"
+                fill="none"
+              />
+            </svg>
+          </div>
+          <div class="scan-corner tl"></div>
+          <div class="scan-corner tr"></div>
+          <div class="scan-corner bl"></div>
+          <div class="scan-corner br"></div>
+          <div class="scan-line"></div>
+          <div class="floating-chip chip-confidence">
+            <i class="bi bi-shield-check"></i>&nbsp;97.8% confident
+          </div>
+          <div class="floating-chip chip-scan">
+            <i class="bi bi-cpu"></i>&nbsp;Analyzing leaf...
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5">
+  <div class="container">
+    <div
+      class="glass-strong px-4 py-4 d-flex flex-wrap justify-content-around text-center gap-3"
+    >
+      <div>
+        <div class="stat-value font-mono fw-bold fs-3 text-body">23+</div>
+        <div class="text-muted-custom small">Disease Classes</div>
+      </div>
+      <div>
+        <div class="stat-value font-mono fw-bold fs-3 text-body">&lt;2s</div>
+        <div class="text-muted-custom small">Average Scan Time</div>
+      </div>
+      <div>
+        <div class="stat-value font-mono fw-bold fs-3 text-body">7</div>
+        <div class="text-muted-custom small">Crops Covered</div>
+      </div>
+      <div>
+        <div class="stat-value font-mono fw-bold fs-3 text-body">Free</div>
+        <div class="text-muted-custom small">To Use</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5 reveal-on-scroll">
+  <div class="container">
+    <div class="section-heading">
+      <h2>Everything you need to keep crops healthy</h2>
+      <p>
+        From instant diagnosis to downloadable reports, PlantCare AI covers the
+        full workflow.
+      </p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="glass-card glass-card--hover feature-card">
+          <div class="feature-icon"><i class="bi bi-camera fs-4"></i></div>
+          <h5>Instant AI Diagnosis</h5>
+          <p>
+            Drag and drop a leaf photo and get a diagnosis in seconds, powered
+            by a custom-trained CNN.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="glass-card glass-card--hover feature-card">
+          <div class="feature-icon">
+            <i class="bi bi-clipboard2-pulse fs-4"></i>
+          </div>
+          <h5>Confidence Scoring</h5>
+          <p>
+            Every result comes with a transparent confidence percentage, not
+            just a guess.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="glass-card glass-card--hover feature-card">
+          <div class="feature-icon"><i class="bi bi-flower2 fs-4"></i></div>
+          <h5>Treatment Plans</h5>
+          <p>
+            Get causes, treatment steps, prevention tips, and fertilizer &amp;
+            pesticide guidance.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="glass-card glass-card--hover feature-card">
+          <div class="feature-icon">
+            <i class="bi bi-clock-history fs-4"></i>
+          </div>
+          <h5>Detection History</h5>
+          <p>
+            Every scan is saved and searchable, so you can track a plant's
+            health over time.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="glass-card glass-card--hover feature-card">
+          <div class="feature-icon">
+            <i class="bi bi-file-earmark-pdf fs-4"></i>
+          </div>
+          <h5>PDF Reports</h5>
+          <p>
+            Download a shareable, print-ready PDF report for every diagnosis.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="glass-card glass-card--hover feature-card">
+          <div class="feature-icon">
+            <i class="bi bi-shield-check fs-4"></i>
+          </div>
+          <h5>Built to Scale</h5>
+          <p>
+            Secure accounts, an admin dashboard, and REST APIs ready for
+            real-world use.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5 reveal-on-scroll">
+  <div class="container">
+    <div class="section-heading">
+      <h2>How it works</h2>
+      <p>Three steps between a worried grower and a clear answer.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="glass-card step-card">
+          <div class="step-number">1</div>
+          <h5>Upload a photo</h5>
+          <p class="text-muted-custom small mb-0">
+            Drag and drop or snap a photo of the affected leaf.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="glass-card step-card">
+          <div class="step-number">2</div>
+          <h5>AI analyzes it</h5>
+          <p class="text-muted-custom small mb-0">
+            Our CNN model scans the image and identifies the condition.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="glass-card step-card">
+          <div class="step-number">3</div>
+          <h5>Get your plan</h5>
+          <p class="text-muted-custom small mb-0">
+            Receive a full diagnosis with treatment and prevention steps.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5 reveal-on-scroll">
+  <div class="container">
+    <div class="glass-strong text-center px-4 py-5">
+      <h2 class="mb-3">Ready to protect your crops?</h2>
+      <p class="text-muted-custom mb-4">
+        Create a free account and run your first scan in under a minute.
+      </p>
+      {% if current_user.is_authenticated %}
+      <a
+        href="{{ url_for('prediction.upload_page') }}"
+        class="btn btn-plant btn-lg"
+        >Scan a Leaf Now</a
+      >
+      {% else %}
+      <a href="{{ url_for('auth.register') }}" class="btn btn-plant btn-lg"
+        >Create Free Account</a
+      >
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% endblock %}
