@@ -64,27 +64,51 @@ content %}
           <label for="password" class="form-label form-label-custom"
             >Password</label
           >
-          <input
-            type="password"
-            class="form-control form-control-glass"
-            id="password"
-            name="password"
-            placeholder="At least 6 characters"
-            required
-          />
+          <div class="password-input-wrapper">
+            <input
+              type="password"
+              class="form-control form-control-glass"
+              id="password"
+              name="password"
+              placeholder="At least 6 characters"
+              required
+            />
+
+            <button
+              type="button"
+              class="password-toggle"
+              data-target="password"
+              aria-label="Show password"
+            >
+              <i class="bi bi-eye"></i>
+            </button>
+          </div>
         </div>
         <div class="col-sm-6 mb-3">
           <label for="confirm_password" class="form-label form-label-custom"
             >Confirm Password</label
           >
-          <input
-            type="password"
-            class="form-control form-control-glass"
-            id="confirm_password"
-            name="confirm_password"
-            placeholder="Re-enter password"
-            required
-          />
+
+          <div class="password-input-wrapper">
+            <input
+              type="password"
+              class="form-control form-control-glass"
+              id="confirm_password"
+              name="confirm_password"
+              placeholder="Re-enter password"
+              required
+            />
+
+            <button
+              type="button"
+              class="password-toggle"
+              data-target="confirm_password"
+              aria-label="Show password"
+            >
+              <i class="bi bi-eye"></i>
+            </button>
+          </div>
+
         </div>
       </div>
       <div class="form-text text-faint mb-4">
@@ -102,4 +126,41 @@ content %}
     </form>
   </div>
 </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const toggleButtons = document.querySelectorAll(".password-toggle");
+
+    toggleButtons.forEach(function (button) {
+        button.addEventListener("click", function () {
+
+            const targetId = button.getAttribute("data-target");
+            const passwordInput = document.getElementById(targetId);
+            const icon = button.querySelector("i");
+
+            if (!passwordInput || !icon) {
+                return;
+            }
+
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+
+                icon.classList.remove("bi-eye");
+                icon.classList.add("bi-eye-slash");
+
+                button.setAttribute("aria-label", "Hide password");
+            } else {
+                passwordInput.type = "password";
+
+                icon.classList.remove("bi-eye-slash");
+                icon.classList.add("bi-eye");
+
+                button.setAttribute("aria-label", "Show password");
+            }
+
+            passwordInput.focus();
+        });
+    });
+});
+</script>
 {% endblock %}

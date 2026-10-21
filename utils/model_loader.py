@@ -6,6 +6,7 @@ disk on every prediction.
 """
 import os
 
+import json
 import numpy as np
 from PIL import Image
 
@@ -50,7 +51,15 @@ def load_model(app):
         from models.data_preprocessing import load_class_indices
 
         _model = tf.keras.models.load_model(model_path)
-        _index_to_class = load_class_indices(class_indices_path)
+        with open(class_indices_path, "r") as f:
+            class_map = json.load(f)
+
+        if isinstance(class_map, list):
+            _index_to_class = {
+                str(i): name for i, name in enumerate(class_map)
+            }
+        else:
+            _index_to_class = class_map
         _model_load_error = None
         app.logger.info(
             f"Plant disease model loaded successfully from {model_path} "
@@ -70,18 +79,23 @@ def get_model_load_error():
     return _model_load_error
 
 
+
 def _preprocess_image(image_path):
     """
-    Loads an image from disk and returns a (1, H, W, 3) float32 array with
-    raw 0-255 pixel values. The model's internal Rescaling(1/255) layer
-    (see models/cnn_model.py) handles normalization - we must NOT divide
-    by 255 again here, or predictions would be silently wrong.
+    Prepares an image for MobileNetV2 inference.
+    Pixel values are scaled to [-1, 1].
     """
+    import tensorflow as tf
+
     img = Image.open(image_path).convert('RGB')
-    img = img.resize((_image_size[1], _image_size[0]))  # PIL wants (width, height)
+    img = img.resize((_image_size[1], _image_size[0]))
+
     arr = np.array(img, dtype=np.float32)
+    arr = tf.keras.applications.mobilenet_v2.preprocess_input(arr)
     arr = np.expand_dims(arr, axis=0)
+
     return arr
+
 
 
 def predict_image(image_path, top_k=3):

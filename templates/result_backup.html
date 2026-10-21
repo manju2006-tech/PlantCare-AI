@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+{% block title %}Scan Result{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+  <div class="row g-4">
+
+    <div class="col-lg-4">
+      <div class="glass-card p-4 text-center">
+        <img src="{{ url_for('prediction.uploaded_file', filename=prediction.image_filename) }}"
+             alt="{{ prediction.plant_name }} leaf" class="preview-image mb-3">
+
+        {% if prediction.is_healthy %}
+          <span class="status-badge healthy mb-3"><i class="bi bi-check-circle-fill"></i> Healthy</span>
+        {% else %}
+          <span class="status-badge diseased mb-3"><i class="bi bi-exclamation-triangle-fill"></i> Disease Detected</span>
+        {% endif %}
+
+        <h4 class="mb-1">{{ prediction.disease_name }}</h4>
+        <p class="text-muted-custom mb-4">{{ prediction.plant_name }} &middot; {{ prediction.created_at.strftime('%B %d, %Y at %H:%M') }}</p>
+
+        <div class="confidence-meter {{ 'is-disease' if not prediction.is_healthy }} mb-2">
+          <div class="d-flex justify-content-between align-items-baseline mb-2">
+            <span class="small text-muted-custom">AI Confidence</span>
+            <span class="confidence-value">{{ '%.1f'|format(prediction.confidence) }}%</span>
+          </div>
+          <div class="meter-track">
+            <div class="meter-fill" style="width: {{ prediction.confidence }}%;"></div>
+          </div>
+        </div>
+
+        <div class="d-grid gap-2 mt-4">
+          {% if prediction.report_filename %}
+            <a href="{{ url_for('prediction.download_report', filename=prediction.report_filename) }}" class="btn btn-plant">
+              <i class="bi bi-file-earmark-pdf me-2"></i>Download PDF Report
+            </a>
+          {% endif %}
+          <a href="{{ url_for('prediction.upload_page') }}" class="btn btn-plant-outline">
+            <i class="bi bi-camera me-2"></i>Scan Another Leaf
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-8">
+      <div class="result-section-card glass-card">
+        <h6><i class="bi bi-info-circle me-1"></i>What it is?</h6>
+        <p>{{ prediction.description }}</p>
+      </div>
+
+      <div class="result-section-card glass-card">
+        <h6><i class="bi bi-search me-1"></i>Why did it happen?</h6>
+        <p>{{ prediction.causes }}</p>
+      </div>
+
+      <div class="result-section-card glass-card">
+        <h6><i class="bi bi-bandaid me-1"></i>What should I do?</h6>
+        <p>{{ prediction.treatment }}</p>
+      </div>
+
+      <div class="result-section-card glass-card">
+        <h6><i class="bi bi-shield-check me-1"></i>How can I prevent it?</h6>
+        <p>{{ prediction.prevention }}</p>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-md-6">
+          <div class="result-section-card glass-card h-100 mb-0">
+            <h6><i class="bi bi-flower2 me-1"></i>Fertilizer Recommendation</h6>
+            <p>{{ prediction.fertilizer_recommendation }}</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="result-section-card glass-card h-100 mb-0">
+            <h6><i class="bi bi-droplet-half me-1"></i>Pesticide Recommendation</h6>
+            <p>{{ prediction.pesticide_recommendation }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+{% endblock %}

@@ -38,8 +38,12 @@ class Config:
 
     # --- AI model ---
     MODEL_DIR = os.path.join(basedir, 'trained_model')
-    MODEL_PATH = os.path.join(MODEL_DIR, 'plant_disease_model.h5')
-    CLASS_INDICES_PATH = os.path.join(MODEL_DIR, 'class_indices.json')
+    MODEL_PATH = os.path.join(
+    basedir, 'trained_model_57class_run2', 'best_model.keras'
+    )
+    CLASS_INDICES_PATH = os.path.join(
+    basedir, 'trained_model_57class_run2', 'class_names.json'
+    )
     MODEL_METADATA_PATH = os.path.join(MODEL_DIR, 'model_metadata.json')
     IMAGE_SIZE = (224, 224)  # (height, width) expected by the CNN
 

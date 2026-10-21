@@ -1506,6 +1506,783 @@ DISEASE_INFO = {
             "problems show up there first."
         ),
     },
+        # ---------------------------------------------------------------- Mango
+    "Mango___Anthracnose": {
+        "plant_name": "Mango",
+        "disease_name": "Anthracnose",
+        "is_healthy": False,
+        "description": (
+            "Anthracnose is a fungal disease that can cause dark, irregular "
+            "spots on mango leaves, flowers and fruit. Severe infections "
+            "may cause leaf damage and fruit rot."
+        ),
+        "causes": (
+            "The disease is caused by Colletotrichum fungi. It spreads through "
+            "infected plant material and spores carried by rain and moisture. "
+            "Warm, humid weather encourages infection."
+        ),
+        "treatment": (
+            "Remove severely affected fallen leaves and plant material. "
+            "Improve airflow and avoid wetting the foliage. Seek local "
+            "agricultural advice for suitable disease control."
+        ),
+        "prevention": (
+            "Prune carefully to improve airflow, remove infected debris, "
+            "avoid overhead watering where practical, and inspect new growth "
+            "regularly, especially during humid weather."
+        ),
+        "fertilizer_recommendation": (
+            "Use a mango-appropriate fertilizer based on soil testing and "
+            "local recommendations. Avoid excessive nitrogen."
+        ),
+        "pesticide_recommendation": (
+            "Ask a local agricultural expert about a fungicide registered "
+            "for mango anthracnose in your area. Follow its label."
+        ),
+    },
+
+    "Mango___Bacterial_Canker": {
+        "plant_name": "Mango",
+        "disease_name": "Bacterial Canker",
+        "is_healthy": False,
+        "description": (
+            "Bacterial canker can produce dark lesions, raised or cracked "
+            "areas, and spots on mango leaves, twigs or fruit. Symptoms "
+            "should be checked by an agricultural expert."
+        ),
+        "causes": (
+            "The disease is associated with bacterial infection. It may "
+            "spread through infected planting material, rain splash and "
+            "contaminated tools."
+        ),
+        "treatment": (
+            "Remove severely affected material when appropriate, disinfect "
+            "pruning tools between cuts, and seek local expert advice before "
+            "choosing a treatment."
+        ),
+        "prevention": (
+            "Use healthy planting material, keep tools clean, avoid injuring "
+            "the tree, and maintain good orchard sanitation."
+        ),
+        "fertilizer_recommendation": (
+            "Base fertilizer use on soil testing and the tree's growth. "
+            "Avoid excessive fertilizer."
+        ),
+        "pesticide_recommendation": (
+            "Confirm the diagnosis before applying a product. Use only "
+            "treatments registered for this disease and crop locally."
+        ),
+    },
+
+    "Mango___Cutting_Weevil": {
+        "plant_name": "Mango",
+        "disease_name": "Cutting Weevil",
+        "is_healthy": False,
+        "description": (
+            "Cutting weevil damage may appear as cut or damaged leaf stalks "
+            "and shoots. The affected plant parts may dry or fall off."
+        ),
+        "causes": (
+            "Weevils can damage plant tissue while feeding or laying eggs. "
+            "The exact pest should be confirmed because other causes can "
+            "produce similar leaf damage."
+        ),
+        "treatment": (
+            "Inspect leaves, shoots and fallen plant material for insects "
+            "or signs of feeding. Remove affected debris and seek local "
+            "agricultural advice for pest control."
+        ),
+        "prevention": (
+            "Inspect trees regularly, maintain orchard cleanliness, and "
+            "monitor new shoots for signs of insect damage."
+        ),
+        "fertilizer_recommendation": (
+            "Use fertilizer suitable for mango trees based on soil testing. "
+            "Fertilizer does not directly control weevils."
+        ),
+        "pesticide_recommendation": (
+            "Identify the pest before treatment. Use only a locally "
+            "registered product labelled for the pest and mango."
+        ),
+    },
+
+    "Mango___Die_Back": {
+        "plant_name": "Mango",
+        "disease_name": "Die Back",
+        "is_healthy": False,
+        "description": (
+            "Die back causes the tips of mango shoots and branches to dry "
+            "and die. Leaves may wither, and affected branches may develop "
+            "discoloured or damaged bark."
+        ),
+        "causes": (
+            "Die back can be associated with fungal pathogens, environmental "
+            "stress or other tree problems. An inspection is needed to "
+            "identify the actual cause."
+        ),
+        "treatment": (
+            "Prune dead branches back to healthy tissue when appropriate, "
+            "clean tools between cuts, and seek expert advice if the problem "
+            "continues or spreads."
+        ),
+        "prevention": (
+            "Maintain proper drainage, avoid tree injuries, remove dead "
+            "plant material, and inspect branches regularly."
+        ),
+        "fertilizer_recommendation": (
+            "Use a balanced mango fertilizer guided by soil testing. Avoid "
+            "overfertilizing a stressed tree."
+        ),
+        "pesticide_recommendation": (
+            "Do not choose a pesticide based on leaf symptoms alone. Confirm "
+            "the cause and use a locally registered treatment if advised."
+        ),
+    },
+
+    "Mango___Gall_Midge": {
+        "plant_name": "Mango",
+        "disease_name": "Gall Midge",
+        "is_healthy": False,
+        "description": (
+            "Gall midge damage may cause abnormal swellings, spots or "
+            "deformed areas on mango leaves or other plant parts, depending "
+            "on the pest species."
+        ),
+        "causes": (
+            "Gall midges are small flies whose larvae feed on plant tissue. "
+            "Their damage can produce abnormal growth or damaged areas."
+        ),
+        "treatment": (
+            "Inspect affected growth for larvae and characteristic damage. "
+            "Remove severely affected material when appropriate and consult "
+            "a local agricultural expert."
+        ),
+        "prevention": (
+            "Monitor new leaves and shoots, remove affected fallen material, "
+            "and inspect trees regularly during periods of new growth."
+        ),
+        "fertilizer_recommendation": (
+            "Follow soil-test-based fertilizer guidance for mango. Fertilizer "
+            "alone will not control gall midges."
+        ),
+        "pesticide_recommendation": (
+            "Confirm the pest species and its life stage before treatment. "
+            "Use only locally registered products labelled for mango."
+        ),
+    },
+
+    "Mango___Powdery_Mildew": {
+        "plant_name": "Mango",
+        "disease_name": "Powdery Mildew",
+        "is_healthy": False,
+        "description": (
+            "Powdery mildew produces a pale, powder-like coating on affected "
+            "mango flowers, young leaves or shoots. Severe infections can "
+            "damage flowers and reduce fruit formation."
+        ),
+        "causes": (
+            "The disease is caused by powdery mildew fungi. Susceptible new "
+            "growth and suitable weather conditions can encourage infection."
+        ),
+        "treatment": (
+            "Inspect the tree and remove severely affected material when "
+            "appropriate. Ask a local agricultural expert about suitable "
+            "control measures, especially during flowering."
+        ),
+        "prevention": (
+            "Maintain good airflow, monitor new growth and flowers, and "
+            "avoid excessive nitrogen that encourages soft new growth."
+        ),
+        "fertilizer_recommendation": (
+            "Use fertilizer based on soil testing and mango growth needs. "
+            "Avoid excessive nitrogen."
+        ),
+        "pesticide_recommendation": (
+            "If confirmed, use a fungicide specifically registered for "
+            "powdery mildew on mango and follow the product label."
+        ),
+    },
+
+    "Mango___Sooty_Mould": {
+        "plant_name": "Mango",
+        "disease_name": "Sooty Mould",
+        "is_healthy": False,
+        "description": (
+            "Sooty mould appears as a dark, soot-like coating on mango "
+            "leaves or branches. It commonly grows on sugary honeydew "
+            "produced by sap-feeding insects."
+        ),
+        "causes": (
+            "The mould grows on honeydew left by insects such as scale "
+            "insects, mealybugs or aphids. The underlying insect infestation "
+            "often needs attention."
+        ),
+        "treatment": (
+            "Inspect leaves and branches for sap-feeding insects. Address "
+            "the identified pest using locally recommended methods and "
+            "gently clean accessible affected surfaces where practical."
+        ),
+        "prevention": (
+            "Monitor for scale insects, mealybugs and aphids, manage them "
+            "appropriately, and keep the tree healthy with good airflow."
+        ),
+        "fertilizer_recommendation": (
+            "Use fertilizer according to soil testing and mango growth "
+            "needs. Extra fertilizer does not remove sooty mould."
+        ),
+        "pesticide_recommendation": (
+            "Identify the honeydew-producing insect first. If treatment is "
+            "needed, use a product registered for that pest on mango."
+        ),
+    },
+
+    "Mango___healthy": {
+        "plant_name": "Mango",
+        "disease_name": "Healthy",
+        "is_healthy": True,
+        "description": (
+            "The model identifies this mango leaf as healthy, with no "
+            "recognised disease pattern in the submitted image."
+        ),
+        "causes": (
+            "No disease pattern was identified by the model. This does not "
+            "guarantee that the entire plant is free from pests or disease."
+        ),
+        "treatment": (
+            "No disease treatment is indicated by this prediction. Continue "
+            "normal care and inspect the tree regularly."
+        ),
+        "prevention": (
+            "Water appropriately, maintain good drainage and airflow, "
+            "remove fallen diseased material, and inspect leaves and shoots "
+            "for changes."
+        ),
+        "fertilizer_recommendation": (
+            "Use a fertilizer suitable for mango based on soil testing, "
+            "tree age and local agricultural recommendations."
+        ),
+        "pesticide_recommendation": (
+            "No pesticide is indicated by this healthy prediction. Apply "
+            "pest treatments only when needed and appropriately identified."
+        ),
+    },
+
+    # -------------------------------------------------------- Banana
+    "Banana___cordana": {
+        "plant_name": "Banana",
+        "disease_name": "Cordana Leaf Spot",
+        "is_healthy": False,
+        "description": (
+            "Cordana leaf spot is a fungus disease of banana leaves. It makes "
+            "large oval or diamond-shaped spots. The spots are brown in the "
+            "middle and have a yellow edge. Rings may show inside the spots. "
+            "It usually starts on older leaves, often at the leaf edge."
+        ),
+        "causes": (
+            "A fungus called Cordana causes this disease. Its spores spread "
+            "by wind and splashing rain. It grows best in warm, wet and humid "
+            "weather. Crowded plants and wet fields with little air movement "
+            "make it worse."
+        ),
+        "treatment": (
+            "Cut off badly spotted leaves and take them out of the field. Do "
+            "not leave them lying under the plant. Remove weeds and clear "
+            "dead leaves from the ground. Fix any place where water stands. "
+            "This disease is usually mild, so spraying is often not needed."
+        ),
+        "prevention": (
+            "Leave enough space between plants so air can move. Make sure "
+            "water drains away well. Remove old, dry leaves often. Avoid "
+            "watering over the leaves. Check the leaves every week, mainly in "
+            "rainy weather."
+        ),
+        "fertilizer_recommendation": (
+            "Strong, well-fed plants cope better with leaf diseases. Use "
+            "compost or manure with a balanced fertilizer that has plenty of "
+            "potassium. Give small amounts several times a year instead of "
+            "one big dose. A soil test shows what your soil needs."
+        ),
+        "pesticide_recommendation": (
+            "Spraying is usually not needed for Cordana leaf spot. If many "
+            "leaves are badly spotted, ask your local agriculture office "
+            "which fungicide is allowed on bananas in your area. Always "
+            "follow the product label and safety rules."
+        ),
+    },
+    "Banana___healthy": {
+        "plant_name": "Banana",
+        "disease_name": "Healthy",
+        "is_healthy": True,
+        "description": (
+            "This banana leaf looks healthy. It has an even green color. "
+            "There are no spots, streaks or dry patches."
+        ),
+        "causes": (
+            "No disease was found, so there is nothing to explain here. The "
+            "leaf looks the way a healthy banana leaf should."
+        ),
+        "treatment": (
+            "No treatment is needed. Keep up your normal care and check the "
+            "leaves often."
+        ),
+        "prevention": (
+            "Give banana plants plenty of sun and shelter from strong wind, "
+            "which tears the leaves. Water regularly, because bananas need a "
+            "lot of water. Never let water stand around the roots. Spread "
+            "mulch around the base to keep the soil moist. Cut off dry old "
+            "leaves and remove extra shoots so the clump does not get "
+            "crowded."
+        ),
+        "fertilizer_recommendation": (
+            "Bananas eat a lot. Use compost or well-rotted manure with a "
+            "balanced fertilizer that has extra potassium. Give small amounts "
+            "several times through the growing season. A soil test shows what "
+            "your soil is missing."
+        ),
+        "pesticide_recommendation": (
+            "No pesticide is needed for a healthy plant. Just check the "
+            "leaves every week or two. If you see spots later, find out the "
+            "cause before you spray anything."
+        ),
+    },
+    "Banana___pestalotiopsis": {
+        "plant_name": "Banana",
+        "disease_name": "Pestalotiopsis Leaf Spot",
+        "is_healthy": False,
+        "description": (
+            "Pestalotiopsis leaf spot is a fungus disease. It makes brown to "
+            "gray spots on banana leaves. The spots often have a dark edge, "
+            "and tiny black dots may show in the middle. Many spots can join "
+            "and dry out large parts of the leaf."
+        ),
+        "causes": (
+            "A fungus called Pestalotiopsis causes it. It often attacks "
+            "leaves that are already weak or hurt. Wind, insects, sunburn or "
+            "cold can injure leaves. The spores spread by wind and splashing "
+            "rain. Warm, wet weather helps the disease spread."
+        ),
+        "treatment": (
+            "Cut off badly spotted leaves and take them away from the plants. "
+            "Try not to hurt the leaves when you work near the plants. "
+            "Improve drainage and air movement. If many leaves are affected, "
+            "ask a local expert before using any spray."
+        ),
+        "prevention": (
+            "Protect plants from strong wind and insect damage. Do not crowd "
+            "the plants. Keep them well watered and well fed so they stay "
+            "strong. Remove dead and damaged leaves regularly."
+        ),
+        "fertilizer_recommendation": (
+            "Weak or hungry plants get this disease more easily. Use compost "
+            "or manure with a balanced fertilizer that has enough potassium. "
+            "Do not give too much nitrogen at once, because soft, fast growth "
+            "is easily damaged."
+        ),
+        "pesticide_recommendation": (
+            "Light spotting usually does not need spraying. Removing damaged "
+            "leaves and avoiding injury is usually more useful. If the "
+            "disease is severe, ask your local agriculture office about a "
+            "fungicide that is allowed on bananas. Follow the product label."
+        ),
+    },
+    "Banana___sigatoka": {
+        "plant_name": "Banana",
+        "disease_name": "Sigatoka Leaf Spot",
+        "is_healthy": False,
+        "description": (
+            "Sigatoka is a serious fungus disease of banana leaves. It starts "
+            "as small yellow or light brown streaks. The streaks grow into "
+            "brown or black spots with a yellow edge, and the middle turns "
+            "gray. Many spots join and the leaf dries up. This makes the "
+            "bunch smaller, and the fruit may ripen too early."
+        ),
+        "causes": (
+            "A fungus causes Sigatoka. Its spores spread by wind and rain. It "
+            "spreads fast in warm, humid and rainy weather. Crowded plants, "
+            "poor drainage, weeds and old infected leaves make it worse. The "
+            "two common kinds are yellow Sigatoka and black Sigatoka. Black "
+            "Sigatoka is the more serious one."
+        ),
+        "treatment": (
+            "Cut off badly spotted leaves, or cut away the spotted parts, and "
+            "take them out of the field. Do this often, because old infected "
+            "leaves release spores. Fix drainage, remove weeds and thin out "
+            "crowded plants. If the disease keeps spreading, ask your local "
+            "agriculture office for a spray plan."
+        ),
+        "prevention": (
+            "Grow banana types that resist or tolerate Sigatoka, if they are "
+            "available in your area. Leave enough space between plants. Keep "
+            "the field clean and well drained. Remove dead and spotted leaves "
+            "often. Check the leaves every week, especially in rainy weather."
+        ),
+        "fertilizer_recommendation": (
+            "Well-fed plants cope better with this disease. Use compost or "
+            "manure with a balanced fertilizer that has plenty of potassium. "
+            "Give small amounts several times a year. Do not overdo nitrogen, "
+            "because it makes thick leaves that stay wet longer. Fertilizer "
+            "alone will not cure Sigatoka."
+        ),
+        "pesticide_recommendation": (
+            "On large farms, Sigatoka is mainly controlled with regular "
+            "fungicide sprays. Farmers usually switch between different types "
+            "so the fungus does not become resistant. Ask your local "
+            "agriculture office which products are allowed and when to spray. "
+            "Follow the label and wear protective clothing."
+        ),
+    },
+
+    # --------------------------------------------------- Money Plant
+    "Money_Plant___Bacterial_Wilt": {
+        "plant_name": "Money Plant",
+        "disease_name": "Bacterial Wilt",
+        "is_healthy": False,
+        "description": (
+            "Bacterial wilt is a disease caused by harmful bacteria. The "
+            "leaves turn yellow, droop and wilt, even when the soil is wet. "
+            "Dark, water-soaked spots may show on the leaves and stems. In "
+            "bad cases the stem turns soft and brown and may smell bad."
+        ),
+        "causes": (
+            "Bacteria get inside the plant through cuts, wounds or damaged "
+            "roots. They spread on dirty tools, dirty pots and contaminated "
+            "water, including the water used to grow cuttings. Overwatering, "
+            "poor drainage and warm, humid air make it worse. This is an "
+            "infection, so it can spread to nearby plants."
+        ),
+        "treatment": (
+            "Move the sick plant away from your other plants right away. Cut "
+            "off badly affected leaves and stems with clean scissors. Put "
+            "them in the trash, not in compost. Wipe the scissors with "
+            "rubbing alcohol after every cut. Stop watering until the top of "
+            "the soil is dry. If the roots are brown and mushy, cut them away "
+            "and repot in fresh mix in a clean pot. If most of the plant is "
+            "soft and rotten, it is safer to throw it away. Recovery is not "
+            "guaranteed."
+        ),
+        "prevention": (
+            "Water only when the top few centimeters of soil feel dry. Use a "
+            "pot with drain holes and a loose, well-draining mix. Do not let "
+            "water sit in the saucer. Use clean pots and clean tools. If you "
+            "grow cuttings in water, change the water often and wash the "
+            "container. Keep plants apart so air can move between them."
+        ),
+        "fertilizer_recommendation": (
+            "Do not fertilize a plant that is wilting or rotting, because "
+            "weak roots can burn. When healthy new growth appears, you may "
+            "give a mild, balanced houseplant fertilizer diluted to half the "
+            "strength on the label. Good watering and drainage matter more "
+            "than extra fertilizer."
+        ),
+        "pesticide_recommendation": (
+            "Fungicides do not work on bacteria, and normal sprays cannot "
+            "cure bacteria that are already inside the plant. The main "
+            "control is to remove infected parts, keep tools clean and fix "
+            "the watering. Some garden shops sell products labeled for "
+            "bacterial problems on indoor plants, but they only protect "
+            "healthy parts. If you try one, ask the shop or a local expert "
+            "and follow the label."
+        ),
+    },
+    "Money_Plant___Healthy": {
+        "plant_name": "Money Plant",
+        "disease_name": "Healthy",
+        "is_healthy": True,
+        "description": (
+            "This money plant leaf looks healthy. It has a fresh green color "
+            "with no brown spots, no soft patches and no dry edges."
+        ),
+        "causes": (
+            "No disease was found, so there is nothing to explain here. Some "
+            "money plants have light yellow or cream patterns on their "
+            "leaves. That is normal and is not a disease."
+        ),
+        "treatment": (
+            "No treatment is needed. Keep up your usual care and check the "
+            "plant from time to time."
+        ),
+        "prevention": (
+            "Keep it in bright light that is not harsh direct sun, which can "
+            "burn the leaves. Water only when the top of the soil feels dry. "
+            "Use a pot with drain holes and never let water stand in the "
+            "saucer. If you grow it in water, change the water often and wash "
+            "the container. Wipe dust off the leaves and trim very long "
+            "vines."
+        ),
+        "fertilizer_recommendation": (
+            "Feed lightly. Use a balanced liquid houseplant fertilizer "
+            "diluted to half the strength on the label, about once a month in "
+            "spring and summer. Give little or none in winter. Too much "
+            "fertilizer can build up in the soil and harm the roots."
+        ),
+        "pesticide_recommendation": (
+            "No pesticide is needed for a healthy plant. Look under the "
+            "leaves now and then for tiny pests like mealybugs or spider "
+            "mites. Treat only if you really find them."
+        ),
+    },
+    "Money_Plant___Manganese_Toxicity": {
+        "plant_name": "Money Plant",
+        "disease_name": "Manganese Toxicity",
+        "is_healthy": False,
+        "description": (
+            "Manganese toxicity is a nutrient problem, not an infection. It "
+            "happens when the plant takes in too much of a mineral called "
+            "manganese. Older leaves may get brown or black spots and turn "
+            "yellow. Younger leaves may show small yellow specks. It does not "
+            "spread from plant to plant like bacterial wilt does."
+        ),
+        "causes": (
+            "Too much manganese becomes easy for the roots to take in. This "
+            "often happens when the soil is very acidic, or when the soil "
+            "stays too wet and has little air. It can also happen when a "
+            "fertilizer or plant food adds extra manganese. The signs look "
+            "like other problems, so the cause can be hard to confirm at "
+            "home."
+        ),
+        "treatment": (
+            "Stop fertilizing for now. Pour clean water slowly through the "
+            "pot until it runs out of the drain holes, and let it drain "
+            "fully. This can help wash out extra minerals. A simple soil pH "
+            "test can help. Money plants do best in soil that is slightly "
+            "acidic to neutral (about pH 6 to 7). If the soil is old, soggy "
+            "or very acidic, repot in fresh, well-draining potting mix. Cut "
+            "off badly damaged leaves, because spots do not heal. If the stem "
+            "turns soft and smelly, think of a bacterial problem instead. "
+            "Recovery is not guaranteed."
+        ),
+        "prevention": (
+            "Use a good, loose potting mix and a pot with drain holes. Do not "
+            "overwater. Never use more fertilizer than the label says. Avoid "
+            "products that add extra trace minerals unless a test shows you "
+            "need them. Check the soil pH now and then. Repot in fresh mix "
+            "every year or two."
+        ),
+        "fertilizer_recommendation": (
+            "Pause all fertilizer until the plant recovers. Then use a mild, "
+            "balanced houseplant fertilizer diluted to half the strength on "
+            "the label. Do not add any product that is sold to add manganese "
+            "or other trace minerals. Add them only if a soil test shows a "
+            "real shortage."
+        ),
+        "pesticide_recommendation": (
+            "No pesticide is needed. This problem is not caused by germs or "
+            "insects, so sprays will not fix it and can stress the plant "
+            "more. The real fix is to correct the soil and the watering. "
+            "Treat for pests or disease only if you also find clear signs of "
+            "them."
+        ),
+    },
+
+    # ---------------------------------------------------------- Rice
+    "Rice___Bacterialblight": {
+        "plant_name": "Rice",
+        "disease_name": "Bacterial Blight",
+        "is_healthy": False,
+        "description": (
+            "Bacterial blight is a serious rice disease caused by bacteria. "
+            "It starts as water-soaked or yellow stripes along the leaf "
+            "edges, usually from the leaf tip. The stripes turn yellow, then "
+            "white or gray, and the leaf dries up. Young plants can wilt and "
+            "die. A bad attack can lower the grain yield a lot."
+        ),
+        "causes": (
+            "A bacterium causes this disease. It enters the leaf through "
+            "small wounds and openings at the leaf tip and edge. It spreads "
+            "in irrigation water, rain splash, wind and storms. It spreads "
+            "fastest in warm, humid, rainy weather. Too much nitrogen "
+            "fertilizer, flooded fields, and infected stubble or weeds make "
+            "it worse."
+        ),
+        "treatment": (
+            "There is no sure cure once the disease is in the field. If it is "
+            "bad, drain extra water from the field and hold back nitrogen "
+            "fertilizer until the plants recover. Remove weeds and old "
+            "infected plant leftovers nearby. Try not to move through wet, "
+            "infected fields and then into healthy ones. Ask your local "
+            "agriculture office for advice early, because the disease can "
+            "spread fast."
+        ),
+        "prevention": (
+            "Plant rice varieties that resist bacterial blight. Use clean, "
+            "healthy seed. Keep fields well drained and free of weeds. Use a "
+            "balanced amount of fertilizer and avoid too much nitrogen. After "
+            "harvest, plow old stubble into the soil and let the empty field "
+            "dry. When transplanting, do not cut the tips of the seedling "
+            "leaves, and try not to damage the roots."
+        ),
+        "fertilizer_recommendation": (
+            "Use a balanced fertilizer based on a soil test or local advice. "
+            "Too much nitrogen makes this disease worse, so give nitrogen in "
+            "small amounts at different times instead of one big dose. Enough "
+            "potassium helps plants stay strong. Do not add extra nitrogen "
+            "while the disease is spreading."
+        ),
+        "pesticide_recommendation": (
+            "Sprays do not cure bacterial blight well. Copper-based products "
+            "are only a last resort. They give limited protection, and too "
+            "much copper can build up in the soil and harm rice roots. The "
+            "bacteria can also become resistant to sprays. Ask your local "
+            "agriculture office before using any spray, and follow the "
+            "product label. Resistant varieties and good field care work much "
+            "better."
+        ),
+    },
+    "Rice___Blast": {
+        "plant_name": "Rice",
+        "disease_name": "Blast",
+        "is_healthy": False,
+        "description": (
+            "Rice blast is a fungus disease. On leaves it makes spots shaped "
+            "like diamonds or eyes. The spots have gray or white centers and "
+            "brown edges. The fungus can also attack the stem joints and the "
+            "neck just below the grain head. A broken or brown neck gives "
+            "empty or poorly filled grains."
+        ),
+        "causes": (
+            "A fungus causes rice blast. It lives on infected seed, straw, "
+            "stubble and some weeds. Its spores spread through the air. It "
+            "spreads fastest when leaves stay wet for many hours from dew or "
+            "rain, when the air is humid, and when nights are cool. Too much "
+            "nitrogen fertilizer and lack of water also make it worse."
+        ),
+        "treatment": (
+            "Act early. Remove weeds and old infected straw. Do not add more "
+            "nitrogen fertilizer while the disease is spreading. Keep the "
+            "soil moist so plants do not suffer from dry stress. If many leaf "
+            "spots appear, or if the grain heads are about to come out, ask "
+            "your local agriculture office about spraying. Neck blast is hard "
+            "to fix after the damage is done."
+        ),
+        "prevention": (
+            "Plant blast-resistant rice varieties if they are available. Use "
+            "healthy seed and treat it as your local agriculture office "
+            "advises. Use balanced fertilizer and avoid too much nitrogen. Do "
+            "not plant too thickly. Keep fields free of weeds, and remove or "
+            "plow in old straw after harvest. Plant at the time recommended "
+            "for your area."
+        ),
+        "fertilizer_recommendation": (
+            "Too much nitrogen is a main cause of severe blast. Use a "
+            "balanced fertilizer and give the nitrogen in small amounts at "
+            "different times instead of one big dose. Enough potassium helps "
+            "plants stay strong. A soil test or local advice will help you "
+            "choose the right amounts."
+        ),
+        "pesticide_recommendation": (
+            "A fungicide may be needed in areas where blast is common or in "
+            "wet weather. Timing matters most. Farmers often spray just "
+            "before the grain heads come out (late booting) and again at "
+            "heading, if their local agriculture office advises it. "
+            "Tricyclazole is one product commonly used against blast. Use "
+            "only products allowed in your country and follow the label. A "
+            "spray works best together with resistant varieties and good "
+            "field care."
+        ),
+    },
+    "Rice___Brownspot": {
+        "plant_name": "Rice",
+        "disease_name": "Brown Spot",
+        "is_healthy": False,
+        "description": (
+            "Brown spot is a fungus disease of rice. It makes small, round or "
+            "oval brown spots on the leaves. Older spots often have a gray "
+            "center and a yellow ring. The grains can also get dark spots and "
+            "may be small or poor in quality. Seedlings can be harmed too."
+        ),
+        "causes": (
+            "A fungus causes brown spot. It lives on seeds, old straw and "
+            "weeds, and spreads through air and water. It is closely linked "
+            "to weak, hungry plants. Poor soil with few nutrients, lack of "
+            "water, and long wet spells in warm, humid weather make it more "
+            "likely."
+        ),
+        "treatment": (
+            "Help the plants get enough food and water. Ask your local "
+            "agriculture office about the right fertilizer for your soil, and "
+            "do not let the field dry out too much. Remove weeds and old "
+            "infected straw. Use healthy seed next season. If the disease is "
+            "bad, ask about spraying. Well-fed plants recover better, but "
+            "recovery is not guaranteed."
+        ),
+        "prevention": (
+            "Use clean, healthy seed. Treat the seed before sowing, for "
+            "example with hot water or a seed treatment that your local "
+            "agriculture office advises. Keep the soil fertile with compost "
+            "and balanced fertilizer. Do not let plants get water stress. "
+            "Keep fields free of weeds and remove or plow in old straw after "
+            "harvest. Grow resistant varieties if you can."
+        ),
+        "fertilizer_recommendation": (
+            "Brown spot is often a sign of poor soil. Use compost or manure "
+            "with a balanced fertilizer. Make sure the plants get enough "
+            "nitrogen, potassium and other nutrients. A soil test helps you "
+            "find what is missing. Do not give too much of any one nutrient, "
+            "because too much nitrogen can cause other rice diseases."
+        ),
+        "pesticide_recommendation": (
+            "If the disease is severe, a fungicide may help. Ask your local "
+            "agriculture office which product is allowed for brown spot on "
+            "rice and when to spray. Follow the product label. Clean seed and "
+            "good field care also help control the disease."
+        ),
+    },
+    "Rice___Tungro": {
+        "plant_name": "Rice",
+        "disease_name": "Tungro",
+        "is_healthy": False,
+        "description": (
+            "Tungro is a virus disease of rice. Infected plants stay short "
+            "and make few tillers (side shoots). The leaves turn yellow or "
+            "orange-yellow, often starting at the tips. The grain heads are "
+            "small and many grains are empty. It often shows up in patches in "
+            "the field, and it can be mistaken for a nutrient shortage. "
+            "Plants infected when they are young are hurt the most."
+        ),
+        "causes": (
+            "Two viruses cause tungro. Small insects called green leafhoppers "
+            "carry the viruses from sick plants to healthy ones when they "
+            "feed. The disease spreads fast when rice is planted at different "
+            "times in the same area, because there is always a green crop for "
+            "the insects. Old stubble, rice plants that sprout by themselves, "
+            "and some weeds can keep the virus alive between crops."
+        ),
+        "treatment": (
+            "There is no cure for a plant that has tungro. If only a few "
+            "plants are sick, pull them out early and destroy them. This "
+            "works only while the disease is still light. Spraying against "
+            "leafhoppers does not always help, because new insects keep "
+            "flying in from nearby fields. Ask your local agriculture office "
+            "when spraying is worth it. Remove weeds and old stubble near the "
+            "field."
+        ),
+        "prevention": (
+            "Plant tungro-resistant or tolerant rice varieties that suit your "
+            "area. This is the most useful step. Try to plant at the same "
+            "time as nearby farmers, so the crops grow and ripen together. "
+            "Late planting makes tungro more likely. After harvest, plow in "
+            "the stubble and remove weeds and rice plants that sprout by "
+            "themselves. If you can, grow a non-rice crop between rice crops. "
+            "Check young plants often for short, yellow plants and for green "
+            "leafhoppers."
+        ),
+        "fertilizer_recommendation": (
+            "Fertilizer cannot cure tungro. Use a balanced fertilizer based "
+            "on local advice. Avoid too much nitrogen, because green "
+            "leafhoppers prefer rice that has been given a lot of nitrogen. "
+            "Good feeding will not protect a plant from tungro."
+        ),
+        "pesticide_recommendation": (
+            "No fungicide or antibiotic spray can cure a virus. Insecticides "
+            "are used only against the green leafhoppers that spread tungro. "
+            "They often fail to stop the disease, because leafhoppers keep "
+            "arriving from nearby fields and can spread the virus in a very "
+            "short time. Spray only when your local agriculture office "
+            "advises it, and follow the label. Resistant varieties and "
+            "planting at the same time as your neighbors work better. "
+            "Spraying too often can kill helpful insects."
+        ),
+    },
 }
 
 

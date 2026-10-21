@@ -1,0 +1,67 @@
+Test images: 8154
+Test loss: 0.091499
+Test accuracy: 97.068923%
+
+                                                    precision    recall  f1-score   support
+
+                                Apple___Apple_scab       0.99      0.95      0.97       202
+                                 Apple___Black_rot       0.97      1.00      0.99       199
+                          Apple___Cedar_apple_rust       0.98      0.99      0.99       176
+                                   Apple___healthy       0.95      1.00      0.97       201
+                                  Banana___cordana       0.83      0.91      0.87        11
+                                  Banana___healthy       1.00      1.00      1.00         9
+                           Banana___pestalotiopsis       0.91      0.83      0.87        12
+                                 Banana___sigatoka       1.00      1.00      1.00        33
+                               Blueberry___healthy       1.00      0.99      0.99       182
+          Cherry_(including_sour)___Powdery_mildew       0.99      1.00      1.00       168
+                 Cherry_(including_sour)___healthy       0.99      0.99      0.99       183
+Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot       0.92      0.98      0.95       164
+                       Corn_(maize)___Common_rust_       1.00      1.00      1.00       191
+               Corn_(maize)___Northern_Leaf_Blight       0.97      0.93      0.95       191
+                            Corn_(maize)___healthy       0.99      0.99      0.99       186
+                                 Grape___Black_rot       0.98      0.99      0.99       189
+                      Grape___Esca_(Black_Measles)       0.99      0.98      0.99       192
+        Grape___Leaf_blight_(Isariopsis_Leaf_Spot)       0.99      1.00      1.00       172
+                                   Grape___healthy       0.99      1.00      1.00       169
+                               Mango___Anthracnose       0.98      1.00      0.99        64
+                          Mango___Bacterial_Canker       0.98      0.98      0.98        64
+                            Mango___Cutting_Weevil       0.98      1.00      0.99        64
+                                  Mango___Die_Back       0.98      1.00      0.99        64
+                                Mango___Gall_Midge       1.00      0.98      0.99        64
+                            Mango___Powdery_Mildew       0.98      0.98      0.98        64
+                               Mango___Sooty_Mould       0.98      1.00      0.99        64
+                                   Mango___healthy       0.98      1.00      0.99        64
+                      Money_Plant___Bacterial_Wilt       1.00      1.00      1.00        40
+                             Money_Plant___Healthy       1.00      1.00      1.00        49
+                  Money_Plant___Manganese_Toxicity       1.00      1.00      1.00        42
+          Orange___Haunglongbing_(Citrus_greening)       1.00      1.00      1.00       201
+                            Peach___Bacterial_spot       0.99      0.97      0.98       184
+                                   Peach___healthy       0.99      0.98      0.99       173
+                     Pepper,_bell___Bacterial_spot       0.98      0.97      0.97       191
+                            Pepper,_bell___healthy       0.97      0.96      0.96       199
+                             Potato___Early_blight       0.99      0.99      0.99       194
+                              Potato___Late_blight       0.97      0.97      0.97       194
+                                  Potato___healthy       0.98      0.99      0.99       182
+                               Raspberry___healthy       1.00      0.99      1.00       178
+                            Rice___Bacterialblight       0.99      0.99      0.99       111
+                                      Rice___Blast       0.99      1.00      1.00       101
+                                  Rice___Brownspot       1.00      1.00      1.00       112
+                                     Rice___Tungro       1.00      1.00      1.00        92
+                                 Soybean___healthy       0.99      0.99      0.99       202
+                           Squash___Powdery_mildew       1.00      1.00      1.00       174
+                          Strawberry___Leaf_scorch       1.00      1.00      1.00       177
+                              Strawberry___healthy       1.00      0.99      1.00       182
+                           Tomato___Bacterial_spot       0.92      0.97      0.95       170
+                             Tomato___Early_blight       0.89      0.78      0.83       192
+                              Tomato___Late_blight       0.91      0.95      0.93       185
+                                Tomato___Leaf_Mold       0.95      0.92      0.93       188
+                       Tomato___Septoria_leaf_spot       0.87      0.89      0.88       174
+     Tomato___Spider_mites Two-spotted_spider_mite       0.92      0.87      0.89       174
+                              Tomato___Target_Spot       0.78      0.89      0.83       183
+            Tomato___Tomato_Yellow_Leaf_Curl_Virus       0.98      0.96      0.97       196
+                      Tomato___Tomato_mosaic_virus       0.98      0.97      0.98       179
+                                  Tomato___healthy       0.97      0.95      0.96       193
+
+                                          accuracy                           0.97      8154
+                                         macro avg       0.97      0.97      0.97      8154
+                                      weighted avg       0.97      0.97      0.97      8154

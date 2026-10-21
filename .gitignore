@@ -28,3 +28,6 @@ database/*.db
 # OS files
 .DS_Store
 Thumbs.db
+
+# Local Python virtual environment
+.venv/
