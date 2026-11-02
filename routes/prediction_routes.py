@@ -81,6 +81,67 @@ def predict():
             'error': 'Failed to analyze the image. Please try a different photo.'
         }), 500
 
+        # --- Reject images that do not match supported plant classes ---
+    if current_app.config.get('UNKNOWN_PLANT_CHECK', False):
+        detector = current_app.extensions.get('unknown_plant_detector')
+
+        if detector is None:
+            current_app.logger.error(
+                "Unknown-plant detection is enabled but not initialized."
+            )
+            try:
+                os.remove(filepath)
+            except OSError:
+                pass
+
+            return jsonify({
+                'success': False,
+                'error': (
+                    'Plant verification is temporarily unavailable. '
+                    'Please try again later.'
+                )
+            }), 503
+
+        try:
+            check = detector.check(
+                filepath,
+                result,
+                image_size=current_app.config['IMAGE_SIZE'],
+            )
+        except Exception:
+            current_app.logger.exception(
+                "Unknown-plant verification failed."
+            )
+            try:
+                os.remove(filepath)
+            except OSError:
+                pass
+
+            return jsonify({
+                'success': False,
+                'error': (
+                    'We could not verify this image safely. '
+                    'Please try a clear, close-up leaf photo.'
+                )
+            }), 503
+
+        if not check['is_known']:
+            try:
+                os.remove(filepath)
+            except OSError:
+                pass
+
+            return jsonify({
+                'success': False,
+                'unknown_plant': True,
+                'error': (
+                    'This image could not be verified as one of the '
+                    'supported plants. Please upload a clear, close-up '
+                    'leaf photo from a plant included in our dataset.'
+                )
+            }), 422
+
+    # --- Continue the existing prediction workflow ---
     class_name = result['class_name']
     confidence = result['confidence']
     disease_info = get_disease_info(class_name)

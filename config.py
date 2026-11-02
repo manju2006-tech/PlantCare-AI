@@ -55,8 +55,18 @@ class Config:
     DEFAULT_ADMIN_USERNAME = os.environ.get('DEFAULT_ADMIN_USERNAME', 'admin')
     DEFAULT_ADMIN_EMAIL = os.environ.get('DEFAULT_ADMIN_EMAIL', 'admin@plantcare.local')
     DEFAULT_ADMIN_PASSWORD = os.environ.get('DEFAULT_ADMIN_PASSWORD', 'Admin@123')
-
-
+    
+    
+# Unknown-plant detection
+    UNKNOWN_PLANT_CHECK = True
+    UNKNOWN_PROFILE_PATH = os.path.join(
+        basedir,
+        'trained_model_57class_run2',
+        'unknown_profile.npz'
+    )
+    UNKNOWN_MIN_CONFIDENCE = 50.0        
+    
+    
 class DevelopmentConfig(Config):
     DEBUG = True
     SQLALCHEMY_ECHO = False
@@ -72,3 +82,5 @@ config_by_name = {
     'production': ProductionConfig,
     'default': DevelopmentConfig,
 }
+
+   

@@ -1,0 +1,3701 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793522121.431997  189287 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+I0000 00:00:1793522121.435070  189287 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+I0000 00:00:1793522121.798074  189287 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793522123.788225  189287 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+I0000 00:00:1793522123.790686  189287 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+Loading model and detector...
+E0000 00:00:1793522125.620868  189287 cuda_platform.cc:52] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: UNKNOWN ERROR (303)
+Supported images: 8154
+Unknown images: 402
+Evaluating supported images...
+Progress: 640/8154
+/home/giridhar-s/.pyenv/versions/plant-disease-311/lib/python3.11/site-packages/PIL/TiffImagePlugin.py:900: UserWarning: Truncated File Read
+  warnings.warn(str(msg))
+/home/giridhar-s/.pyenv/versions/plant-disease-311/lib/python3.11/site-packages/PIL/JpegImagePlugin.py:846: UserWarning: Image appears to be a malformed MPO file, it will be interpreted as a base JPEG file
+  warnings.warn(
+Progress: 1280/8154
+Progress: 1920/8154
+Progress: 2560/8154
+Progress: 3200/8154
+Progress: 3840/8154
+Progress: 4480/8154
+Progress: 5120/8154
+Progress: 5760/8154
+Progress: 6400/8154
+Progress: 7040/8154
+Progress: 7680/8154
+
+SUPPORTED IMAGE COMPARISON
+Evaluated: 8154; skipped: 0
+Model classification accuracy: 97.11%
+Rule A (Current predicted-class rule): accepted 7670 (94.06%), rejected 484
+Rule B (Nearest normalized-distance rule): accepted 7946 (97.45%), rejected 208
+Rule C (Nearest distance + class agreement): accepted 5193 (63.69%), rejected 2961
+
+Evaluating unknown images...
+
+Azadirachta_indica_104903364.jpg
+  Predicted: Cherry_(including_sour)___healthy (83.65%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 23.2377/24.7269
+  Normalized ratio: 0.9398
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Azadirachta_indica_109214415.jpg
+  Predicted: Rice___Tungro (99.85%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 20.2089/24.7269
+  Normalized ratio: 0.8173
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Azadirachta_indica_109858051.jpg
+  Predicted: Rice___Brownspot (62.92%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 25.2860/24.9704
+  Normalized ratio: 1.0126
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Azadirachta_indica_110305893.jpg
+  Predicted: Banana___pestalotiopsis (94.02%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 21.6643/24.9704
+  Normalized ratio: 0.8676
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Azadirachta_indica_114153288.jpg
+  Predicted: Banana___pestalotiopsis (78.92%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.5955/24.9704
+  Normalized ratio: 0.9049
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Azadirachta_indica_114153293.jpg
+  Predicted: Banana___pestalotiopsis (86.30%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.6340/24.9704
+  Normalized ratio: 0.9465
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Azadirachta_indica_116022276.jpg
+  Predicted: Rice___Bacterialblight (99.80%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 21.1773/24.7269
+  Normalized ratio: 0.8564
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Azadirachta_indica_122235417.jpg
+  Predicted: Rice___Brownspot (88.77%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 23.7890/24.7269
+  Normalized ratio: 0.9621
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Azadirachta_indica_122938060.jpg
+  Predicted: Rice___Brownspot (79.46%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 21.5527/24.7269
+  Normalized ratio: 0.8716
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Azadirachta_indica_128434889.jpg
+  Predicted: Rice___Tungro (91.04%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.5343/24.9704
+  Normalized ratio: 0.9425
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Azadirachta_indica_150908073.jpg
+  Predicted: Tomato___Late_blight (100.00%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 28.2416/24.9704
+  Normalized ratio: 1.1310
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Azadirachta_indica_157469460.jpg
+  Predicted: Rice___Bacterialblight (99.90%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 23.6155/24.7269
+  Normalized ratio: 0.9551
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Azadirachta_indica_175192587.jpg
+  Predicted: Rice___Bacterialblight (99.10%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 21.7698/24.7269
+  Normalized ratio: 0.8804
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Azadirachta_indica_179059200.jpg
+  Predicted: Strawberry___Leaf_scorch (96.00%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 21.3635/24.9704
+  Normalized ratio: 0.8556
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Azadirachta_indica_189252286.jpg
+  Predicted: Rice___Bacterialblight (99.76%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 22.3412/24.7269
+  Normalized ratio: 0.9035
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Azadirachta_indica_201460186.jpg
+  Predicted: Rice___Bacterialblight (96.15%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 21.7961/24.7269
+  Normalized ratio: 0.8815
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Azadirachta_indica_202648111.jpg
+  Predicted: Tomato___healthy (73.87%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 21.2596/24.9704
+  Normalized ratio: 0.8514
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Azadirachta_indica_203069093.jpg
+  Predicted: Rice___Tungro (98.04%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 25.2121/24.9704
+  Normalized ratio: 1.0097
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Azadirachta_indica_206361193.jpg
+  Predicted: Squash___Powdery_mildew (95.04%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 21.9582/24.7269
+  Normalized ratio: 0.8880
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Azadirachta_indica_206460858.jpg
+  Predicted: Rice___Bacterialblight (62.77%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 21.8300/24.7269
+  Normalized ratio: 0.8828
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Azadirachta_indica_209377846.jpg
+  Predicted: Rice___Bacterialblight (100.00%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 22.4392/24.7269
+  Normalized ratio: 0.9075
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Azadirachta_indica_209399649.jpg
+  Predicted: Rice___Bacterialblight (83.50%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 25.0733/24.9704
+  Normalized ratio: 1.0041
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Azadirachta_indica_209411833.jpg
+  Predicted: Banana___pestalotiopsis (67.85%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 21.9805/24.9704
+  Normalized ratio: 0.8803
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Azadirachta_indica_210585912.jpg
+  Predicted: Banana___pestalotiopsis (97.44%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.7500/24.9704
+  Normalized ratio: 0.9111
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Azadirachta_indica_211538359.jpg
+  Predicted: Strawberry___Leaf_scorch (100.00%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.3430/24.9704
+  Normalized ratio: 0.9348
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Azadirachta_indica_222128366.jpg
+  Predicted: Rice___Blast (72.61%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 24.0792/24.9704
+  Normalized ratio: 0.9643
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Azadirachta_indica_234834091.jpg
+  Predicted: Rice___Bacterialblight (78.72%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.8847/24.9704
+  Normalized ratio: 0.9165
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Azadirachta_indica_235800790.jpg
+  Predicted: Rice___Tungro (78.44%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 20.9308/24.7269
+  Normalized ratio: 0.8465
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Azadirachta_indica_238894929.jpg
+  Predicted: Banana___pestalotiopsis (56.74%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.7631/24.9704
+  Normalized ratio: 0.9116
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Azadirachta_indica_241727412.jpg
+  Predicted: Rice___Bacterialblight (43.14%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 22.4027/24.7269
+  Normalized ratio: 0.9060
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Azadirachta_indica_242081686.jpg
+  Predicted: Rice___Bacterialblight (93.78%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 22.5599/24.7269
+  Normalized ratio: 0.9124
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Azadirachta_indica_242259294.jpg
+  Predicted: Banana___sigatoka (55.69%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 21.5824/24.9704
+  Normalized ratio: 0.8643
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Azadirachta_indica_243547931.jpg
+  Predicted: Squash___Powdery_mildew (100.00%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 25.6049/24.9704
+  Normalized ratio: 1.0254
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Azadirachta_indica_247897939.jpg
+  Predicted: Banana___pestalotiopsis (81.05%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.4880/24.9704
+  Normalized ratio: 0.9006
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Azadirachta_indica_257572050.jpg
+  Predicted: Rice___Bacterialblight (99.92%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.3453/24.9704
+  Normalized ratio: 0.8949
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Azadirachta_indica_260297105.jpg
+  Predicted: Rice___Tungro (89.01%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 21.8237/24.9704
+  Normalized ratio: 0.8740
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Azadirachta_indica_263451348.jpg
+  Predicted: Banana___healthy (97.73%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 21.2134/24.9704
+  Normalized ratio: 0.8495
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Azadirachta_indica_273077400.jpg
+  Predicted: Rice___Bacterialblight (97.73%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 22.7319/24.7269
+  Normalized ratio: 0.9193
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Azadirachta_indica_274630256.jpg
+  Predicted: Banana___healthy (99.72%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 25.1944/24.9704
+  Normalized ratio: 1.0090
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Azadirachta_indica_275317794.jpg
+  Predicted: Banana___sigatoka (45.83%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 25.3450/24.9704
+  Normalized ratio: 1.0150
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Azadirachta_indica_280685527.jpg
+  Predicted: Banana___pestalotiopsis (89.24%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.6947/24.9704
+  Normalized ratio: 0.9489
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Azadirachta_indica_289171953.jpg
+  Predicted: Rice___Tungro (96.46%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 22.2017/24.7269
+  Normalized ratio: 0.8979
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Azadirachta_indica_28938863.jpg
+  Predicted: Banana___pestalotiopsis (99.94%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 28.2246/24.9704
+  Normalized ratio: 1.1303
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Azadirachta_indica_294956382.jpg
+  Predicted: Rice___Brownspot (99.75%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 25.2551/24.7269
+  Normalized ratio: 1.0214
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Azadirachta_indica_296644845.jpg
+  Predicted: Banana___pestalotiopsis (63.45%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.1478/24.9704
+  Normalized ratio: 0.9270
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Azadirachta_indica_297200632.jpg
+  Predicted: Banana___pestalotiopsis (99.46%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.1669/24.9704
+  Normalized ratio: 0.8877
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Azadirachta_indica_306139685.jpg
+  Predicted: Rice___Tungro (99.97%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 21.6559/24.9704
+  Normalized ratio: 0.8673
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Azadirachta_indica_324592658.jpg
+  Predicted: Rice___Bacterialblight (97.30%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 24.1014/24.9704
+  Normalized ratio: 0.9652
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Azadirachta_indica_325475612.jpg
+  Predicted: Rice___Bacterialblight (96.12%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 21.4961/24.7269
+  Normalized ratio: 0.8693
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Azadirachta_indica_325857055.jpg
+  Predicted: Rice___Brownspot (41.88%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 24.1682/24.9704
+  Normalized ratio: 0.9679
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Azadirachta_indica_328161354.jpg
+  Predicted: Banana___pestalotiopsis (99.92%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 25.4393/24.9704
+  Normalized ratio: 1.0188
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Azadirachta_indica_328289768.jpg
+  Predicted: Banana___pestalotiopsis (99.97%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.9734/24.9704
+  Normalized ratio: 0.9200
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Azadirachta_indica_333580608.jpg
+  Predicted: Banana___healthy (63.27%)
+  Nearest class: Banana___sigatoka
+  Nearest distance/threshold: 22.7650/23.8907
+  Normalized ratio: 0.9529
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Azadirachta_indica_333978780.jpg
+  Predicted: Banana___sigatoka (74.51%)
+  Nearest class: Banana___sigatoka
+  Nearest distance/threshold: 24.5642/23.8907
+  Normalized ratio: 1.0282
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Azadirachta_indica_340031165.jpg
+  Predicted: Banana___healthy (99.25%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 25.1344/24.9704
+  Normalized ratio: 1.0066
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Azadirachta_indica_352605300.jpg
+  Predicted: Rice___Tungro (91.30%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 24.2065/24.7269
+  Normalized ratio: 0.9790
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Azadirachta_indica_353297897.jpg
+  Predicted: Rice___Bacterialblight (99.68%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.2306/24.9704
+  Normalized ratio: 0.9303
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Azadirachta_indica_353378307.jpg
+  Predicted: Tomato___Tomato_Yellow_Leaf_Curl_Virus (78.02%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 22.7622/24.7269
+  Normalized ratio: 0.9205
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Azadirachta_indica_355264369.jpg
+  Predicted: Banana___pestalotiopsis (87.71%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.2033/24.9704
+  Normalized ratio: 0.8892
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Azadirachta_indica_369551525.jpg
+  Predicted: Rice___Bacterialblight (95.98%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 26.7770/24.7269
+  Normalized ratio: 1.0829
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Azadirachta_indica_388109969.jpg
+  Predicted: Squash___Powdery_mildew (65.75%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 23.1255/24.7269
+  Normalized ratio: 0.9352
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Azadirachta_indica_390983363.jpg
+  Predicted: Rice___Bacterialblight (58.19%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 24.1719/24.9704
+  Normalized ratio: 0.9680
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Azadirachta_indica_391015100.jpg
+  Predicted: Rice___Blast (86.94%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 21.8864/24.9704
+  Normalized ratio: 0.8765
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Azadirachta_indica_409380648.jpg
+  Predicted: Rice___Brownspot (88.24%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.1868/24.9704
+  Normalized ratio: 0.9286
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Azadirachta_indica_56564409.jpg
+  Predicted: Rice___Bacterialblight (99.97%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 23.4577/24.7269
+  Normalized ratio: 0.9487
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Azadirachta_indica_69237804.jpg
+  Predicted: Banana___pestalotiopsis (96.38%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.7026/24.9704
+  Normalized ratio: 0.9492
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Azadirachta_indica_86380155.jpg
+  Predicted: Mango___Cutting_Weevil (77.64%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 18.7759/24.7269
+  Normalized ratio: 0.7593
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Carica_papaya_102227764.jpg
+  Predicted: Tomato___Late_blight (99.66%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 23.5375/24.7269
+  Normalized ratio: 0.9519
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Carica_papaya_10384156.jpg
+  Predicted: Tomato___Target_Spot (79.60%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 24.4013/24.9704
+  Normalized ratio: 0.9772
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Carica_papaya_103941457.jpg
+  Predicted: Banana___pestalotiopsis (80.02%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 22.4248/24.7269
+  Normalized ratio: 0.9069
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Carica_papaya_106976121.jpg
+  Predicted: Strawberry___Leaf_scorch (99.99%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.3246/24.9704
+  Normalized ratio: 0.8940
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Carica_papaya_108387143.jpg
+  Predicted: Banana___pestalotiopsis (76.58%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 23.5332/24.7269
+  Normalized ratio: 0.9517
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Carica_papaya_118385140.jpg
+  Predicted: Rice___Blast (95.65%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 17.2578/24.9704
+  Normalized ratio: 0.6911
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Carica_papaya_127766765.jpg
+  Predicted: Rice___Tungro (73.24%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 22.1717/24.7269
+  Normalized ratio: 0.8967
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Carica_papaya_132820693.jpg
+  Predicted: Rice___Blast (99.52%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.4432/24.9704
+  Normalized ratio: 0.8988
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Carica_papaya_133203491.jpg
+  Predicted: Rice___Bacterialblight (99.99%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 23.3159/24.7269
+  Normalized ratio: 0.9429
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Carica_papaya_138190652.jpg
+  Predicted: Rice___Tungro (65.59%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 22.1051/24.7269
+  Normalized ratio: 0.8940
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Carica_papaya_139945974.jpg
+  Predicted: Rice___Bacterialblight (83.10%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 21.3449/24.9704
+  Normalized ratio: 0.8548
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Carica_papaya_146416161.jpg
+  Predicted: Rice___Bacterialblight (64.34%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 22.3805/24.7269
+  Normalized ratio: 0.9051
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Carica_papaya_149146173.jpg
+  Predicted: Rice___Bacterialblight (100.00%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 19.7497/24.7269
+  Normalized ratio: 0.7987
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Carica_papaya_150865843.jpg
+  Predicted: Rice___Tungro (99.59%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.9406/24.9704
+  Normalized ratio: 0.9187
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Carica_papaya_15201489.jpg
+  Predicted: Rice___Tungro (96.58%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 24.5335/24.7269
+  Normalized ratio: 0.9922
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Carica_papaya_152384618.jpg
+  Predicted: Banana___pestalotiopsis (97.30%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 21.6203/24.7269
+  Normalized ratio: 0.8744
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Carica_papaya_162944439.jpg
+  Predicted: Rice___Bacterialblight (99.93%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.7725/24.9704
+  Normalized ratio: 0.9520
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Carica_papaya_188891360.jpg
+  Predicted: Rice___Tungro (85.44%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 27.3530/24.9704
+  Normalized ratio: 1.0954
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Carica_papaya_195983405.jpg
+  Predicted: Banana___healthy (97.13%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.4744/24.9704
+  Normalized ratio: 0.9000
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Carica_papaya_197688568.jpg
+  Predicted: Rice___Tungro (100.00%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 21.8923/24.7269
+  Normalized ratio: 0.8854
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Carica_papaya_207604377.jpg
+  Predicted: Rice___Bacterialblight (97.92%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 20.7242/24.7269
+  Normalized ratio: 0.8381
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Carica_papaya_214111872.jpg
+  Predicted: Rice___Bacterialblight (77.26%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.9562/24.9704
+  Normalized ratio: 0.9594
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Carica_papaya_218810484.jpg
+  Predicted: Tomato___Late_blight (38.50%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 21.3677/24.9704
+  Normalized ratio: 0.8557
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Carica_papaya_238572869.jpg
+  Predicted: Rice___Blast (80.69%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.6035/24.9704
+  Normalized ratio: 0.9052
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Carica_papaya_24045972.jpg
+  Predicted: Tomato___Late_blight (74.05%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 21.2893/24.9704
+  Normalized ratio: 0.8526
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Carica_papaya_250566399.jpg
+  Predicted: Rice___Bacterialblight (99.88%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 22.5319/24.7269
+  Normalized ratio: 0.9112
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Carica_papaya_252690039.jpg
+  Predicted: Banana___pestalotiopsis (82.45%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 25.8855/24.9704
+  Normalized ratio: 1.0366
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Carica_papaya_256118688.jpg
+  Predicted: Rice___Bacterialblight (97.63%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 23.0969/24.7269
+  Normalized ratio: 0.9341
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Carica_papaya_258604757.jpg
+  Predicted: Strawberry___Leaf_scorch (99.83%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 24.6813/24.9704
+  Normalized ratio: 0.9884
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Carica_papaya_261598071.jpg
+  Predicted: Banana___healthy (99.82%)
+  Nearest class: Banana___healthy
+  Nearest distance/threshold: 20.7409/22.7690
+  Normalized ratio: 0.9109
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Carica_papaya_262333676.jpg
+  Predicted: Rice___Brownspot (89.12%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 21.7345/24.7269
+  Normalized ratio: 0.8790
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Carica_papaya_263584262.jpg
+  Predicted: Rice___Bacterialblight (89.54%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 23.5559/24.7269
+  Normalized ratio: 0.9526
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Carica_papaya_265416563.jpg
+  Predicted: Rice___Bacterialblight (100.00%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 25.8047/24.7269
+  Normalized ratio: 1.0436
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Carica_papaya_266288395.jpg
+  Predicted: Rice___Bacterialblight (99.20%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 20.6434/24.7269
+  Normalized ratio: 0.8349
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Carica_papaya_266684427.jpg
+  Predicted: Banana___pestalotiopsis (88.87%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.8472/24.9704
+  Normalized ratio: 0.9550
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Carica_papaya_273370069.jpg
+  Predicted: Rice___Bacterialblight (97.32%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 23.1669/24.7269
+  Normalized ratio: 0.9369
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Carica_papaya_274486182.jpg
+  Predicted: Strawberry___Leaf_scorch (100.00%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 25.1969/24.9704
+  Normalized ratio: 1.0091
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Carica_papaya_276119184.jpg
+  Predicted: Banana___pestalotiopsis (80.87%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.3775/24.9704
+  Normalized ratio: 0.9362
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Carica_papaya_278067441.jpg
+  Predicted: Rice___Tungro (100.00%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 21.9917/24.7269
+  Normalized ratio: 0.8894
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Carica_papaya_27823904.jpg
+  Predicted: Rice___Bacterialblight (69.30%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 24.6653/24.7269
+  Normalized ratio: 0.9975
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Carica_papaya_287770910.jpg
+  Predicted: Pepper,_bell___Bacterial_spot (85.22%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 20.8123/24.7269
+  Normalized ratio: 0.8417
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Carica_papaya_289605564.jpg
+  Predicted: Rice___Bacterialblight (68.64%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 21.0349/24.9704
+  Normalized ratio: 0.8424
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Carica_papaya_299610339.jpg
+  Predicted: Strawberry___Leaf_scorch (77.23%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 22.2904/24.7269
+  Normalized ratio: 0.9015
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Carica_papaya_301824810.jpg
+  Predicted: Rice___Blast (71.25%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 19.6280/24.9704
+  Normalized ratio: 0.7861
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Carica_papaya_30658440.jpg
+  Predicted: Money_Plant___Healthy (39.98%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 21.4147/24.9704
+  Normalized ratio: 0.8576
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Carica_papaya_310021838.jpg
+  Predicted: Strawberry___Leaf_scorch (92.68%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 20.8101/24.7269
+  Normalized ratio: 0.8416
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Carica_papaya_329707429.jpg
+  Predicted: Rice___Bacterialblight (100.00%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 21.7819/24.7269
+  Normalized ratio: 0.8809
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Carica_papaya_336914701.jpg
+  Predicted: Cherry_(including_sour)___healthy (69.04%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 19.1667/24.9704
+  Normalized ratio: 0.7676
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Carica_papaya_337952041.jpg
+  Predicted: Tomato___healthy (80.27%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 24.1245/24.9704
+  Normalized ratio: 0.9661
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Carica_papaya_33863552.jpg
+  Predicted: Rice___Tungro (52.34%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 24.1339/24.7269
+  Normalized ratio: 0.9760
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Carica_papaya_339230522.jpg
+  Predicted: Rice___Tungro (94.07%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.5269/24.9704
+  Normalized ratio: 0.9422
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Carica_papaya_35238030.jpg
+  Predicted: Banana___pestalotiopsis (49.33%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 20.7386/24.9704
+  Normalized ratio: 0.8305
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Carica_papaya_37651559.jpg
+  Predicted: Tomato___Late_blight (55.05%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 21.7581/24.9704
+  Normalized ratio: 0.8714
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Carica_papaya_38274954.jpg
+  Predicted: Mango___Cutting_Weevil (48.38%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 22.8553/24.7269
+  Normalized ratio: 0.9243
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Carica_papaya_388212975.jpg
+  Predicted: Rice___Bacterialblight (99.84%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 17.6590/24.7269
+  Normalized ratio: 0.7142
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Carica_papaya_391411295.jpg
+  Predicted: Banana___pestalotiopsis (62.45%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.4949/24.9704
+  Normalized ratio: 0.9009
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Carica_papaya_408421493.jpg
+  Predicted: Banana___pestalotiopsis (78.98%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.6577/24.9704
+  Normalized ratio: 0.9074
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Carica_papaya_57037281.jpg
+  Predicted: Rice___Bacterialblight (82.73%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 25.0822/24.9704
+  Normalized ratio: 1.0045
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Carica_papaya_64801996.jpg
+  Predicted: Banana___pestalotiopsis (98.85%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 20.9994/24.9704
+  Normalized ratio: 0.8410
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Carica_papaya_68062369.jpg
+  Predicted: Rice___Bacterialblight (89.96%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.9290/24.9704
+  Normalized ratio: 0.9182
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Carica_papaya_69607796.jpg
+  Predicted: Rice___Blast (97.87%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 24.3238/24.9704
+  Normalized ratio: 0.9741
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Carica_papaya_71029051.jpg
+  Predicted: Rice___Brownspot (40.61%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 26.2289/24.7269
+  Normalized ratio: 1.0607
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Carica_papaya_71764042.jpg
+  Predicted: Strawberry___Leaf_scorch (74.27%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 24.2850/24.7269
+  Normalized ratio: 0.9821
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Carica_papaya_7215218.jpg
+  Predicted: Strawberry___Leaf_scorch (62.28%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 22.7787/24.7269
+  Normalized ratio: 0.9212
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Carica_papaya_84891224.jpg
+  Predicted: Strawberry___Leaf_scorch (75.32%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 24.6120/24.9704
+  Normalized ratio: 0.9856
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Carica_papaya_93819197.jpg
+  Predicted: Strawberry___Leaf_scorch (96.18%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.9592/24.9704
+  Normalized ratio: 0.9595
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Carica_papaya_96251312.jpg
+  Predicted: Tomato___Late_blight (42.88%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 22.6117/24.7269
+  Normalized ratio: 0.9145
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Cocos_nucifera_103546184.jpg
+  Predicted: Rice___Bacterialblight (97.93%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.6813/24.9704
+  Normalized ratio: 0.9083
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Cocos_nucifera_105564264.jpg
+  Predicted: Rice___Tungro (99.96%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 19.6280/24.9704
+  Normalized ratio: 0.7860
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Cocos_nucifera_108381142.jpg
+  Predicted: Banana___pestalotiopsis (30.29%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 21.9460/24.9704
+  Normalized ratio: 0.8789
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Cocos_nucifera_113183586.jpg
+  Predicted: Banana___pestalotiopsis (93.05%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.1496/24.9704
+  Normalized ratio: 0.9271
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Cocos_nucifera_113664894.jpg
+  Predicted: Rice___Brownspot (99.07%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.9792/24.9704
+  Normalized ratio: 0.9203
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Cocos_nucifera_126037933.jpg
+  Predicted: Rice___Bacterialblight (99.98%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 27.7263/24.7269
+  Normalized ratio: 1.1213
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Cocos_nucifera_130225710.jpg
+  Predicted: Banana___healthy (88.08%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.9325/24.9704
+  Normalized ratio: 0.9584
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Cocos_nucifera_137571855.jpg
+  Predicted: Strawberry___Leaf_scorch (80.75%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 21.4940/24.9704
+  Normalized ratio: 0.8608
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Cocos_nucifera_138892916.jpg
+  Predicted: Rice___Tungro (95.48%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 23.7617/24.7269
+  Normalized ratio: 0.9610
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Cocos_nucifera_144329003.jpg
+  Predicted: Strawberry___Leaf_scorch (83.66%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 24.0971/24.9704
+  Normalized ratio: 0.9650
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Cocos_nucifera_162120975.jpg
+  Predicted: Mango___Bacterial_Canker (50.14%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 24.0790/24.9704
+  Normalized ratio: 0.9643
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Cocos_nucifera_162765686.jpg
+  Predicted: Rice___Tungro (100.00%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.7761/24.9704
+  Normalized ratio: 0.9522
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Cocos_nucifera_188272510.jpg
+  Predicted: Raspberry___healthy (99.30%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 23.4328/24.7269
+  Normalized ratio: 0.9477
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Cocos_nucifera_189766800.jpg
+  Predicted: Rice___Tungro (79.43%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 21.7906/24.9704
+  Normalized ratio: 0.8727
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Cocos_nucifera_192692956.jpg
+  Predicted: Rice___Bacterialblight (85.65%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.3465/24.9704
+  Normalized ratio: 0.9350
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Cocos_nucifera_193875001.jpg
+  Predicted: Rice___Tungro (96.14%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 19.1881/24.9704
+  Normalized ratio: 0.7684
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Cocos_nucifera_194983107.jpg
+  Predicted: Rice___Bacterialblight (99.75%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 26.3227/24.9704
+  Normalized ratio: 1.0542
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Cocos_nucifera_194983171.jpg
+  Predicted: Banana___pestalotiopsis (80.46%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.2826/24.9704
+  Normalized ratio: 0.9324
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Cocos_nucifera_197422929.jpg
+  Predicted: Rice___Tungro (100.00%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 20.7332/24.7269
+  Normalized ratio: 0.8385
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Cocos_nucifera_222091738.jpg
+  Predicted: Rice___Bacterialblight (92.09%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.2560/24.9704
+  Normalized ratio: 0.9313
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Cocos_nucifera_226964107.jpg
+  Predicted: Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot (86.76%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 23.1375/24.7269
+  Normalized ratio: 0.9357
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Cocos_nucifera_241057177.jpg
+  Predicted: Rice___Tungro (90.33%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.9161/24.9704
+  Normalized ratio: 0.9578
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Cocos_nucifera_25939545.jpg
+  Predicted: Rice___Tungro (53.65%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.0659/24.9704
+  Normalized ratio: 0.8837
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Cocos_nucifera_269425608.jpg
+  Predicted: Rice___Bacterialblight (65.32%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 23.0288/24.7269
+  Normalized ratio: 0.9313
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Cocos_nucifera_272869831.jpg
+  Predicted: Rice___Bacterialblight (53.74%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 21.8238/24.7269
+  Normalized ratio: 0.8826
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Cocos_nucifera_273358472.jpg
+  Predicted: Rice___Bacterialblight (100.00%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 21.9149/24.7269
+  Normalized ratio: 0.8863
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Cocos_nucifera_2746307.jpg
+  Predicted: Rice___Tungro (46.06%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.2406/24.9704
+  Normalized ratio: 0.8907
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Cocos_nucifera_275911212.jpg
+  Predicted: Rice___Bacterialblight (99.60%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 25.9107/24.9704
+  Normalized ratio: 1.0377
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Cocos_nucifera_279593476.jpg
+  Predicted: Corn_(maize)___healthy (87.50%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 25.1525/24.7269
+  Normalized ratio: 1.0172
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Cocos_nucifera_281528763.jpg
+  Predicted: Rice___Tungro (84.77%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 20.5379/24.9704
+  Normalized ratio: 0.8225
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Cocos_nucifera_287016211.jpg
+  Predicted: Tomato___Early_blight (63.50%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 24.0775/24.7269
+  Normalized ratio: 0.9737
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Cocos_nucifera_299468082.jpg
+  Predicted: Corn_(maize)___healthy (59.12%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 26.9399/24.9704
+  Normalized ratio: 1.0789
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Cocos_nucifera_301430035.jpg
+  Predicted: Rice___Bacterialblight (99.88%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 24.2978/24.7269
+  Normalized ratio: 0.9826
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Cocos_nucifera_309137974.jpg
+  Predicted: Mango___Bacterial_Canker (78.53%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.8720/24.9704
+  Normalized ratio: 0.9160
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Cocos_nucifera_312394391.jpg
+  Predicted: Rice___Tungro (46.55%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 24.5843/24.9704
+  Normalized ratio: 0.9845
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Cocos_nucifera_32445659.jpg
+  Predicted: Rice___Tungro (99.97%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 21.2150/24.9704
+  Normalized ratio: 0.8496
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Cocos_nucifera_328319220.jpg
+  Predicted: Rice___Bacterialblight (99.67%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 21.2001/24.7269
+  Normalized ratio: 0.8574
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Cocos_nucifera_338783683.jpg
+  Predicted: Rice___Tungro (51.21%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 24.0354/24.9704
+  Normalized ratio: 0.9626
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Cocos_nucifera_341173273.jpg
+  Predicted: Banana___healthy (41.87%)
+  Nearest class: Banana___sigatoka
+  Nearest distance/threshold: 22.0369/23.8907
+  Normalized ratio: 0.9224
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Cocos_nucifera_342243727.jpg
+  Predicted: Banana___sigatoka (69.59%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.2721/24.9704
+  Normalized ratio: 0.8919
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Cocos_nucifera_345234635.jpg
+  Predicted: Rice___Bacterialblight (88.03%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 22.3160/24.7269
+  Normalized ratio: 0.9025
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Cocos_nucifera_345235298.jpg
+  Predicted: Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot (44.52%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.2822/24.9704
+  Normalized ratio: 0.9324
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Cocos_nucifera_36147939.jpg
+  Predicted: Rice___Tungro (61.66%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 21.7498/24.7269
+  Normalized ratio: 0.8796
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Cocos_nucifera_372887829.jpg
+  Predicted: Money_Plant___Bacterial_Wilt (99.94%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.6512/24.9704
+  Normalized ratio: 0.9472
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Cocos_nucifera_37841941.jpg
+  Predicted: Rice___Tungro (62.71%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 22.6206/24.7269
+  Normalized ratio: 0.9148
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Cocos_nucifera_3833.jpg
+  Predicted: Rice___Bacterialblight (99.48%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 23.9031/24.7269
+  Normalized ratio: 0.9667
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Cocos_nucifera_383432624.jpg
+  Predicted: Rice___Blast (70.54%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 24.3913/24.9704
+  Normalized ratio: 0.9768
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Cocos_nucifera_383814581.jpg
+  Predicted: Rice___Tungro (77.20%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.2904/24.9704
+  Normalized ratio: 0.9327
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Cocos_nucifera_387730675.jpg
+  Predicted: Rice___Bacterialblight (64.53%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 21.6558/24.9704
+  Normalized ratio: 0.8673
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Cocos_nucifera_391623877.jpg
+  Predicted: Mango___Powdery_Mildew (43.23%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 28.7694/24.9704
+  Normalized ratio: 1.1521
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Cocos_nucifera_39212610.jpg
+  Predicted: Rice___Tungro (82.97%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 21.0547/24.9704
+  Normalized ratio: 0.8432
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Cocos_nucifera_392512846.jpg
+  Predicted: Rice___Tungro (97.72%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 26.3901/24.9704
+  Normalized ratio: 1.0569
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Cocos_nucifera_397823202.jpg
+  Predicted: Strawberry___Leaf_scorch (71.58%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.2956/24.9704
+  Normalized ratio: 0.8929
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Cocos_nucifera_403145920.jpg
+  Predicted: Rice___Bacterialblight (99.95%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 26.4854/24.9704
+  Normalized ratio: 1.0607
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Cocos_nucifera_405124041.jpg
+  Predicted: Strawberry___Leaf_scorch (97.83%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.4189/24.9704
+  Normalized ratio: 0.9379
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Cocos_nucifera_405124524.jpg
+  Predicted: Rice___Blast (99.83%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 24.6376/24.9704
+  Normalized ratio: 0.9867
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Cocos_nucifera_50157662.jpg
+  Predicted: Banana___sigatoka (47.98%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 26.9755/24.9704
+  Normalized ratio: 1.0803
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Cocos_nucifera_64444824.jpg
+  Predicted: Banana___pestalotiopsis (79.73%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.2638/24.9704
+  Normalized ratio: 0.9317
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Cocos_nucifera_65609682.jpg
+  Predicted: Banana___pestalotiopsis (99.23%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.8462/24.9704
+  Normalized ratio: 0.9550
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Cocos_nucifera_6609401.jpg
+  Predicted: Strawberry___Leaf_scorch (85.66%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 24.0278/24.9704
+  Normalized ratio: 0.9623
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Cocos_nucifera_71938781.jpg
+  Predicted: Corn_(maize)___healthy (59.99%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 25.8494/24.9704
+  Normalized ratio: 1.0352
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Cocos_nucifera_7215216.jpg
+  Predicted: Banana___healthy (63.56%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.9798/24.9704
+  Normalized ratio: 0.9603
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Cocos_nucifera_73917095.jpg
+  Predicted: Banana___healthy (87.06%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 24.3335/24.9704
+  Normalized ratio: 0.9745
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Cocos_nucifera_81686043.jpg
+  Predicted: Banana___pestalotiopsis (96.43%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.0254/24.9704
+  Normalized ratio: 0.9221
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Cocos_nucifera_91823301.jpg
+  Predicted: Rice___Tungro (99.95%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 23.4159/24.7269
+  Normalized ratio: 0.9470
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Cocos_nucifera_93843659.jpg
+  Predicted: Mango___Bacterial_Canker (44.51%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 24.3657/24.9704
+  Normalized ratio: 0.9758
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Cocos_nucifera_9797084.jpg
+  Predicted: Money_Plant___Bacterial_Wilt (82.20%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 27.4754/24.9704
+  Normalized ratio: 1.1003
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Hibiscus_102342156.jpg
+  Predicted: Strawberry___Leaf_scorch (99.58%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.0197/24.9704
+  Normalized ratio: 0.9219
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_105284239.jpg
+  Predicted: Strawberry___Leaf_scorch (59.88%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 19.9105/24.9704
+  Normalized ratio: 0.7974
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_106018369.jpg
+  Predicted: Strawberry___Leaf_scorch (100.00%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 24.3349/24.9704
+  Normalized ratio: 0.9745
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_109448170.jpg
+  Predicted: Strawberry___Leaf_scorch (56.29%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 19.5989/24.9704
+  Normalized ratio: 0.7849
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_11012548.jpg
+  Predicted: Strawberry___Leaf_scorch (97.66%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 20.5296/24.9704
+  Normalized ratio: 0.8222
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_11312607.jpg
+  Predicted: Rice___Bacterialblight (93.16%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 21.7816/24.9704
+  Normalized ratio: 0.8723
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_125781603.jpg
+  Predicted: Strawberry___Leaf_scorch (99.70%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 20.7304/24.9704
+  Normalized ratio: 0.8302
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_128576478.jpg
+  Predicted: Strawberry___Leaf_scorch (76.14%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 24.5809/24.9704
+  Normalized ratio: 0.9844
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_128591856.jpg
+  Predicted: Strawberry___Leaf_scorch (86.37%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 20.4858/24.9704
+  Normalized ratio: 0.8204
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_131615146.jpg
+  Predicted: Strawberry___Leaf_scorch (99.46%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 20.2861/24.9704
+  Normalized ratio: 0.8124
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_132484603.jpg
+  Predicted: Tomato___Late_blight (99.93%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 21.7327/24.9704
+  Normalized ratio: 0.8703
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_136227777.jpg
+  Predicted: Strawberry___Leaf_scorch (89.95%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 19.7867/24.9704
+  Normalized ratio: 0.7924
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_142405020.jpg
+  Predicted: Rice___Blast (87.66%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.9381/24.9704
+  Normalized ratio: 0.9186
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Hibiscus_147012689.jpg
+  Predicted: Rice___Tungro (99.97%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 23.9486/24.7269
+  Normalized ratio: 0.9685
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_148652612.jpg
+  Predicted: Rice___Blast (99.95%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 20.6853/24.9704
+  Normalized ratio: 0.8284
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Hibiscus_16703380.jpg
+  Predicted: Rice___Brownspot (94.52%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.7063/24.9704
+  Normalized ratio: 0.9093
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_185490445.jpg
+  Predicted: Tomato___Early_blight (48.69%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 19.5530/24.9704
+  Normalized ratio: 0.7830
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Hibiscus_188444524.jpg
+  Predicted: Rice___Tungro (93.38%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 19.2449/24.9704
+  Normalized ratio: 0.7707
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_189225142.jpg
+  Predicted: Strawberry___Leaf_scorch (100.00%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 24.6591/24.9704
+  Normalized ratio: 0.9875
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_190587329.jpg
+  Predicted: Rice___Bacterialblight (97.99%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 26.4495/24.7269
+  Normalized ratio: 1.0697
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Hibiscus_19094038.jpg
+  Predicted: Rice___Blast (98.68%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 19.5840/24.9704
+  Normalized ratio: 0.7843
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Hibiscus_192010411.jpg
+  Predicted: Strawberry___Leaf_scorch (66.69%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 21.6933/24.9704
+  Normalized ratio: 0.8688
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_195043679.jpg
+  Predicted: Rice___Blast (46.65%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 19.9879/24.9704
+  Normalized ratio: 0.8005
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Hibiscus_195402237.jpg
+  Predicted: Rice___Blast (99.93%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 25.1883/24.9704
+  Normalized ratio: 1.0087
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Hibiscus_195857886.jpg
+  Predicted: Mango___Bacterial_Canker (83.96%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 20.7247/24.9704
+  Normalized ratio: 0.8300
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_198080182.jpg
+  Predicted: Banana___pestalotiopsis (83.76%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 20.6804/24.9704
+  Normalized ratio: 0.8282
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_19819451.jpg
+  Predicted: Strawberry___Leaf_scorch (99.99%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.0651/24.9704
+  Normalized ratio: 0.8837
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_211984513.jpg
+  Predicted: Rice___Bacterialblight (55.45%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 21.8718/24.9704
+  Normalized ratio: 0.8759
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_220444025.jpg
+  Predicted: Tomato___Late_blight (99.96%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 27.4487/24.9704
+  Normalized ratio: 1.0992
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Hibiscus_223876004.jpg
+  Predicted: Rice___Tungro (97.98%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.4403/24.9704
+  Normalized ratio: 0.9387
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_225543177.jpg
+  Predicted: Strawberry___Leaf_scorch (89.86%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.5531/24.9704
+  Normalized ratio: 0.9032
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_229970278.jpg
+  Predicted: Strawberry___Leaf_scorch (97.64%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.5091/24.9704
+  Normalized ratio: 0.9014
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_237735575.jpg
+  Predicted: Rice___Bacterialblight (50.31%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 21.8595/24.9704
+  Normalized ratio: 0.8754
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_24013916.jpg
+  Predicted: Rice___Brownspot (99.93%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 20.1655/24.9704
+  Normalized ratio: 0.8076
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_242774549.jpg
+  Predicted: Rice___Tungro (83.59%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 21.4955/24.7269
+  Normalized ratio: 0.8693
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_247774364.jpg
+  Predicted: Strawberry___Leaf_scorch (81.18%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 19.8641/24.9704
+  Normalized ratio: 0.7955
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_25265534.jpg
+  Predicted: Banana___pestalotiopsis (82.57%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 24.2329/24.9704
+  Normalized ratio: 0.9705
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_257869813.jpg
+  Predicted: Strawberry___Leaf_scorch (99.99%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.2585/24.9704
+  Normalized ratio: 0.9314
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_259372769.jpg
+  Predicted: Rice___Bacterialblight (99.98%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 23.4554/24.7269
+  Normalized ratio: 0.9486
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Hibiscus_276657913.jpg
+  Predicted: Rice___Bacterialblight (69.86%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 26.4738/24.9704
+  Normalized ratio: 1.0602
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Hibiscus_279305087.jpg
+  Predicted: Strawberry___Leaf_scorch (99.86%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.4231/24.9704
+  Normalized ratio: 0.9380
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_289935567.jpg
+  Predicted: Strawberry___Leaf_scorch (100.00%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 21.9955/24.9704
+  Normalized ratio: 0.8809
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_29474011.jpg
+  Predicted: Mango___Cutting_Weevil (96.53%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 21.5678/24.9704
+  Normalized ratio: 0.8637
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_30716343.jpg
+  Predicted: Rice___Tungro (100.00%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.1344/24.9704
+  Normalized ratio: 0.8864
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_3152409.jpg
+  Predicted: Strawberry___Leaf_scorch (96.68%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 19.5658/24.9704
+  Normalized ratio: 0.7836
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_335889844.jpg
+  Predicted: Rice___Blast (99.86%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 20.1205/24.9704
+  Normalized ratio: 0.8058
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Hibiscus_337390514.jpg
+  Predicted: Rice___Tungro (99.98%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 24.0252/24.9704
+  Normalized ratio: 0.9621
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_35420185.jpg
+  Predicted: Strawberry___Leaf_scorch (99.99%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 24.8035/24.9704
+  Normalized ratio: 0.9933
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_37090516.jpg
+  Predicted: Banana___pestalotiopsis (47.20%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 21.4529/24.9704
+  Normalized ratio: 0.8591
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Hibiscus_376819154.jpg
+  Predicted: Banana___pestalotiopsis (37.01%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.1783/24.9704
+  Normalized ratio: 0.8882
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Hibiscus_38143095.jpg
+  Predicted: Strawberry___Leaf_scorch (100.00%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.3056/24.9704
+  Normalized ratio: 0.8933
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_402371424.jpg
+  Predicted: Strawberry___Leaf_scorch (99.64%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.5799/24.9704
+  Normalized ratio: 0.9043
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_40526605.jpg
+  Predicted: Strawberry___Leaf_scorch (79.83%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 24.2111/24.9704
+  Normalized ratio: 0.9696
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_45591463.jpg
+  Predicted: Banana___pestalotiopsis (84.84%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 24.9820/24.9704
+  Normalized ratio: 1.0005
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Hibiscus_48514086.jpg
+  Predicted: Tomato___Late_blight (99.87%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 20.6941/24.9704
+  Normalized ratio: 0.8287
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_54843996.jpg
+  Predicted: Strawberry___Leaf_scorch (99.98%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 20.0127/24.9704
+  Normalized ratio: 0.8015
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_66845300.jpg
+  Predicted: Rice___Bacterialblight (75.54%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 24.9082/24.9704
+  Normalized ratio: 0.9975
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_67351197.jpg
+  Predicted: Strawberry___Leaf_scorch (85.17%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.3346/24.9704
+  Normalized ratio: 0.9345
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_67848703.jpg
+  Predicted: Rice___Brownspot (84.19%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 21.2970/24.9704
+  Normalized ratio: 0.8529
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_69760498.jpg
+  Predicted: Strawberry___Leaf_scorch (100.00%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 21.3372/24.9704
+  Normalized ratio: 0.8545
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_71499714.jpg
+  Predicted: Banana___pestalotiopsis (99.20%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.0325/24.9704
+  Normalized ratio: 0.9224
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_7888321.jpg
+  Predicted: Strawberry___Leaf_scorch (98.14%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.1849/24.9704
+  Normalized ratio: 0.8884
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_7989948.jpg
+  Predicted: Strawberry___Leaf_scorch (75.62%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.7225/24.9704
+  Normalized ratio: 0.9100
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_84605204.jpg
+  Predicted: Strawberry___Leaf_scorch (99.65%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 21.1053/24.9704
+  Normalized ratio: 0.8452
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_88348749.jpg
+  Predicted: Strawberry___Leaf_scorch (84.12%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 20.5467/24.9704
+  Normalized ratio: 0.8228
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_90385064.jpg
+  Predicted: Strawberry___Leaf_scorch (99.96%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.1350/24.9704
+  Normalized ratio: 0.8864
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Hibiscus_96271170.jpg
+  Predicted: Tomato___Late_blight (49.67%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.3374/24.9704
+  Normalized ratio: 0.8946
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Psidium_guajava_10982660.jpg
+  Predicted: Rice___Tungro (77.55%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 27.1358/24.9704
+  Normalized ratio: 1.0867
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Psidium_guajava_11023658.jpg
+  Predicted: Banana___healthy (77.89%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 25.4556/24.9704
+  Normalized ratio: 1.0194
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Psidium_guajava_11157141.jpg
+  Predicted: Squash___Powdery_mildew (92.56%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 26.5784/24.9704
+  Normalized ratio: 1.0644
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Psidium_guajava_11163369.jpg
+  Predicted: Tomato___Early_blight (95.63%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 22.2339/24.7269
+  Normalized ratio: 0.8992
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Psidium_guajava_11266673.jpg
+  Predicted: Rice___Tungro (73.85%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 26.8901/24.9704
+  Normalized ratio: 1.0769
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Psidium_guajava_11287088.jpg
+  Predicted: Mango___Powdery_Mildew (83.27%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 31.0061/24.9704
+  Normalized ratio: 1.2417
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Psidium_guajava_124635986.jpg
+  Predicted: Tomato___Late_blight (84.00%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 17.7096/24.7269
+  Normalized ratio: 0.7162
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Psidium_guajava_126593847.jpg
+  Predicted: Banana___pestalotiopsis (66.87%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 26.3323/24.9704
+  Normalized ratio: 1.0545
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Psidium_guajava_126954783.jpg
+  Predicted: Banana___pestalotiopsis (51.16%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.0758/24.9704
+  Normalized ratio: 0.9241
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Psidium_guajava_134439107.jpg
+  Predicted: Rice___Brownspot (50.74%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 19.2244/24.7269
+  Normalized ratio: 0.7775
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Psidium_guajava_141048640.jpg
+  Predicted: Squash___Powdery_mildew (94.16%)
+  Nearest class: Banana___sigatoka
+  Nearest distance/threshold: 24.1495/23.8907
+  Normalized ratio: 1.0108
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Psidium_guajava_143807038.jpg
+  Predicted: Rice___Brownspot (96.71%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 20.7970/24.9704
+  Normalized ratio: 0.8329
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Psidium_guajava_145426482.jpg
+  Predicted: Rice___Brownspot (56.79%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 21.1524/24.7269
+  Normalized ratio: 0.8554
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Psidium_guajava_150662253.jpg
+  Predicted: Money_Plant___Healthy (57.65%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.3068/24.9704
+  Normalized ratio: 0.8933
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Psidium_guajava_154034025.jpg
+  Predicted: Tomato___Late_blight (94.03%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 21.3549/24.7269
+  Normalized ratio: 0.8636
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Psidium_guajava_164306086.jpg
+  Predicted: Tomato___Late_blight (99.62%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 21.5049/24.7269
+  Normalized ratio: 0.8697
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Psidium_guajava_166544760.jpg
+  Predicted: Banana___pestalotiopsis (99.97%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 25.0949/24.9704
+  Normalized ratio: 1.0050
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Psidium_guajava_16869026.jpg
+  Predicted: Strawberry___Leaf_scorch (96.64%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.0319/24.9704
+  Normalized ratio: 0.9224
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Psidium_guajava_173331788.jpg
+  Predicted: Tomato___Late_blight (45.23%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 20.6914/24.9704
+  Normalized ratio: 0.8286
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Psidium_guajava_185709091.jpg
+  Predicted: Tomato___Late_blight (55.35%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.2250/24.9704
+  Normalized ratio: 0.8901
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Psidium_guajava_190588116.jpg
+  Predicted: Rice___Bacterialblight (80.78%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 18.3974/24.7269
+  Normalized ratio: 0.7440
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Psidium_guajava_191444532.jpg
+  Predicted: Strawberry___Leaf_scorch (72.97%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.9329/24.9704
+  Normalized ratio: 0.9585
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Psidium_guajava_192771715.jpg
+  Predicted: Rice___Bacterialblight (100.00%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 24.0555/24.7269
+  Normalized ratio: 0.9728
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Psidium_guajava_194505469.jpg
+  Predicted: Rice___Brownspot (59.63%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 19.5742/24.7269
+  Normalized ratio: 0.7916
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Psidium_guajava_196257292.jpg
+  Predicted: Tomato___Late_blight (97.39%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 23.0497/24.7269
+  Normalized ratio: 0.9322
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Psidium_guajava_196923249.jpg
+  Predicted: Rice___Brownspot (93.04%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.4911/24.9704
+  Normalized ratio: 0.9007
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Psidium_guajava_200105640.jpg
+  Predicted: Rice___Brownspot (62.48%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 21.4434/24.7269
+  Normalized ratio: 0.8672
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Psidium_guajava_205500003.jpg
+  Predicted: Rice___Blast (97.21%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.9658/24.9704
+  Normalized ratio: 0.9197
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Psidium_guajava_212526183.jpg
+  Predicted: Tomato___Late_blight (44.01%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 21.4710/24.9704
+  Normalized ratio: 0.8599
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Psidium_guajava_21280010.jpg
+  Predicted: Tomato___Late_blight (98.49%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 21.4340/24.9704
+  Normalized ratio: 0.8584
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Psidium_guajava_225897786.jpg
+  Predicted: Money_Plant___Bacterial_Wilt (77.76%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.1370/24.9704
+  Normalized ratio: 0.8865
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Psidium_guajava_229705664.jpg
+  Predicted: Rice___Tungro (98.05%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 24.3289/24.7269
+  Normalized ratio: 0.9839
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Psidium_guajava_231296314.jpg
+  Predicted: Tomato___Late_blight (65.32%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 23.6741/24.7269
+  Normalized ratio: 0.9574
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Psidium_guajava_248157925.jpg
+  Predicted: Banana___pestalotiopsis (41.53%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.8129/24.9704
+  Normalized ratio: 0.9536
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Psidium_guajava_2486721.jpg
+  Predicted: Strawberry___Leaf_scorch (99.97%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 25.8894/24.9704
+  Normalized ratio: 1.0368
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Psidium_guajava_255124905.jpg
+  Predicted: Tomato___Early_blight (80.00%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 20.8468/24.9704
+  Normalized ratio: 0.8349
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Psidium_guajava_256319909.jpg
+  Predicted: Mango___Bacterial_Canker (66.81%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 21.4705/24.7269
+  Normalized ratio: 0.8683
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Psidium_guajava_265232059.jpg
+  Predicted: Strawberry___Leaf_scorch (48.01%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 21.2237/24.9704
+  Normalized ratio: 0.8500
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Psidium_guajava_27493463.jpg
+  Predicted: Tomato___Late_blight (99.21%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 21.7072/24.9704
+  Normalized ratio: 0.8693
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Psidium_guajava_297580309.jpg
+  Predicted: Strawberry___Leaf_scorch (55.69%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.4604/24.9704
+  Normalized ratio: 0.9395
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Psidium_guajava_326940590.jpg
+  Predicted: Rice___Bacterialblight (99.97%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 21.2897/24.7269
+  Normalized ratio: 0.8610
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Psidium_guajava_336944690.jpg
+  Predicted: Tomato___Late_blight (96.27%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.3869/24.9704
+  Normalized ratio: 0.8965
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Psidium_guajava_337632815.jpg
+  Predicted: Tomato___Late_blight (53.69%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 22.7960/24.7269
+  Normalized ratio: 0.9219
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Psidium_guajava_339547772.jpg
+  Predicted: Rice___Bacterialblight (60.95%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 21.6791/24.7269
+  Normalized ratio: 0.8767
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Psidium_guajava_339652975.jpg
+  Predicted: Strawberry___Leaf_scorch (82.31%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 19.3502/24.9704
+  Normalized ratio: 0.7749
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Psidium_guajava_34815321.jpg
+  Predicted: Rice___Bacterialblight (99.60%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 24.0341/24.7269
+  Normalized ratio: 0.9720
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Psidium_guajava_348253489.jpg
+  Predicted: Rice___Bacterialblight (97.99%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 20.1547/24.7269
+  Normalized ratio: 0.8151
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Psidium_guajava_351591625.jpg
+  Predicted: Strawberry___Leaf_scorch (99.94%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 25.6004/24.9704
+  Normalized ratio: 1.0252
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Psidium_guajava_357139210.jpg
+  Predicted: Rice___Brownspot (28.28%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 18.7220/24.9704
+  Normalized ratio: 0.7498
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Psidium_guajava_360535956.jpg
+  Predicted: Rice___Bacterialblight (46.32%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 26.8049/24.9704
+  Normalized ratio: 1.0735
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Psidium_guajava_377606325.jpg
+  Predicted: Tomato___Early_blight (46.88%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 21.5942/24.9704
+  Normalized ratio: 0.8648
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Psidium_guajava_380321302.jpg
+  Predicted: Tomato___Late_blight (47.46%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 21.8333/24.7269
+  Normalized ratio: 0.8830
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Psidium_guajava_388260315.jpg
+  Predicted: Rice___Brownspot (99.60%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 19.6139/24.7269
+  Normalized ratio: 0.7932
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Psidium_guajava_47708966.jpg
+  Predicted: Tomato___Late_blight (99.38%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 19.1404/24.7269
+  Normalized ratio: 0.7741
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Psidium_guajava_48974883.jpg
+  Predicted: Tomato___Late_blight (61.77%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 20.8380/24.7269
+  Normalized ratio: 0.8427
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Psidium_guajava_52088086.jpg
+  Predicted: Rice___Bacterialblight (99.82%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 22.8990/24.7269
+  Normalized ratio: 0.9261
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Psidium_guajava_52705790.jpg
+  Predicted: Rice___Brownspot (97.39%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 22.4231/24.7269
+  Normalized ratio: 0.9068
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Psidium_guajava_53115687.jpg
+  Predicted: Money_Plant___Manganese_Toxicity (72.16%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.5770/24.9704
+  Normalized ratio: 0.9442
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Psidium_guajava_57628716.jpg
+  Predicted: Banana___pestalotiopsis (50.94%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 25.7165/24.9704
+  Normalized ratio: 1.0299
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Psidium_guajava_60153136.jpg
+  Predicted: Rice___Bacterialblight (100.00%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 23.1623/24.7269
+  Normalized ratio: 0.9367
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Psidium_guajava_65980885.jpg
+  Predicted: Banana___pestalotiopsis (60.56%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.2717/24.9704
+  Normalized ratio: 0.8919
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Psidium_guajava_7043260.jpg
+  Predicted: Rice___Bacterialblight (98.66%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 18.4802/24.7269
+  Normalized ratio: 0.7474
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Psidium_guajava_71934890.jpg
+  Predicted: Banana___healthy (58.61%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 24.8856/24.7269
+  Normalized ratio: 1.0064
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Psidium_guajava_74950104.jpg
+  Predicted: Mango___Cutting_Weevil (77.84%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 25.7181/24.7269
+  Normalized ratio: 1.0401
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Psidium_guajava_7611164.jpg
+  Predicted: Rice___Brownspot (74.77%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.7585/24.9704
+  Normalized ratio: 0.9114
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Psidium_guajava_83406433.jpg
+  Predicted: Tomato___Late_blight (88.00%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 19.4434/24.7269
+  Normalized ratio: 0.7863
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Psidium_guajava_8887301.jpg
+  Predicted: Tomato___Late_blight (80.94%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 24.3419/24.7269
+  Normalized ratio: 0.9844
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Rosa_100191212.jpg
+  Predicted: Tomato___Late_blight (56.79%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 18.9089/24.9704
+  Normalized ratio: 0.7572
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Rosa_108644567.jpg
+  Predicted: Strawberry___Leaf_scorch (99.96%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.9030/24.9704
+  Normalized ratio: 0.9573
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Rosa_123754747.jpg
+  Predicted: Strawberry___Leaf_scorch (99.98%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 21.0646/24.9704
+  Normalized ratio: 0.8436
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Rosa_127706224.jpg
+  Predicted: Strawberry___Leaf_scorch (82.28%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 22.8871/24.7269
+  Normalized ratio: 0.9256
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Rosa_130678669.jpg
+  Predicted: Strawberry___Leaf_scorch (81.07%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.1942/24.9704
+  Normalized ratio: 0.8888
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Rosa_13760901.jpg
+  Predicted: Strawberry___Leaf_scorch (97.93%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 20.0828/24.9704
+  Normalized ratio: 0.8043
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Rosa_139859240.jpg
+  Predicted: Tomato___Late_blight (51.65%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 21.4663/24.9704
+  Normalized ratio: 0.8597
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Rosa_140911457.jpg
+  Predicted: Grape___Esca_(Black_Measles) (99.75%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 21.7203/24.9704
+  Normalized ratio: 0.8698
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Rosa_146976512.jpg
+  Predicted: Rice___Blast (65.76%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.3016/24.9704
+  Normalized ratio: 0.9332
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Rosa_148985154.jpg
+  Predicted: Rice___Tungro (58.16%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.4522/24.9704
+  Normalized ratio: 0.8992
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Rosa_149286584.jpg
+  Predicted: Rice___Brownspot (99.88%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 24.5856/24.9704
+  Normalized ratio: 0.9846
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Rosa_166133498.jpg
+  Predicted: Strawberry___Leaf_scorch (99.99%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 21.5082/24.9704
+  Normalized ratio: 0.8613
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Rosa_166521021.jpg
+  Predicted: Strawberry___Leaf_scorch (98.79%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.4628/24.9704
+  Normalized ratio: 0.9396
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Rosa_167745804.jpg
+  Predicted: Rice___Tungro (67.19%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 18.3602/24.9704
+  Normalized ratio: 0.7353
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Rosa_168415265.jpg
+  Predicted: Rice___Tungro (99.95%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 25.1909/24.9704
+  Normalized ratio: 1.0088
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Rosa_170514964.jpg
+  Predicted: Strawberry___Leaf_scorch (100.00%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.9414/24.9704
+  Normalized ratio: 0.9187
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Rosa_170623672.jpg
+  Predicted: Strawberry___Leaf_scorch (97.70%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 25.5948/24.9704
+  Normalized ratio: 1.0250
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Rosa_183060936.jpg
+  Predicted: Strawberry___Leaf_scorch (96.82%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 20.9772/24.9704
+  Normalized ratio: 0.8401
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Rosa_184501852.jpg
+  Predicted: Rice___Brownspot (82.58%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.7670/24.9704
+  Normalized ratio: 0.9518
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Rosa_185819613.jpg
+  Predicted: Banana___pestalotiopsis (53.28%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 21.3084/24.9704
+  Normalized ratio: 0.8533
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Rosa_1877308.jpg
+  Predicted: Banana___pestalotiopsis (90.08%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 25.3919/24.9704
+  Normalized ratio: 1.0169
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Rosa_190190817.jpg
+  Predicted: Rice___Brownspot (66.47%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 24.8491/24.9704
+  Normalized ratio: 0.9951
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Rosa_21548203.jpg
+  Predicted: Rice___Tungro (99.97%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.8116/24.9704
+  Normalized ratio: 0.9536
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Rosa_224197003.jpg
+  Predicted: Rice___Blast (84.22%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.6603/24.9704
+  Normalized ratio: 0.9075
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Rosa_242059242.jpg
+  Predicted: Rice___Bacterialblight (97.35%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 20.0406/24.9704
+  Normalized ratio: 0.8026
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Rosa_242059491.jpg
+  Predicted: Strawberry___Leaf_scorch (100.00%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 27.2649/24.9704
+  Normalized ratio: 1.0919
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Rosa_249094764.jpg
+  Predicted: Rice___Blast (83.85%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 21.9960/24.9704
+  Normalized ratio: 0.8809
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Rosa_249181557.jpg
+  Predicted: Rice___Bacterialblight (89.98%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 21.4786/24.9704
+  Normalized ratio: 0.8602
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Rosa_26737250.jpg
+  Predicted: Banana___pestalotiopsis (95.81%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 21.7808/24.9704
+  Normalized ratio: 0.8723
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Rosa_269579055.jpg
+  Predicted: Strawberry___Leaf_scorch (90.28%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.8798/24.9704
+  Normalized ratio: 0.9163
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Rosa_27059911.jpg
+  Predicted: Strawberry___Leaf_scorch (100.00%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 20.9037/24.9704
+  Normalized ratio: 0.8371
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Rosa_27975925.jpg
+  Predicted: Rice___Tungro (87.83%)
+  Nearest class: Rice___Bacterialblight
+  Nearest distance/threshold: 21.0518/24.7269
+  Normalized ratio: 0.8514
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Rosa_28163912.jpg
+  Predicted: Strawberry___Leaf_scorch (91.58%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.5984/24.9704
+  Normalized ratio: 0.9050
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Rosa_28164041.jpg
+  Predicted: Strawberry___Leaf_scorch (99.34%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 21.8415/24.9704
+  Normalized ratio: 0.8747
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Rosa_28845743.jpg
+  Predicted: Strawberry___Leaf_scorch (78.05%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 25.5300/24.9704
+  Normalized ratio: 1.0224
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Rosa_292189504.jpg
+  Predicted: Strawberry___Leaf_scorch (81.46%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 20.4044/24.9704
+  Normalized ratio: 0.8171
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Rosa_317227925.jpg
+  Predicted: Strawberry___Leaf_scorch (99.99%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.0735/24.9704
+  Normalized ratio: 0.9240
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Rosa_31889261.jpg
+  Predicted: Strawberry___Leaf_scorch (100.00%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 27.4686/24.9704
+  Normalized ratio: 1.1000
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Rosa_31889290.jpg
+  Predicted: Strawberry___Leaf_scorch (75.34%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 25.7949/24.9704
+  Normalized ratio: 1.0330
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Rosa_32154711.jpg
+  Predicted: Corn_(maize)___Common_rust_ (99.84%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.2314/24.9704
+  Normalized ratio: 0.9304
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Rosa_32940468.jpg
+  Predicted: Strawberry___Leaf_scorch (96.02%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.0277/24.9704
+  Normalized ratio: 0.8822
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Rosa_33167954.jpg
+  Predicted: Apple___Black_rot (91.05%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 21.7299/24.9704
+  Normalized ratio: 0.8702
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Rosa_331979665.jpg
+  Predicted: Rice___Bacterialblight (69.52%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.8871/24.9704
+  Normalized ratio: 0.9166
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Rosa_33836862.jpg
+  Predicted: Strawberry___Leaf_scorch (100.00%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.6486/24.9704
+  Normalized ratio: 0.9070
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Rosa_36758591.jpg
+  Predicted: Rice___Brownspot (74.23%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 26.6654/24.9704
+  Normalized ratio: 1.0679
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Rosa_370167656.jpg
+  Predicted: Banana___pestalotiopsis (78.38%)
+  Nearest class: Banana___healthy
+  Nearest distance/threshold: 20.5701/22.7690
+  Normalized ratio: 0.9034
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Rosa_370488127.jpg
+  Predicted: Strawberry___Leaf_scorch (91.35%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 20.7880/24.9704
+  Normalized ratio: 0.8325
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Rosa_37222175.jpg
+  Predicted: Strawberry___Leaf_scorch (100.00%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 29.5972/24.9704
+  Normalized ratio: 1.1853
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Rosa_375074569.jpg
+  Predicted: Banana___pestalotiopsis (92.09%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.9427/24.9704
+  Normalized ratio: 0.9588
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Rosa_45675208.jpg
+  Predicted: Strawberry___Leaf_scorch (86.68%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.8063/24.9704
+  Normalized ratio: 0.9534
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Rosa_48157855.jpg
+  Predicted: Strawberry___Leaf_scorch (99.84%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.1233/24.9704
+  Normalized ratio: 0.8860
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Rosa_4849076.jpg
+  Predicted: Strawberry___Leaf_scorch (87.13%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 26.5675/24.9704
+  Normalized ratio: 1.0640
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Rosa_49001606.jpg
+  Predicted: Strawberry___Leaf_scorch (99.18%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 24.6051/24.9704
+  Normalized ratio: 0.9854
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Rosa_49759329.jpg
+  Predicted: Strawberry___Leaf_scorch (77.35%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 24.1834/24.9704
+  Normalized ratio: 0.9685
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Rosa_52988220.jpg
+  Predicted: Strawberry___Leaf_scorch (99.72%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 20.4333/24.9704
+  Normalized ratio: 0.8183
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Rosa_58395903.jpg
+  Predicted: Strawberry___Leaf_scorch (99.80%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 25.4432/24.9704
+  Normalized ratio: 1.0189
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Rosa_61394291.jpg
+  Predicted: Strawberry___Leaf_scorch (99.95%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.6336/24.9704
+  Normalized ratio: 0.9064
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Rosa_61954721.jpg
+  Predicted: Banana___pestalotiopsis (71.15%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 18.8036/24.9704
+  Normalized ratio: 0.7530
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Rosa_62013417.jpg
+  Predicted: Strawberry___Leaf_scorch (99.90%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 20.4075/24.9704
+  Normalized ratio: 0.8173
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Rosa_68319086.jpg
+  Predicted: Rice___Blast (98.07%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 18.2596/24.9704
+  Normalized ratio: 0.7312
+  Rule A: ACCEPT
+  Rule B: ACCEPT
+  Rule C: ACCEPT
+
+Rosa_71414584.jpg
+  Predicted: Mango___Cutting_Weevil (90.88%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 19.9840/24.9704
+  Normalized ratio: 0.8003
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Rosa_7152512.jpg
+  Predicted: Rice___Tungro (98.76%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.8177/24.9704
+  Normalized ratio: 0.9538
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Rosa_7160552.jpg
+  Predicted: Strawberry___Leaf_scorch (91.35%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.3019/24.9704
+  Normalized ratio: 0.9332
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Rosa_72250271.jpg
+  Predicted: Rice___Tungro (89.56%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 24.8190/24.9704
+  Normalized ratio: 0.9939
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Rosa_83166179.jpg
+  Predicted: Strawberry___Leaf_scorch (60.61%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 24.9922/24.9704
+  Normalized ratio: 1.0009
+  Rule A: REJECT
+  Rule B: REJECT
+  Rule C: REJECT
+
+Rosa_91454629.jpg
+  Predicted: Strawberry___Leaf_scorch (99.98%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 22.4984/24.9704
+  Normalized ratio: 0.9010
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+Rosa_97931629.jpg
+  Predicted: Strawberry___Leaf_scorch (99.17%)
+  Nearest class: Rice___Blast
+  Nearest distance/threshold: 23.0958/24.9704
+  Normalized ratio: 0.9249
+  Rule A: REJECT
+  Rule B: ACCEPT
+  Rule C: REJECT
+
+UNKNOWN IMAGE COMPARISON
+Evaluated: 402
+Rule A (Current predicted-class rule): accepted 136 (33.83%), rejected 266 (66.17%)
+Rule B (Nearest normalized-distance rule): accepted 316 (78.61%), rejected 86 (21.39%)
+Rule C (Nearest distance + class agreement): accepted 59 (14.68%), rejected 343 (85.32%)
+
+UNKNOWN IMAGE RESULTS BY CATEGORY
+
+Azadirachta indica: 67 images
+  Rule A: accepted 35 (52.24%), rejected 32 (47.76%)
+  Rule B: accepted 52 (77.61%), rejected 15 (22.39%)
+  Rule C: accepted 13 (19.40%), rejected 54 (80.60%)
+
+Carica papaya: 67 images
+  Rule A: accepted 31 (46.27%), rejected 36 (53.73%)
+  Rule B: accepted 56 (83.58%), rejected 11 (16.42%)
+  Rule C: accepted 18 (26.87%), rejected 49 (73.13%)
+
+Cocos nucifera: 67 images
+  Rule A: accepted 18 (26.87%), rejected 49 (73.13%)
+  Rule B: accepted 50 (74.63%), rejected 17 (25.37%)
+  Rule C: accepted 9 (13.43%), rejected 58 (86.57%)
+
+Hibiscus: 67 images
+  Rule A: accepted 15 (22.39%), rejected 52 (77.61%)
+  Rule B: accepted 57 (85.07%), rejected 10 (14.93%)
+  Rule C: accepted 5 (7.46%), rejected 62 (92.54%)
+
+Psidium guajava: 67 images
+  Rule A: accepted 24 (35.82%), rejected 43 (64.18%)
+  Rule B: accepted 46 (68.66%), rejected 21 (31.34%)
+  Rule C: accepted 10 (14.93%), rejected 57 (85.07%)
+
+Rosa: 67 images
+  Rule A: accepted 13 (19.40%), rejected 54 (80.60%)
+  Rule B: accepted 55 (82.09%), rejected 12 (17.91%)
+  Rule C: accepted 4 (5.97%), rejected 63 (94.03%)
+
+EXPERIMENTAL CONFIDENCE CUTOFFS
+D60 (confidence >= 60%): unknown accepted 125/402 (31.09%), rejected 277
+D70 (confidence >= 70%): unknown accepted 109/402 (27.11%), rejected 293
+D80 (confidence >= 80%): unknown accepted 97/402 (24.13%), rejected 305
+
+Comparison complete. No app files were changed.

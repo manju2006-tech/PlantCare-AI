@@ -1,0 +1,401 @@
+category,image,predicted_class,confidence_percent,accepted_as_supported,reason,distance,threshold,nearest_class
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(1).JPG,Rice___Blast,86.88,True,matched_profile,19.54356575012207,24.97043228149414,Rice___Bacterialblight
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(10).JPG,Rice___Blast,99.64,True,matched_profile,19.349674224853516,24.97043228149414,Rice___Bacterialblight
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(100).JPG,Rice___Bacterialblight,99.99,False,feature_distance,27.60367774963379,24.726938247680664,Banana___healthy
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(11).JPG,Rice___Blast,99.94,True,matched_profile,21.678075790405273,24.97043228149414,Rice___Blast
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(12).JPG,Rice___Blast,92.11,True,matched_profile,16.93589973449707,24.97043228149414,Rice___Blast
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(13).JPG,Rice___Blast,98.05,True,matched_profile,18.11457061767578,24.97043228149414,Rice___Bacterialblight
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(14).JPG,Rice___Bacterialblight,51.78,True,matched_profile,15.871664047241211,24.726938247680664,Rice___Bacterialblight
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(15).JPG,Rice___Blast,94.75,True,matched_profile,18.01938247680664,24.97043228149414,Rice___Bacterialblight
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(16).JPG,Rice___Blast,99.95,True,matched_profile,17.02496337890625,24.97043228149414,Rice___Blast
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(17).JPG,Rice___Blast,77.0,True,matched_profile,16.86607551574707,24.97043228149414,Rice___Blast
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(18).JPG,Rice___Blast,94.45,True,matched_profile,18.888883590698242,24.97043228149414,Rice___Blast
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(19).JPG,Rice___Blast,85.21,True,matched_profile,18.138103485107422,24.97043228149414,Rice___Blast
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(2).JPG,Rice___Tungro,92.18,True,matched_profile,19.238683700561523,19.94704818725586,Rice___Tungro
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(20).JPG,Rice___Blast,99.11,True,matched_profile,15.716346740722656,24.97043228149414,Rice___Bacterialblight
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(21).JPG,Rice___Blast,73.12,True,matched_profile,17.48680877685547,24.97043228149414,Rice___Bacterialblight
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(22).JPG,Rice___Blast,85.23,True,matched_profile,15.422758102416992,24.97043228149414,Rice___Bacterialblight
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(23).JPG,Rice___Bacterialblight,98.2,True,matched_profile,15.10576057434082,24.726938247680664,Rice___Blast
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(24).JPG,Rice___Blast,95.43,True,matched_profile,19.51274871826172,24.97043228149414,Rice___Blast
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(25).JPG,Rice___Bacterialblight,96.51,True,matched_profile,16.04817008972168,24.726938247680664,Rice___Bacterialblight
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(26).JPG,Rice___Blast,99.98,True,matched_profile,17.12126350402832,24.97043228149414,Rice___Blast
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(27).JPG,Rice___Blast,99.38,True,matched_profile,17.231414794921875,24.97043228149414,Rice___Bacterialblight
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(28).JPG,Rice___Blast,99.94,True,matched_profile,17.253849029541016,24.97043228149414,Rice___Blast
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(29).JPG,Rice___Blast,99.85,True,matched_profile,23.21442222595215,24.97043228149414,Rice___Blast
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(3).JPG,Rice___Blast,99.15,True,matched_profile,17.77391815185547,24.97043228149414,Rice___Bacterialblight
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(30).JPG,Rice___Bacterialblight,91.94,True,matched_profile,15.89889907836914,24.726938247680664,Rice___Bacterialblight
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(31).JPG,Rice___Blast,85.22,True,matched_profile,20.372005462646484,24.97043228149414,Rice___Blast
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(32).JPG,Rice___Blast,99.83,True,matched_profile,18.607181549072266,24.97043228149414,Rice___Bacterialblight
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(33).JPG,Rice___Tungro,99.89,True,matched_profile,17.39791488647461,19.94704818725586,Rice___Tungro
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(34).JPG,Rice___Bacterialblight,74.05,True,matched_profile,18.64683723449707,24.726938247680664,Rice___Blast
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(35).JPG,Rice___Blast,78.53,True,matched_profile,17.938547134399414,24.97043228149414,Rice___Bacterialblight
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(36).JPG,Rice___Blast,66.05,True,matched_profile,16.921594619750977,24.97043228149414,Rice___Blast
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(37).JPG,Rice___Brownspot,85.95,True,matched_profile,21.449825286865234,24.275524139404297,Rice___Bacterialblight
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(38).JPG,Rice___Tungro,70.89,True,matched_profile,17.520063400268555,19.94704818725586,Rice___Bacterialblight
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(39).JPG,Rice___Tungro,99.97,True,matched_profile,18.755952835083008,19.94704818725586,Rice___Tungro
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(4).JPG,Rice___Bacterialblight,66.17,True,matched_profile,17.546628952026367,24.726938247680664,Rice___Bacterialblight
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(40).JPG,Rice___Tungro,99.68,True,matched_profile,19.01414680480957,19.94704818725586,Rice___Bacterialblight
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(41).JPG,Rice___Blast,94.47,True,matched_profile,17.068937301635742,24.97043228149414,Rice___Bacterialblight
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(42).JPG,Rice___Blast,100.0,True,matched_profile,17.149885177612305,24.97043228149414,Rice___Blast
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(43).JPG,Rice___Blast,99.99,True,matched_profile,17.262006759643555,24.97043228149414,Rice___Blast
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(44).JPG,Rice___Blast,99.56,True,matched_profile,19.50328826904297,24.97043228149414,Rice___Blast
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(45).JPG,Rice___Blast,99.2,True,matched_profile,15.75850772857666,24.97043228149414,Rice___Bacterialblight
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(46).JPG,Rice___Blast,99.93,True,matched_profile,18.762956619262695,24.97043228149414,Rice___Bacterialblight
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(47).JPG,Rice___Blast,98.62,True,matched_profile,16.921342849731445,24.97043228149414,Rice___Bacterialblight
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(48).JPG,Rice___Bacterialblight,99.66,True,matched_profile,18.87457847595215,24.726938247680664,Rice___Bacterialblight
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(49).JPG,Rice___Blast,55.14,True,matched_profile,17.662845611572266,24.97043228149414,Rice___Blast
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(5).JPG,Rice___Blast,100.0,True,matched_profile,17.957170486450195,24.97043228149414,Rice___Blast
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(50).JPG,Rice___Blast,99.98,True,matched_profile,21.311168670654297,24.97043228149414,Rice___Blast
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(51).JPG,Rice___Blast,99.95,True,matched_profile,18.442520141601562,24.97043228149414,Rice___Blast
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(52).JPG,Rice___Blast,85.41,True,matched_profile,17.997785568237305,24.97043228149414,Rice___Bacterialblight
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(53).JPG,Rice___Tungro,100.0,True,matched_profile,19.616802215576172,19.94704818725586,Rice___Tungro
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(54).JPG,Rice___Blast,99.19,True,matched_profile,16.04886817932129,24.97043228149414,Rice___Blast
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(55).JPG,Rice___Blast,97.38,True,matched_profile,17.326690673828125,24.97043228149414,Rice___Bacterialblight
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(56).JPG,Rice___Blast,49.63,False,low_confidence,,,
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(57).JPG,Rice___Blast,98.99,True,matched_profile,16.564002990722656,24.97043228149414,Rice___Blast
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(58).JPG,Rice___Blast,99.93,True,matched_profile,17.006574630737305,24.97043228149414,Rice___Bacterialblight
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(59).JPG,Rice___Blast,91.94,True,matched_profile,15.656353950500488,24.97043228149414,Rice___Blast
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(6).JPG,Rice___Bacterialblight,78.79,True,matched_profile,18.16385841369629,24.726938247680664,Rice___Bacterialblight
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(60).JPG,Rice___Bacterialblight,54.69,True,matched_profile,15.904709815979004,24.726938247680664,Rice___Bacterialblight
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(61).JPG,Rice___Bacterialblight,99.06,True,matched_profile,17.794082641601562,24.726938247680664,Rice___Bacterialblight
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(62).JPG,Rice___Blast,99.31,True,matched_profile,17.337034225463867,24.97043228149414,Rice___Bacterialblight
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(63).JPG,Rice___Blast,96.23,True,matched_profile,17.080224990844727,24.97043228149414,Rice___Blast
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(64).JPG,Rice___Blast,92.73,True,matched_profile,16.984304428100586,24.97043228149414,Rice___Blast
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(65).JPG,Rice___Blast,99.27,True,matched_profile,18.48296356201172,24.97043228149414,Rice___Bacterialblight
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(66).JPG,Rice___Blast,73.3,True,matched_profile,18.044748306274414,24.97043228149414,Rice___Bacterialblight
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(67).JPG,Rice___Blast,76.56,True,matched_profile,16.645309448242188,24.97043228149414,Rice___Blast
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(68).JPG,Rice___Blast,78.17,True,matched_profile,18.611799240112305,24.97043228149414,Rice___Blast
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(69).JPG,Rice___Blast,88.48,True,matched_profile,18.62718963623047,24.97043228149414,Rice___Blast
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(7).JPG,Rice___Blast,98.29,True,matched_profile,17.0947265625,24.97043228149414,Rice___Bacterialblight
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(70).JPG,Rice___Blast,99.8,True,matched_profile,17.390949249267578,24.97043228149414,Rice___Bacterialblight
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(71).JPG,Rice___Tungro,99.84,True,matched_profile,16.391769409179688,19.94704818725586,Rice___Tungro
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(72).JPG,Rice___Blast,82.77,True,matched_profile,15.901961326599121,24.97043228149414,Rice___Blast
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(73).JPG,Rice___Bacterialblight,99.99,False,feature_distance,26.694072723388672,24.726938247680664,Rice___Brownspot
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(74).JPG,Corn_(maize)___Northern_Leaf_Blight,87.47,False,feature_distance,22.302383422851562,22.14586067199707,Rice___Blast
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(75).JPG,Rice___Brownspot,58.42,True,matched_profile,20.0786190032959,24.275524139404297,Rice___Blast
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(76).JPG,Mango___Bacterial_Canker,53.4,False,feature_distance,22.629846572875977,20.274681091308594,Rice___Blast
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(77).JPG,Rice___Blast,91.93,True,matched_profile,22.266298294067383,24.97043228149414,Mango___Bacterial_Canker
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(78).JPG,Rice___Bacterialblight,99.9,True,matched_profile,21.783153533935547,24.726938247680664,Rice___Blast
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(79).JPG,Rice___Blast,99.57,True,matched_profile,19.199342727661133,24.97043228149414,Rice___Blast
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(8).JPG,Rice___Blast,97.76,True,matched_profile,16.622901916503906,24.97043228149414,Rice___Bacterialblight
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(80).JPG,Rice___Blast,99.45,False,feature_distance,26.064956665039062,24.97043228149414,Banana___healthy
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(81).JPG,Rice___Bacterialblight,99.81,False,feature_distance,25.41596031188965,24.726938247680664,Banana___healthy
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(82).JPG,Rice___Bacterialblight,99.81,True,matched_profile,22.103046417236328,24.726938247680664,Rice___Blast
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(83).JPG,Rice___Bacterialblight,100.0,True,matched_profile,22.428531646728516,24.726938247680664,Rice___Bacterialblight
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(84).JPG,Rice___Blast,99.19,True,matched_profile,16.04886817932129,24.97043228149414,Rice___Blast
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(85).JPG,Rice___Bacterialblight,100.0,True,matched_profile,21.252666473388672,24.726938247680664,Rice___Blast
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(86).JPG,Rice___Bacterialblight,94.89,True,matched_profile,21.128263473510742,24.726938247680664,Rice___Blast
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(87).JPG,Rice___Bacterialblight,99.99,True,matched_profile,17.88057518005371,24.726938247680664,Rice___Blast
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(88).JPG,Rice___Bacterialblight,100.0,False,feature_distance,26.816146850585938,24.726938247680664,Banana___healthy
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(89).JPG,Rice___Bacterialblight,100.0,False,feature_distance,26.480295181274414,24.726938247680664,Banana___healthy
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(9).JPG,Rice___Blast,99.81,True,matched_profile,19.49232292175293,24.97043228149414,Rice___Blast
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(90).JPG,Rice___Bacterialblight,99.99,True,matched_profile,23.800691604614258,24.726938247680664,Banana___healthy
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(91).JPG,Rice___Bacterialblight,99.66,False,feature_distance,25.78478240966797,24.726938247680664,Banana___healthy
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(92).JPG,Rice___Bacterialblight,100.0,False,feature_distance,24.90816879272461,24.726938247680664,Rice___Blast
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(93).JPG,Rice___Bacterialblight,53.94,False,feature_distance,25.154193878173828,24.726938247680664,Banana___healthy
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(94).JPG,Rice___Bacterialblight,99.94,False,feature_distance,25.144338607788086,24.726938247680664,Rice___Blast
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(95).JPG,Rice___Bacterialblight,99.76,False,feature_distance,26.1589412689209,24.726938247680664,Banana___healthy
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(96).JPG,Rice___Bacterialblight,66.18,True,matched_profile,22.680280685424805,24.726938247680664,Rice___Blast
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(97).JPG,Rice___Bacterialblight,87.6,True,matched_profile,23.65212059020996,24.726938247680664,Rice___Blast
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(98).JPG,Rice___Bacterialblight,99.87,False,feature_distance,25.283361434936523,24.726938247680664,Rice___Blast
+wheat_healthy,dataset/unknown_test/wheat_healthy/loh(99).JPG,Rice___Bacterialblight,99.99,True,matched_profile,24.501068115234375,24.726938247680664,Rice___Blast
+wheat_damaged/septoria,dataset/unknown_test/wheat_damaged/septoria/los(1).JPG,Rice___Blast,59.8,True,matched_profile,20.77147674560547,24.97043228149414,Rice___Bacterialblight
+wheat_damaged/septoria,dataset/unknown_test/wheat_damaged/septoria/los(10).JPG,Banana___healthy,98.93,True,matched_profile,21.129117965698242,22.768957138061523,Banana___healthy
+wheat_damaged/septoria,dataset/unknown_test/wheat_damaged/septoria/los(11).JPG,Rice___Bacterialblight,99.82,True,matched_profile,19.569318771362305,24.726938247680664,Rice___Blast
+wheat_damaged/septoria,dataset/unknown_test/wheat_damaged/septoria/los(12).JPG,Rice___Bacterialblight,98.89,True,matched_profile,17.9501953125,24.726938247680664,Rice___Bacterialblight
+wheat_damaged/septoria,dataset/unknown_test/wheat_damaged/septoria/los(13).JPG,Rice___Bacterialblight,99.86,True,matched_profile,17.518041610717773,24.726938247680664,Rice___Bacterialblight
+wheat_damaged/septoria,dataset/unknown_test/wheat_damaged/septoria/los(14).JPG,Rice___Bacterialblight,99.3,True,matched_profile,20.08708953857422,24.726938247680664,Rice___Blast
+wheat_damaged/septoria,dataset/unknown_test/wheat_damaged/septoria/los(15).JPG,Rice___Bacterialblight,99.86,True,matched_profile,18.530553817749023,24.726938247680664,Rice___Bacterialblight
+wheat_damaged/septoria,dataset/unknown_test/wheat_damaged/septoria/los(16).JPG,Rice___Blast,95.13,True,matched_profile,18.127656936645508,24.97043228149414,Rice___Bacterialblight
+wheat_damaged/septoria,dataset/unknown_test/wheat_damaged/septoria/los(17).JPG,Rice___Bacterialblight,63.09,True,matched_profile,18.47504425048828,24.726938247680664,Rice___Blast
+wheat_damaged/septoria,dataset/unknown_test/wheat_damaged/septoria/los(18).JPG,Rice___Bacterialblight,100.0,True,matched_profile,19.97623634338379,24.726938247680664,Rice___Bacterialblight
+wheat_damaged/septoria,dataset/unknown_test/wheat_damaged/septoria/los(19).JPG,Rice___Bacterialblight,96.63,True,matched_profile,16.62590789794922,24.726938247680664,Rice___Bacterialblight
+wheat_damaged/septoria,dataset/unknown_test/wheat_damaged/septoria/los(2).JPG,Rice___Blast,50.53,True,matched_profile,17.150068283081055,24.97043228149414,Rice___Blast
+wheat_damaged/septoria,dataset/unknown_test/wheat_damaged/septoria/los(20).JPG,Rice___Bacterialblight,98.59,True,matched_profile,17.67435646057129,24.726938247680664,Rice___Bacterialblight
+wheat_damaged/septoria,dataset/unknown_test/wheat_damaged/septoria/los(21).JPG,Rice___Bacterialblight,98.35,True,matched_profile,18.599843978881836,24.726938247680664,Rice___Blast
+wheat_damaged/septoria,dataset/unknown_test/wheat_damaged/septoria/los(22).JPG,Rice___Bacterialblight,99.62,True,matched_profile,19.265853881835938,24.726938247680664,Rice___Blast
+wheat_damaged/septoria,dataset/unknown_test/wheat_damaged/septoria/los(23).JPG,Rice___Blast,99.5,True,matched_profile,22.624422073364258,24.97043228149414,Rice___Blast
+wheat_damaged/septoria,dataset/unknown_test/wheat_damaged/septoria/los(24).JPG,Rice___Bacterialblight,98.71,True,matched_profile,21.811864852905273,24.726938247680664,Rice___Blast
+wheat_damaged/septoria,dataset/unknown_test/wheat_damaged/septoria/los(25).JPG,Rice___Blast,88.33,True,matched_profile,17.62054443359375,24.97043228149414,Rice___Blast
+wheat_damaged/septoria,dataset/unknown_test/wheat_damaged/septoria/los(26).JPG,Rice___Blast,90.0,True,matched_profile,19.667028427124023,24.97043228149414,Rice___Blast
+wheat_damaged/septoria,dataset/unknown_test/wheat_damaged/septoria/los(27).JPG,Rice___Bacterialblight,98.9,True,matched_profile,23.05647087097168,24.726938247680664,Rice___Blast
+wheat_damaged/septoria,dataset/unknown_test/wheat_damaged/septoria/los(28).JPG,Rice___Blast,74.3,True,matched_profile,18.53359603881836,24.97043228149414,Rice___Blast
+wheat_damaged/septoria,dataset/unknown_test/wheat_damaged/septoria/los(29).JPG,Rice___Bacterialblight,59.19,True,matched_profile,20.951679229736328,24.726938247680664,Rice___Blast
+wheat_damaged/septoria,dataset/unknown_test/wheat_damaged/septoria/los(3).JPG,Rice___Bacterialblight,91.0,True,matched_profile,18.82848358154297,24.726938247680664,Rice___Blast
+wheat_damaged/septoria,dataset/unknown_test/wheat_damaged/septoria/los(30).JPG,Rice___Blast,62.0,True,matched_profile,19.552988052368164,24.97043228149414,Rice___Blast
+wheat_damaged/septoria,dataset/unknown_test/wheat_damaged/septoria/los(31).JPG,Rice___Blast,99.88,True,matched_profile,21.008480072021484,24.97043228149414,Rice___Blast
+wheat_damaged/septoria,dataset/unknown_test/wheat_damaged/septoria/los(32).JPG,Rice___Blast,85.46,True,matched_profile,18.242496490478516,24.97043228149414,Rice___Blast
+wheat_damaged/septoria,dataset/unknown_test/wheat_damaged/septoria/los(33).JPG,Rice___Bacterialblight,94.72,True,matched_profile,17.008195877075195,24.726938247680664,Rice___Blast
+wheat_damaged/septoria,dataset/unknown_test/wheat_damaged/septoria/los(34).JPG,Rice___Blast,99.72,True,matched_profile,15.018277168273926,24.97043228149414,Rice___Blast
+wheat_damaged/septoria,dataset/unknown_test/wheat_damaged/septoria/los(35).JPG,Rice___Bacterialblight,99.98,True,matched_profile,21.367982864379883,24.726938247680664,Rice___Blast
+wheat_damaged/septoria,dataset/unknown_test/wheat_damaged/septoria/los(36).JPG,Rice___Blast,93.58,True,matched_profile,18.967634201049805,24.97043228149414,Rice___Blast
+wheat_damaged/septoria,dataset/unknown_test/wheat_damaged/septoria/los(37).JPG,Rice___Bacterialblight,100.0,True,matched_profile,19.6476993560791,24.726938247680664,Rice___Blast
+wheat_damaged/septoria,dataset/unknown_test/wheat_damaged/septoria/los(38).JPG,Banana___cordana,92.53,True,matched_profile,19.44576644897461,22.09589195251465,Rice___Blast
+wheat_damaged/septoria,dataset/unknown_test/wheat_damaged/septoria/los(39).JPG,Rice___Bacterialblight,96.08,True,matched_profile,19.699918746948242,24.726938247680664,Rice___Blast
+wheat_damaged/septoria,dataset/unknown_test/wheat_damaged/septoria/los(4).JPG,Mango___Bacterial_Canker,80.25,False,feature_distance,22.211944580078125,20.274681091308594,Mango___Bacterial_Canker
+wheat_damaged/septoria,dataset/unknown_test/wheat_damaged/septoria/los(40).JPG,Rice___Bacterialblight,94.44,True,matched_profile,19.066875457763672,24.726938247680664,Rice___Blast
+wheat_damaged/septoria,dataset/unknown_test/wheat_damaged/septoria/los(41).JPG,Rice___Bacterialblight,69.56,True,matched_profile,20.271480560302734,24.726938247680664,Rice___Blast
+wheat_damaged/septoria,dataset/unknown_test/wheat_damaged/septoria/los(42).JPG,Rice___Blast,78.04,True,matched_profile,19.1557674407959,24.97043228149414,Rice___Blast
+wheat_damaged/septoria,dataset/unknown_test/wheat_damaged/septoria/los(43).JPG,Rice___Bacterialblight,93.47,True,matched_profile,16.736068725585938,24.726938247680664,Rice___Blast
+wheat_damaged/septoria,dataset/unknown_test/wheat_damaged/septoria/los(44).JPG,Rice___Bacterialblight,99.05,True,matched_profile,19.98820686340332,24.726938247680664,Rice___Blast
+wheat_damaged/septoria,dataset/unknown_test/wheat_damaged/septoria/los(45).JPG,Rice___Bacterialblight,97.2,True,matched_profile,21.703594207763672,24.726938247680664,Rice___Blast
+wheat_damaged/septoria,dataset/unknown_test/wheat_damaged/septoria/los(46).JPG,Rice___Blast,99.88,True,matched_profile,20.05064582824707,24.97043228149414,Rice___Blast
+wheat_damaged/septoria,dataset/unknown_test/wheat_damaged/septoria/los(47).JPG,Rice___Blast,95.38,True,matched_profile,19.43299674987793,24.97043228149414,Rice___Blast
+wheat_damaged/septoria,dataset/unknown_test/wheat_damaged/septoria/los(48).JPG,Rice___Bacterialblight,59.9,True,matched_profile,21.196569442749023,24.726938247680664,Rice___Blast
+wheat_damaged/septoria,dataset/unknown_test/wheat_damaged/septoria/los(49).JPG,Rice___Bacterialblight,63.15,True,matched_profile,23.132566452026367,24.726938247680664,Banana___healthy
+wheat_damaged/septoria,dataset/unknown_test/wheat_damaged/septoria/los(5).JPG,Rice___Blast,87.5,True,matched_profile,19.35699462890625,24.97043228149414,Rice___Blast
+wheat_damaged/septoria,dataset/unknown_test/wheat_damaged/septoria/los(50).JPG,Rice___Bacterialblight,99.86,True,matched_profile,19.696252822875977,24.726938247680664,Rice___Blast
+wheat_damaged/septoria,dataset/unknown_test/wheat_damaged/septoria/los(6).JPG,Rice___Blast,98.83,True,matched_profile,21.093074798583984,24.97043228149414,Rice___Blast
+wheat_damaged/septoria,dataset/unknown_test/wheat_damaged/septoria/los(7).JPG,Rice___Blast,88.57,True,matched_profile,19.840496063232422,24.97043228149414,Rice___Blast
+wheat_damaged/septoria,dataset/unknown_test/wheat_damaged/septoria/los(8).JPG,Rice___Bacterialblight,99.99,True,matched_profile,20.506505966186523,24.726938247680664,Rice___Blast
+wheat_damaged/septoria,dataset/unknown_test/wheat_damaged/septoria/los(9).JPG,Rice___Blast,78.07,True,matched_profile,22.93023681640625,24.97043228149414,Rice___Blast
+wheat_damaged/strip_rust,dataset/unknown_test/wheat_damaged/strip_rust/lolr(1).JPG,Mango___Bacterial_Canker,58.71,False,feature_distance,20.557781219482422,20.274681091308594,Rice___Blast
+wheat_damaged/strip_rust,dataset/unknown_test/wheat_damaged/strip_rust/lolr(10).JPG,Rice___Blast,91.77,True,matched_profile,20.408273696899414,24.97043228149414,Rice___Blast
+wheat_damaged/strip_rust,dataset/unknown_test/wheat_damaged/strip_rust/lolr(11).JPG,Mango___Bacterial_Canker,45.47,False,low_confidence,,,
+wheat_damaged/strip_rust,dataset/unknown_test/wheat_damaged/strip_rust/lolr(12).JPG,Rice___Blast,97.86,True,matched_profile,22.381935119628906,24.97043228149414,Banana___healthy
+wheat_damaged/strip_rust,dataset/unknown_test/wheat_damaged/strip_rust/lolr(13).JPG,Rice___Bacterialblight,96.04,True,matched_profile,19.657690048217773,24.726938247680664,Rice___Tungro
+wheat_damaged/strip_rust,dataset/unknown_test/wheat_damaged/strip_rust/lolr(14).JPG,Rice___Tungro,100.0,False,feature_distance,20.71042823791504,19.94704818725586,Rice___Tungro
+wheat_damaged/strip_rust,dataset/unknown_test/wheat_damaged/strip_rust/lolr(15).JPG,Rice___Bacterialblight,99.99,True,matched_profile,19.631254196166992,24.726938247680664,Rice___Bacterialblight
+wheat_damaged/strip_rust,dataset/unknown_test/wheat_damaged/strip_rust/lolr(16).JPG,Rice___Bacterialblight,100.0,True,matched_profile,21.040830612182617,24.726938247680664,Rice___Bacterialblight
+wheat_damaged/strip_rust,dataset/unknown_test/wheat_damaged/strip_rust/lolr(17).JPG,Rice___Tungro,99.88,False,feature_distance,22.75746726989746,19.94704818725586,Rice___Tungro
+wheat_damaged/strip_rust,dataset/unknown_test/wheat_damaged/strip_rust/lolr(18).JPG,Rice___Bacterialblight,97.44,True,matched_profile,17.97317123413086,24.726938247680664,Rice___Bacterialblight
+wheat_damaged/strip_rust,dataset/unknown_test/wheat_damaged/strip_rust/lolr(19).JPG,Rice___Blast,100.0,True,matched_profile,18.60131072998047,24.97043228149414,Rice___Tungro
+wheat_damaged/strip_rust,dataset/unknown_test/wheat_damaged/strip_rust/lolr(2).JPG,Mango___Bacterial_Canker,73.18,True,matched_profile,19.992671966552734,20.274681091308594,Mango___Bacterial_Canker
+wheat_damaged/strip_rust,dataset/unknown_test/wheat_damaged/strip_rust/lolr(20).JPG,Rice___Blast,86.81,True,matched_profile,19.90167999267578,24.97043228149414,Rice___Bacterialblight
+wheat_damaged/strip_rust,dataset/unknown_test/wheat_damaged/strip_rust/lolr(21).JPG,Rice___Tungro,67.62,True,matched_profile,19.194442749023438,19.94704818725586,Rice___Tungro
+wheat_damaged/strip_rust,dataset/unknown_test/wheat_damaged/strip_rust/lolr(22).JPG,Rice___Blast,99.83,True,matched_profile,18.58568000793457,24.97043228149414,Rice___Tungro
+wheat_damaged/strip_rust,dataset/unknown_test/wheat_damaged/strip_rust/lolr(23).JPG,Rice___Bacterialblight,100.0,True,matched_profile,18.406455993652344,24.726938247680664,Rice___Bacterialblight
+wheat_damaged/strip_rust,dataset/unknown_test/wheat_damaged/strip_rust/lolr(24).JPG,Rice___Blast,96.71,True,matched_profile,17.388608932495117,24.97043228149414,Rice___Blast
+wheat_damaged/strip_rust,dataset/unknown_test/wheat_damaged/strip_rust/lolr(25).JPG,Rice___Blast,98.91,True,matched_profile,16.78707504272461,24.97043228149414,Rice___Bacterialblight
+wheat_damaged/strip_rust,dataset/unknown_test/wheat_damaged/strip_rust/lolr(26).JPG,Rice___Tungro,78.23,True,matched_profile,17.88825798034668,19.94704818725586,Rice___Tungro
+wheat_damaged/strip_rust,dataset/unknown_test/wheat_damaged/strip_rust/lolr(27).JPG,Rice___Tungro,99.18,True,matched_profile,17.589401245117188,19.94704818725586,Rice___Tungro
+wheat_damaged/strip_rust,dataset/unknown_test/wheat_damaged/strip_rust/lolr(28).JPG,Rice___Blast,74.38,True,matched_profile,16.70842742919922,24.97043228149414,Rice___Bacterialblight
+wheat_damaged/strip_rust,dataset/unknown_test/wheat_damaged/strip_rust/lolr(29).JPG,Rice___Blast,79.03,True,matched_profile,18.457733154296875,24.97043228149414,Rice___Tungro
+wheat_damaged/strip_rust,dataset/unknown_test/wheat_damaged/strip_rust/lolr(3).JPG,Mango___Gall_Midge,60.17,False,feature_distance,23.368423461914062,21.58159637451172,Mango___Bacterial_Canker
+wheat_damaged/strip_rust,dataset/unknown_test/wheat_damaged/strip_rust/lolr(30).JPG,Rice___Blast,96.77,True,matched_profile,21.195514678955078,24.97043228149414,Rice___Blast
+wheat_damaged/strip_rust,dataset/unknown_test/wheat_damaged/strip_rust/lolr(31).JPG,Rice___Bacterialblight,65.82,True,matched_profile,17.843677520751953,24.726938247680664,Rice___Tungro
+wheat_damaged/strip_rust,dataset/unknown_test/wheat_damaged/strip_rust/lolr(32).JPG,Rice___Bacterialblight,94.75,True,matched_profile,15.61471176147461,24.726938247680664,Rice___Bacterialblight
+wheat_damaged/strip_rust,dataset/unknown_test/wheat_damaged/strip_rust/lolr(33).JPG,Rice___Bacterialblight,99.93,True,matched_profile,17.0238094329834,24.726938247680664,Rice___Bacterialblight
+wheat_damaged/strip_rust,dataset/unknown_test/wheat_damaged/strip_rust/lolr(34).JPG,Rice___Blast,78.91,True,matched_profile,20.585651397705078,24.97043228149414,Rice___Blast
+wheat_damaged/strip_rust,dataset/unknown_test/wheat_damaged/strip_rust/lolr(35).JPG,Rice___Blast,99.95,True,matched_profile,18.916494369506836,24.97043228149414,Rice___Bacterialblight
+wheat_damaged/strip_rust,dataset/unknown_test/wheat_damaged/strip_rust/lolr(36).JPG,Rice___Bacterialblight,80.21,True,matched_profile,20.343223571777344,24.726938247680664,Rice___Blast
+wheat_damaged/strip_rust,dataset/unknown_test/wheat_damaged/strip_rust/lolr(37).JPG,Rice___Blast,99.16,True,matched_profile,19.107769012451172,24.97043228149414,Rice___Tungro
+wheat_damaged/strip_rust,dataset/unknown_test/wheat_damaged/strip_rust/lolr(38).JPG,Rice___Blast,71.93,True,matched_profile,18.56108283996582,24.97043228149414,Rice___Bacterialblight
+wheat_damaged/strip_rust,dataset/unknown_test/wheat_damaged/strip_rust/lolr(39).JPG,Rice___Bacterialblight,74.63,True,matched_profile,16.897268295288086,24.726938247680664,Rice___Tungro
+wheat_damaged/strip_rust,dataset/unknown_test/wheat_damaged/strip_rust/lolr(4).JPG,Mango___Gall_Midge,58.94,False,feature_distance,23.398555755615234,21.58159637451172,Mango___Bacterial_Canker
+wheat_damaged/strip_rust,dataset/unknown_test/wheat_damaged/strip_rust/lolr(40).JPG,Rice___Bacterialblight,55.4,True,matched_profile,22.231733322143555,24.726938247680664,Rice___Bacterialblight
+wheat_damaged/strip_rust,dataset/unknown_test/wheat_damaged/strip_rust/lolr(41).JPG,Rice___Bacterialblight,85.05,True,matched_profile,16.11774444580078,24.726938247680664,Rice___Bacterialblight
+wheat_damaged/strip_rust,dataset/unknown_test/wheat_damaged/strip_rust/lolr(42).JPG,Rice___Bacterialblight,99.38,True,matched_profile,17.810508728027344,24.726938247680664,Rice___Blast
+wheat_damaged/strip_rust,dataset/unknown_test/wheat_damaged/strip_rust/lolr(43).JPG,Rice___Blast,92.7,True,matched_profile,19.698923110961914,24.97043228149414,Rice___Blast
+wheat_damaged/strip_rust,dataset/unknown_test/wheat_damaged/strip_rust/lolr(44).JPG,Rice___Bacterialblight,99.87,True,matched_profile,20.633026123046875,24.726938247680664,Rice___Bacterialblight
+wheat_damaged/strip_rust,dataset/unknown_test/wheat_damaged/strip_rust/lolr(45).JPG,Rice___Bacterialblight,99.99,True,matched_profile,22.040685653686523,24.726938247680664,Rice___Blast
+wheat_damaged/strip_rust,dataset/unknown_test/wheat_damaged/strip_rust/lolr(46).JPG,Rice___Bacterialblight,98.61,True,matched_profile,21.050928115844727,24.726938247680664,Rice___Blast
+wheat_damaged/strip_rust,dataset/unknown_test/wheat_damaged/strip_rust/lolr(47).JPG,Rice___Bacterialblight,99.92,True,matched_profile,21.36777687072754,24.726938247680664,Rice___Bacterialblight
+wheat_damaged/strip_rust,dataset/unknown_test/wheat_damaged/strip_rust/lolr(48).JPG,Rice___Bacterialblight,100.0,True,matched_profile,21.178579330444336,24.726938247680664,Rice___Blast
+wheat_damaged/strip_rust,dataset/unknown_test/wheat_damaged/strip_rust/lolr(49).JPG,Rice___Bacterialblight,99.98,True,matched_profile,21.276124954223633,24.726938247680664,Rice___Blast
+wheat_damaged/strip_rust,dataset/unknown_test/wheat_damaged/strip_rust/lolr(5).JPG,Rice___Tungro,68.53,False,feature_distance,27.05352783203125,19.94704818725586,Mango___Bacterial_Canker
+wheat_damaged/strip_rust,dataset/unknown_test/wheat_damaged/strip_rust/lolr(50).JPG,Rice___Bacterialblight,82.46,True,matched_profile,22.334022521972656,24.726938247680664,Rice___Blast
+wheat_damaged/strip_rust,dataset/unknown_test/wheat_damaged/strip_rust/lolr(6).JPG,Rice___Blast,83.55,True,matched_profile,18.70366668701172,24.97043228149414,Rice___Blast
+wheat_damaged/strip_rust,dataset/unknown_test/wheat_damaged/strip_rust/lolr(7).JPG,Mango___Sooty_Mould,81.52,False,feature_distance,21.854167938232422,20.782386779785156,Rice___Blast
+wheat_damaged/strip_rust,dataset/unknown_test/wheat_damaged/strip_rust/lolr(8).JPG,Mango___Bacterial_Canker,63.75,False,feature_distance,20.97604751586914,20.274681091308594,Mango___Bacterial_Canker
+wheat_damaged/strip_rust,dataset/unknown_test/wheat_damaged/strip_rust/lolr(9).JPG,Mango___Bacterial_Canker,79.97,False,feature_distance,20.578847885131836,20.274681091308594,Mango___Bacterial_Canker
+other_plants,dataset/unknown_test/other_plants/RGB/1. Quercus suber/iPAD2_C01_EX01.JPG,Tomato___Late_blight,57.93,False,feature_distance,20.484895706176758,19.721282958984375,Orange___Haunglongbing_(Citrus_greening)
+other_plants,dataset/unknown_test/other_plants/RGB/1. Quercus suber/iPAD2_C01_EX02.JPG,Apple___Cedar_apple_rust,76.1,True,matched_profile,20.58871841430664,21.56960678100586,Apple___Cedar_apple_rust
+other_plants,dataset/unknown_test/other_plants/RGB/1. Quercus suber/iPAD2_C01_EX03.JPG,Apple___Cedar_apple_rust,98.67,True,matched_profile,20.189983367919922,21.56960678100586,Apple___Cedar_apple_rust
+other_plants,dataset/unknown_test/other_plants/RGB/1. Quercus suber/iPAD2_C01_EX04.JPG,Apple___healthy,48.1,False,low_confidence,,,
+other_plants,dataset/unknown_test/other_plants/RGB/1. Quercus suber/iPAD2_C01_EX05.JPG,Apple___Cedar_apple_rust,36.95,False,low_confidence,,,
+other_plants,dataset/unknown_test/other_plants/RGB/1. Quercus suber/iPAD2_C01_EX06.JPG,Apple___Cedar_apple_rust,90.96,True,matched_profile,21.327882766723633,21.56960678100586,Apple___Cedar_apple_rust
+other_plants,dataset/unknown_test/other_plants/RGB/1. Quercus suber/iPAD2_C01_EX07.JPG,Apple___Cedar_apple_rust,69.14,True,matched_profile,20.812421798706055,21.56960678100586,Peach___Bacterial_spot
+other_plants,dataset/unknown_test/other_plants/RGB/1. Quercus suber/iPAD2_C01_EX08.JPG,Apple___healthy,63.68,False,feature_distance,20.32000160217285,18.600955963134766,Blueberry___healthy
+other_plants,dataset/unknown_test/other_plants/RGB/1. Quercus suber/iPAD2_C01_EX09.JPG,Mango___Sooty_Mould,98.7,False,feature_distance,22.81686019897461,20.782386779785156,Apple___Cedar_apple_rust
+other_plants,dataset/unknown_test/other_plants/RGB/1. Quercus suber/iPAD2_C01_EX10.JPG,Mango___healthy,50.43,False,feature_distance,24.248706817626953,21.27459144592285,Mango___Bacterial_Canker
+other_plants,dataset/unknown_test/other_plants/RGB/1. Quercus suber/iPAD2_C01_EX11.JPG,Apple___Cedar_apple_rust,82.63,False,feature_distance,23.785783767700195,21.56960678100586,Apple___Cedar_apple_rust
+other_plants,dataset/unknown_test/other_plants/RGB/1. Quercus suber/iPAD2_C01_EX12.JPG,Apple___healthy,99.49,False,feature_distance,23.440717697143555,18.600955963134766,Apple___Cedar_apple_rust
+other_plants,dataset/unknown_test/other_plants/RGB/10. Tilia tomentosa/iPAD2_C10_EX01.JPG,Raspberry___healthy,80.53,False,feature_distance,17.68414306640625,16.88538360595703,Grape___healthy
+other_plants,dataset/unknown_test/other_plants/RGB/10. Tilia tomentosa/iPAD2_C10_EX02.JPG,Grape___healthy,98.72,False,feature_distance,17.75507926940918,17.640975952148438,Grape___healthy
+other_plants,dataset/unknown_test/other_plants/RGB/10. Tilia tomentosa/iPAD2_C10_EX03.JPG,Apple___Cedar_apple_rust,47.4,False,low_confidence,,,
+other_plants,dataset/unknown_test/other_plants/RGB/10. Tilia tomentosa/iPAD2_C10_EX04.JPG,Apple___Cedar_apple_rust,68.16,True,matched_profile,19.04932403564453,21.56960678100586,Grape___healthy
+other_plants,dataset/unknown_test/other_plants/RGB/10. Tilia tomentosa/iPAD2_C10_EX05.JPG,Grape___Esca_(Black_Measles),98.95,False,feature_distance,16.922475814819336,15.867803573608398,Grape___Esca_(Black_Measles)
+other_plants,dataset/unknown_test/other_plants/RGB/10. Tilia tomentosa/iPAD2_C10_EX06.JPG,Tomato___Late_blight,33.17,False,low_confidence,,,
+other_plants,dataset/unknown_test/other_plants/RGB/10. Tilia tomentosa/iPAD2_C10_EX07.JPG,Tomato___Late_blight,54.97,False,feature_distance,22.879201889038086,19.721282958984375,Strawberry___Leaf_scorch
+other_plants,dataset/unknown_test/other_plants/RGB/10. Tilia tomentosa/iPAD2_C10_EX08.JPG,Strawberry___Leaf_scorch,92.52,False,feature_distance,22.08475685119629,19.2470703125,Potato___Late_blight
+other_plants,dataset/unknown_test/other_plants/RGB/10. Tilia tomentosa/iPAD2_C10_EX09.JPG,Strawberry___Leaf_scorch,46.56,False,low_confidence,,,
+other_plants,dataset/unknown_test/other_plants/RGB/10. Tilia tomentosa/iPAD2_C10_EX10.JPG,Tomato___Late_blight,56.36,False,feature_distance,22.39491081237793,19.721282958984375,Potato___Late_blight
+other_plants,dataset/unknown_test/other_plants/RGB/10. Tilia tomentosa/iPAD2_C10_EX11.JPG,Potato___healthy,59.23,False,feature_distance,23.171600341796875,18.188508987426758,Cherry_(including_sour)___Powdery_mildew
+other_plants,dataset/unknown_test/other_plants/RGB/10. Tilia tomentosa/iPAD2_C10_EX12.JPG,Tomato___Late_blight,95.69,False,feature_distance,23.696245193481445,19.721282958984375,Apple___Cedar_apple_rust
+other_plants,dataset/unknown_test/other_plants/RGB/10. Tilia tomentosa/iPAD2_C10_EX13.JPG,Rice___Brownspot,92.25,False,feature_distance,24.796247482299805,24.275524139404297,Apple___Cedar_apple_rust
+other_plants,dataset/unknown_test/other_plants/RGB/11. Acer palmaturu/iPAD2_C11_EX01.JPG,Rice___Blast,100.0,True,matched_profile,22.171382904052734,24.97043228149414,Mango___Cutting_Weevil
+other_plants,dataset/unknown_test/other_plants/RGB/11. Acer palmaturu/iPAD2_C11_EX02.JPG,Rice___Blast,99.97,True,matched_profile,20.86427116394043,24.97043228149414,Tomato___Late_blight
+other_plants,dataset/unknown_test/other_plants/RGB/11. Acer palmaturu/iPAD2_C11_EX03.JPG,Rice___Blast,99.94,True,matched_profile,22.48067855834961,24.97043228149414,Mango___Cutting_Weevil
+other_plants,dataset/unknown_test/other_plants/RGB/11. Acer palmaturu/iPAD2_C11_EX04.JPG,Rice___Blast,99.79,True,matched_profile,21.231592178344727,24.97043228149414,Tomato___Late_blight
+other_plants,dataset/unknown_test/other_plants/RGB/11. Acer palmaturu/iPAD2_C11_EX05.JPG,Rice___Blast,99.81,True,matched_profile,22.34682846069336,24.97043228149414,Mango___Cutting_Weevil
+other_plants,dataset/unknown_test/other_plants/RGB/11. Acer palmaturu/iPAD2_C11_EX06.JPG,Rice___Blast,99.75,True,matched_profile,22.408123016357422,24.97043228149414,Mango___Cutting_Weevil
+other_plants,dataset/unknown_test/other_plants/RGB/11. Acer palmaturu/iPAD2_C11_EX07.JPG,Rice___Blast,99.99,True,matched_profile,22.98103904724121,24.97043228149414,Mango___Cutting_Weevil
+other_plants,dataset/unknown_test/other_plants/RGB/11. Acer palmaturu/iPAD2_C11_EX08.JPG,Rice___Blast,99.87,True,matched_profile,22.491180419921875,24.97043228149414,Tomato___Late_blight
+other_plants,dataset/unknown_test/other_plants/RGB/11. Acer palmaturu/iPAD2_C11_EX09.JPG,Rice___Blast,100.0,True,matched_profile,24.287710189819336,24.97043228149414,Mango___Cutting_Weevil
+other_plants,dataset/unknown_test/other_plants/RGB/11. Acer palmaturu/iPAD2_C11_EX10.JPG,Rice___Blast,99.99,True,matched_profile,21.459787368774414,24.97043228149414,Tomato___Late_blight
+other_plants,dataset/unknown_test/other_plants/RGB/11. Acer palmaturu/iPAD2_C11_EX11.JPG,Rice___Blast,99.8,True,matched_profile,21.317123413085938,24.97043228149414,Tomato___Late_blight
+other_plants,dataset/unknown_test/other_plants/RGB/11. Acer palmaturu/iPAD2_C11_EX12.JPG,Rice___Blast,99.94,True,matched_profile,23.41798210144043,24.97043228149414,Mango___Cutting_Weevil
+other_plants,dataset/unknown_test/other_plants/RGB/11. Acer palmaturu/iPAD2_C11_EX13.JPG,Rice___Blast,99.57,True,matched_profile,22.993803024291992,24.97043228149414,Mango___Cutting_Weevil
+other_plants,dataset/unknown_test/other_plants/RGB/11. Acer palmaturu/iPAD2_C11_EX14.JPG,Rice___Blast,99.99,True,matched_profile,23.44606590270996,24.97043228149414,Mango___Cutting_Weevil
+other_plants,dataset/unknown_test/other_plants/RGB/11. Acer palmaturu/iPAD2_C11_EX15.JPG,Rice___Blast,99.98,True,matched_profile,23.58645248413086,24.97043228149414,Mango___Cutting_Weevil
+other_plants,dataset/unknown_test/other_plants/RGB/11. Acer palmaturu/iPAD2_C11_EX16.JPG,Rice___Blast,99.2,True,matched_profile,21.321468353271484,24.97043228149414,Tomato___Late_blight
+other_plants,dataset/unknown_test/other_plants/RGB/12. Celtis sp/iPAD2_C12_EX01.JPG,Apple___healthy,64.18,False,feature_distance,19.219850540161133,18.600955963134766,Apple___healthy
+other_plants,dataset/unknown_test/other_plants/RGB/12. Celtis sp/iPAD2_C12_EX02.JPG,Tomato___Late_blight,66.12,False,feature_distance,20.21194076538086,19.721282958984375,Tomato___Leaf_Mold
+other_plants,dataset/unknown_test/other_plants/RGB/12. Celtis sp/iPAD2_C12_EX03.JPG,Apple___Cedar_apple_rust,53.41,True,matched_profile,20.144695281982422,21.56960678100586,Apple___Black_rot
+other_plants,dataset/unknown_test/other_plants/RGB/12. Celtis sp/iPAD2_C12_EX04.JPG,Tomato___Late_blight,98.24,False,feature_distance,21.65666961669922,19.721282958984375,Tomato___Late_blight
+other_plants,dataset/unknown_test/other_plants/RGB/12. Celtis sp/iPAD2_C12_EX05.JPG,Apple___healthy,90.32,False,feature_distance,20.222766876220703,18.600955963134766,Apple___healthy
+other_plants,dataset/unknown_test/other_plants/RGB/12. Celtis sp/iPAD2_C12_EX06.JPG,Apple___healthy,97.34,False,feature_distance,21.44992446899414,18.600955963134766,Tomato___Late_blight
+other_plants,dataset/unknown_test/other_plants/RGB/12. Celtis sp/iPAD2_C12_EX07.JPG,Tomato___Late_blight,99.99,False,feature_distance,20.665647506713867,19.721282958984375,Blueberry___healthy
+other_plants,dataset/unknown_test/other_plants/RGB/12. Celtis sp/iPAD2_C12_EX08.JPG,Apple___healthy,99.41,False,feature_distance,20.496963500976562,18.600955963134766,Tomato___Leaf_Mold
+other_plants,dataset/unknown_test/other_plants/RGB/12. Celtis sp/iPAD2_C12_EX09.JPG,Apple___healthy,69.54,True,matched_profile,18.42804527282715,18.600955963134766,Apple___healthy
+other_plants,dataset/unknown_test/other_plants/RGB/12. Celtis sp/iPAD2_C12_EX10.JPG,Strawberry___Leaf_scorch,77.89,False,feature_distance,21.63730812072754,19.2470703125,Tomato___Late_blight
+other_plants,dataset/unknown_test/other_plants/RGB/12. Celtis sp/iPAD2_C12_EX11.JPG,Tomato___Late_blight,60.42,False,feature_distance,20.753087997436523,19.721282958984375,Peach___Bacterial_spot
+other_plants,dataset/unknown_test/other_plants/RGB/12. Celtis sp/iPAD2_C12_EX12.JPG,Tomato___Late_blight,96.19,False,feature_distance,21.841663360595703,19.721282958984375,Tomato___Late_blight
+other_plants,dataset/unknown_test/other_plants/RGB/13. Corylus avellana/iPAD2_C13_EX01.JPG,Tomato___Late_blight,80.03,True,matched_profile,19.65143585205078,19.721282958984375,Cherry_(including_sour)___Powdery_mildew
+other_plants,dataset/unknown_test/other_plants/RGB/13. Corylus avellana/iPAD2_C13_EX02.JPG,Tomato___Late_blight,96.02,False,feature_distance,22.900102615356445,19.721282958984375,Orange___Haunglongbing_(Citrus_greening)
+other_plants,dataset/unknown_test/other_plants/RGB/13. Corylus avellana/iPAD2_C13_EX03.JPG,Tomato___Late_blight,73.04,False,feature_distance,20.083494186401367,19.721282958984375,Potato___Late_blight
+other_plants,dataset/unknown_test/other_plants/RGB/13. Corylus avellana/iPAD2_C13_EX04.JPG,Tomato___Late_blight,99.96,False,feature_distance,25.86028480529785,19.721282958984375,Apple___Cedar_apple_rust
+other_plants,dataset/unknown_test/other_plants/RGB/13. Corylus avellana/iPAD2_C13_EX05.JPG,Cherry_(including_sour)___Powdery_mildew,56.78,False,feature_distance,20.226316452026367,17.814212799072266,Cherry_(including_sour)___Powdery_mildew
+other_plants,dataset/unknown_test/other_plants/RGB/13. Corylus avellana/iPAD2_C13_EX06.JPG,Cherry_(including_sour)___Powdery_mildew,81.0,True,matched_profile,17.074045181274414,17.814212799072266,Cherry_(including_sour)___Powdery_mildew
+other_plants,dataset/unknown_test/other_plants/RGB/13. Corylus avellana/iPAD2_C13_EX07.JPG,Apple___healthy,74.43,False,feature_distance,19.582448959350586,18.600955963134766,Soybean___healthy
+other_plants,dataset/unknown_test/other_plants/RGB/13. Corylus avellana/iPAD2_C13_EX08.JPG,Apple___Cedar_apple_rust,99.92,True,matched_profile,19.517959594726562,21.56960678100586,Apple___Cedar_apple_rust
+other_plants,dataset/unknown_test/other_plants/RGB/13. Corylus avellana/iPAD2_C13_EX09.JPG,Tomato___Late_blight,91.23,False,feature_distance,22.414958953857422,19.721282958984375,Apple___Cedar_apple_rust
+other_plants,dataset/unknown_test/other_plants/RGB/13. Corylus avellana/iPAD2_C13_EX10.JPG,Tomato___Late_blight,99.51,False,feature_distance,22.363981246948242,19.721282958984375,Apple___Cedar_apple_rust
+other_plants,dataset/unknown_test/other_plants/RGB/13. Corylus avellana/iPAD2_C13_EX11.JPG,Apple___Cedar_apple_rust,62.11,False,feature_distance,23.288192749023438,21.56960678100586,Apple___Black_rot
+other_plants,dataset/unknown_test/other_plants/RGB/13. Corylus avellana/iPAD2_C13_EX12.JPG,Tomato___Target_Spot,65.73,True,matched_profile,16.920976638793945,18.863468170166016,Cherry_(including_sour)___Powdery_mildew
+other_plants,dataset/unknown_test/other_plants/RGB/13. Corylus avellana/iPAD2_C13_EX13.JPG,Tomato___Late_blight,96.81,False,feature_distance,23.04003143310547,19.721282958984375,Cherry_(including_sour)___Powdery_mildew
+other_plants,dataset/unknown_test/other_plants/RGB/14. Castanea sativa/iPAD2_C14_EX01.JPG,Apple___healthy,94.53,False,feature_distance,19.969066619873047,18.600955963134766,Apple___healthy
+other_plants,dataset/unknown_test/other_plants/RGB/14. Castanea sativa/iPAD2_C14_EX02.JPG,Apple___healthy,99.84,False,feature_distance,20.95328712463379,18.600955963134766,Apple___healthy
+other_plants,dataset/unknown_test/other_plants/RGB/14. Castanea sativa/iPAD2_C14_EX03.JPG,Apple___healthy,98.38,False,feature_distance,21.976810455322266,18.600955963134766,Apple___healthy
+other_plants,dataset/unknown_test/other_plants/RGB/14. Castanea sativa/iPAD2_C14_EX04.JPG,Apple___Cedar_apple_rust,98.58,True,matched_profile,18.774349212646484,21.56960678100586,Apple___healthy
+other_plants,dataset/unknown_test/other_plants/RGB/14. Castanea sativa/iPAD2_C14_EX05.JPG,Tomato___Late_blight,71.71,False,feature_distance,23.832508087158203,19.721282958984375,Blueberry___healthy
+other_plants,dataset/unknown_test/other_plants/RGB/14. Castanea sativa/iPAD2_C14_EX06.JPG,Apple___Cedar_apple_rust,65.27,False,feature_distance,24.61130142211914,21.56960678100586,Apple___healthy
+other_plants,dataset/unknown_test/other_plants/RGB/14. Castanea sativa/iPAD2_C14_EX07.JPG,Potato___healthy,80.1,False,feature_distance,21.74732780456543,18.188508987426758,Potato___Late_blight
+other_plants,dataset/unknown_test/other_plants/RGB/14. Castanea sativa/iPAD2_C14_EX08.JPG,Apple___healthy,72.97,False,feature_distance,22.087875366210938,18.600955963134766,Apple___healthy
+other_plants,dataset/unknown_test/other_plants/RGB/14. Castanea sativa/iPAD2_C14_EX09.JPG,Tomato___Late_blight,59.95,False,feature_distance,19.864107131958008,19.721282958984375,Apple___Cedar_apple_rust
+other_plants,dataset/unknown_test/other_plants/RGB/14. Castanea sativa/iPAD2_C14_EX10.JPG,Apple___healthy,83.72,False,feature_distance,21.84294319152832,18.600955963134766,Potato___Late_blight
+other_plants,dataset/unknown_test/other_plants/RGB/14. Castanea sativa/iPAD2_C14_EX11.JPG,Apple___Cedar_apple_rust,94.63,False,feature_distance,22.050090789794922,21.56960678100586,Apple___healthy
+other_plants,dataset/unknown_test/other_plants/RGB/14. Castanea sativa/iPAD2_C14_EX12.JPG,Tomato___Late_blight,77.57,False,feature_distance,21.725971221923828,19.721282958984375,Peach___Bacterial_spot
+other_plants,dataset/unknown_test/other_plants/RGB/15. Populus alba/iPAD2_C15_EX01.JPG,Rice___Blast,77.84,True,matched_profile,24.075517654418945,24.97043228149414,Grape___Esca_(Black_Measles)
+other_plants,dataset/unknown_test/other_plants/RGB/15. Populus alba/iPAD2_C15_EX02.JPG,Rice___Blast,69.04,True,matched_profile,23.66963005065918,24.97043228149414,Grape___Esca_(Black_Measles)
+other_plants,dataset/unknown_test/other_plants/RGB/15. Populus alba/iPAD2_C15_EX03.JPG,Grape___Esca_(Black_Measles),25.5,False,low_confidence,,,
+other_plants,dataset/unknown_test/other_plants/RGB/15. Populus alba/iPAD2_C15_EX04.JPG,Apple___Black_rot,92.71,False,feature_distance,24.317386627197266,18.991910934448242,Grape___Esca_(Black_Measles)
+other_plants,dataset/unknown_test/other_plants/RGB/15. Populus alba/iPAD2_C15_EX05.JPG,Apple___Black_rot,37.91,False,low_confidence,,,
+other_plants,dataset/unknown_test/other_plants/RGB/15. Populus alba/iPAD2_C15_EX06.JPG,Rice___Blast,95.4,True,matched_profile,23.7365665435791,24.97043228149414,Grape___Esca_(Black_Measles)
+other_plants,dataset/unknown_test/other_plants/RGB/15. Populus alba/iPAD2_C15_EX07.JPG,Rice___Blast,85.85,True,matched_profile,24.828563690185547,24.97043228149414,Grape___Esca_(Black_Measles)
+other_plants,dataset/unknown_test/other_plants/RGB/15. Populus alba/iPAD2_C15_EX08.JPG,Grape___Esca_(Black_Measles),60.04,False,feature_distance,18.263750076293945,15.867803573608398,Grape___Esca_(Black_Measles)
+other_plants,dataset/unknown_test/other_plants/RGB/15. Populus alba/iPAD2_C15_EX09.JPG,Rice___Blast,66.86,False,feature_distance,25.74016571044922,24.97043228149414,Tomato___Late_blight
+other_plants,dataset/unknown_test/other_plants/RGB/15. Populus alba/iPAD2_C15_EX10.JPG,Tomato___Late_blight,78.04,True,matched_profile,18.56195068359375,19.721282958984375,Tomato___Late_blight
+other_plants,dataset/unknown_test/other_plants/RGB/16. Acer negundo/iPAD2_C16_EX01.JPG,Tomato___Septoria_leaf_spot,37.1,False,low_confidence,,,
+other_plants,dataset/unknown_test/other_plants/RGB/16. Acer negundo/iPAD2_C16_EX02.JPG,Tomato___Target_Spot,58.79,False,feature_distance,21.44256019592285,18.863468170166016,Potato___Late_blight
+other_plants,dataset/unknown_test/other_plants/RGB/16. Acer negundo/iPAD2_C16_EX03.JPG,Rice___Blast,43.01,False,low_confidence,,,
+other_plants,dataset/unknown_test/other_plants/RGB/16. Acer negundo/iPAD2_C16_EX04.JPG,Banana___cordana,98.84,True,matched_profile,21.979278564453125,22.09589195251465,Banana___cordana
+other_plants,dataset/unknown_test/other_plants/RGB/16. Acer negundo/iPAD2_C16_EX05.JPG,Apple___Cedar_apple_rust,44.98,False,low_confidence,,,
+other_plants,dataset/unknown_test/other_plants/RGB/16. Acer negundo/iPAD2_C16_EX06.JPG,Tomato___Late_blight,98.79,False,feature_distance,19.85960578918457,19.721282958984375,Tomato___Late_blight
+other_plants,dataset/unknown_test/other_plants/RGB/16. Acer negundo/iPAD2_C16_EX07.JPG,Tomato___Late_blight,100.0,False,feature_distance,22.505504608154297,19.721282958984375,Mango___Cutting_Weevil
+other_plants,dataset/unknown_test/other_plants/RGB/16. Acer negundo/iPAD2_C16_EX08.JPG,Rice___Blast,96.6,True,matched_profile,23.757251739501953,24.97043228149414,Mango___Cutting_Weevil
+other_plants,dataset/unknown_test/other_plants/RGB/16. Acer negundo/iPAD2_C16_EX09.JPG,Tomato___Late_blight,87.17,False,feature_distance,21.71541404724121,19.721282958984375,Tomato___Late_blight
+other_plants,dataset/unknown_test/other_plants/RGB/16. Acer negundo/iPAD2_C16_EX10.JPG,Tomato___Late_blight,63.78,False,feature_distance,22.158105850219727,19.721282958984375,Tomato___Late_blight
+other_plants,dataset/unknown_test/other_plants/RGB/17. Taxus bacatta/iPAD2_C17_EX01.JPG,Tomato___Leaf_Mold,50.52,False,feature_distance,22.394947052001953,17.559589385986328,Peach___Bacterial_spot
+other_plants,dataset/unknown_test/other_plants/RGB/17. Taxus bacatta/iPAD2_C17_EX02.JPG,Tomato___Tomato_mosaic_virus,88.52,False,feature_distance,22.974206924438477,18.61347198486328,Peach___Bacterial_spot
+unsupported_plants,dataset/unknown_test/unsupported_plants/images (1).jpeg,Rice___Blast,85.36,False,feature_distance,25.844837188720703,24.97043228149414,Banana___healthy
+unsupported_plants,dataset/unknown_test/unsupported_plants/images (10).jpeg,Apple___Cedar_apple_rust,74.61,False,feature_distance,22.123291015625,21.56960678100586,Tomato___Late_blight
+unsupported_plants,dataset/unknown_test/unsupported_plants/images (11).jpeg,Mango___healthy,99.11,False,feature_distance,23.865556716918945,21.27459144592285,Mango___healthy
+unsupported_plants,dataset/unknown_test/unsupported_plants/images (12).jpeg,Rice___Bacterialblight,67.92,True,matched_profile,18.159255981445312,24.726938247680664,Rice___Bacterialblight
+unsupported_plants,dataset/unknown_test/unsupported_plants/images (13).jpeg,Rice___Tungro,99.99,False,feature_distance,19.95856285095215,19.94704818725586,Rice___Tungro
+unsupported_plants,dataset/unknown_test/unsupported_plants/images (14).jpeg,Rice___Tungro,96.4,False,feature_distance,22.149255752563477,19.94704818725586,Rice___Tungro
+unsupported_plants,dataset/unknown_test/unsupported_plants/images (15).jpeg,Rice___Blast,93.87,True,matched_profile,21.9003963470459,24.97043228149414,Rice___Bacterialblight
+unsupported_plants,dataset/unknown_test/unsupported_plants/images (16).jpeg,Rice___Tungro,98.79,False,feature_distance,23.035036087036133,19.94704818725586,Rice___Bacterialblight
+unsupported_plants,dataset/unknown_test/unsupported_plants/images (17).jpeg,Rice___Bacterialblight,100.0,True,matched_profile,16.710037231445312,24.726938247680664,Rice___Bacterialblight
+unsupported_plants,dataset/unknown_test/unsupported_plants/images (18).jpeg,Rice___Bacterialblight,99.99,True,matched_profile,18.688528060913086,24.726938247680664,Rice___Bacterialblight
+unsupported_plants,dataset/unknown_test/unsupported_plants/images (19).jpeg,Rice___Blast,43.01,False,low_confidence,,,
+unsupported_plants,dataset/unknown_test/unsupported_plants/images (2).jpeg,Raspberry___healthy,99.97,False,feature_distance,23.82723045349121,16.88538360595703,Banana___healthy
+unsupported_plants,dataset/unknown_test/unsupported_plants/images (20).jpeg,Rice___Tungro,68.6,False,feature_distance,28.204975128173828,19.94704818725586,Rice___Tungro
+unsupported_plants,dataset/unknown_test/unsupported_plants/images (21).jpeg,Rice___Blast,100.0,True,matched_profile,21.202882766723633,24.97043228149414,Rice___Blast
+unsupported_plants,dataset/unknown_test/unsupported_plants/images (22).jpeg,Cherry_(including_sour)___healthy,88.47,False,feature_distance,23.26265525817871,15.744919776916504,Mango___Cutting_Weevil
+unsupported_plants,dataset/unknown_test/unsupported_plants/images (23).jpeg,Rice___Brownspot,94.63,True,matched_profile,24.188974380493164,24.275524139404297,Rice___Bacterialblight
+unsupported_plants,dataset/unknown_test/unsupported_plants/images (24).jpeg,Strawberry___Leaf_scorch,100.0,False,feature_distance,22.947189331054688,19.2470703125,Rice___Blast
+unsupported_plants,dataset/unknown_test/unsupported_plants/images (25).jpeg,Rice___Bacterialblight,90.83,True,matched_profile,18.493061065673828,24.726938247680664,Rice___Bacterialblight
+unsupported_plants,dataset/unknown_test/unsupported_plants/images (26).jpeg,Tomato___Late_blight,50.08,False,feature_distance,24.956680297851562,19.721282958984375,Tomato___Late_blight
+unsupported_plants,dataset/unknown_test/unsupported_plants/images (27).jpeg,Strawberry___Leaf_scorch,98.54,False,feature_distance,23.48651695251465,19.2470703125,Tomato___Late_blight
+unsupported_plants,dataset/unknown_test/unsupported_plants/images (28).jpeg,Strawberry___Leaf_scorch,100.0,False,feature_distance,24.5342960357666,19.2470703125,Tomato___Late_blight
+unsupported_plants,dataset/unknown_test/unsupported_plants/images (29).jpeg,Tomato___Late_blight,99.82,False,feature_distance,22.643238067626953,19.721282958984375,Tomato___Late_blight
+unsupported_plants,dataset/unknown_test/unsupported_plants/images (3).jpeg,Rice___Tungro,99.33,False,feature_distance,25.647977828979492,19.94704818725586,Banana___healthy
+unsupported_plants,dataset/unknown_test/unsupported_plants/images (30).jpeg,Grape___Black_rot,99.97,False,feature_distance,23.897581100463867,15.984307289123535,Grape___Black_rot
+unsupported_plants,dataset/unknown_test/unsupported_plants/images (31).jpeg,Mango___Bacterial_Canker,58.89,False,feature_distance,20.336376190185547,20.274681091308594,Mango___Bacterial_Canker
+unsupported_plants,dataset/unknown_test/unsupported_plants/images (32).jpeg,Banana___pestalotiopsis,72.49,False,feature_distance,25.112031936645508,22.30856704711914,Money_Plant___Manganese_Toxicity
+unsupported_plants,dataset/unknown_test/unsupported_plants/images (33).jpeg,Mango___Bacterial_Canker,97.84,False,feature_distance,20.934324264526367,20.274681091308594,Mango___healthy
+unsupported_plants,dataset/unknown_test/unsupported_plants/images (34).jpeg,Raspberry___healthy,94.19,False,feature_distance,25.195112228393555,16.88538360595703,Rice___Tungro
+unsupported_plants,dataset/unknown_test/unsupported_plants/images (35).jpeg,Mango___Bacterial_Canker,97.84,False,feature_distance,20.934324264526367,20.274681091308594,Mango___healthy
+unsupported_plants,dataset/unknown_test/unsupported_plants/images (36).jpeg,Rice___Blast,88.5,True,matched_profile,23.2131404876709,24.97043228149414,Mango___Bacterial_Canker
+unsupported_plants,dataset/unknown_test/unsupported_plants/images (37).jpeg,Rice___Blast,99.81,False,feature_distance,25.278749465942383,24.97043228149414,Mango___Bacterial_Canker
+unsupported_plants,dataset/unknown_test/unsupported_plants/images (38).jpeg,Mango___Bacterial_Canker,93.19,True,matched_profile,19.426870346069336,20.274681091308594,Mango___Bacterial_Canker
+unsupported_plants,dataset/unknown_test/unsupported_plants/images (39).jpeg,Rice___Bacterialblight,97.1,True,matched_profile,21.203651428222656,24.726938247680664,Rice___Bacterialblight
+unsupported_plants,dataset/unknown_test/unsupported_plants/images (4).jpeg,Raspberry___healthy,62.95,False,feature_distance,27.150503158569336,16.88538360595703,Banana___healthy
+unsupported_plants,dataset/unknown_test/unsupported_plants/images (40).jpeg,Tomato___Late_blight,64.19,True,matched_profile,18.94101905822754,19.721282958984375,Tomato___Early_blight
+unsupported_plants,dataset/unknown_test/unsupported_plants/images (41).jpeg,Raspberry___healthy,61.64,False,feature_distance,19.954696655273438,16.88538360595703,Tomato___Late_blight
+unsupported_plants,dataset/unknown_test/unsupported_plants/images (42).jpeg,Blueberry___healthy,78.5,True,matched_profile,17.933298110961914,19.273887634277344,Blueberry___healthy
+unsupported_plants,dataset/unknown_test/unsupported_plants/images (43).jpeg,Raspberry___healthy,99.98,False,feature_distance,18.439498901367188,16.88538360595703,Raspberry___healthy
+unsupported_plants,dataset/unknown_test/unsupported_plants/images (44).jpeg,Tomato___Target_Spot,34.12,False,low_confidence,,,
+unsupported_plants,dataset/unknown_test/unsupported_plants/images (45).jpeg,Tomato___Late_blight,90.54,True,matched_profile,18.634336471557617,19.721282958984375,Tomato___Late_blight
+unsupported_plants,dataset/unknown_test/unsupported_plants/images (46).jpeg,Mango___Bacterial_Canker,99.92,False,feature_distance,22.21245002746582,20.274681091308594,Mango___Bacterial_Canker
+unsupported_plants,dataset/unknown_test/unsupported_plants/images (47).jpeg,Strawberry___Leaf_scorch,88.47,False,feature_distance,20.451236724853516,19.2470703125,Tomato___Late_blight
+unsupported_plants,dataset/unknown_test/unsupported_plants/images (48).jpeg,Tomato___Target_Spot,69.86,False,feature_distance,19.62215232849121,18.863468170166016,Tomato___Early_blight
+unsupported_plants,dataset/unknown_test/unsupported_plants/images (49).jpeg,Mango___Bacterial_Canker,80.53,False,feature_distance,20.820302963256836,20.274681091308594,Tomato___Leaf_Mold
+unsupported_plants,dataset/unknown_test/unsupported_plants/images (5).jpeg,Rice___Blast,89.19,False,feature_distance,27.464073181152344,24.97043228149414,Peach___healthy
+unsupported_plants,dataset/unknown_test/unsupported_plants/images (6).jpeg,Banana___healthy,61.05,True,matched_profile,21.376087188720703,22.768957138061523,Banana___healthy
+unsupported_plants,dataset/unknown_test/unsupported_plants/images (7).jpeg,Raspberry___healthy,48.31,False,low_confidence,,,
+unsupported_plants,dataset/unknown_test/unsupported_plants/images (8).jpeg,"Pepper,_bell___healthy",43.77,False,low_confidence,,,
+unsupported_plants,dataset/unknown_test/unsupported_plants/images (9).jpeg,Grape___Esca_(Black_Measles),99.24,False,feature_distance,20.19874382019043,15.867803573608398,Grape___Esca_(Black_Measles)
+unsupported_plants,dataset/unknown_test/unsupported_plants/images.jpeg,Raspberry___healthy,98.61,False,feature_distance,25.485076904296875,16.88538360595703,Banana___sigatoka
+non_plants,dataset/unknown_test/non_plants/download (1).jpeg,Rice___Blast,99.14,False,feature_distance,27.58425521850586,24.97043228149414,Mango___Bacterial_Canker
+non_plants,dataset/unknown_test/non_plants/download.jpeg,Rice___Bacterialblight,59.45,False,feature_distance,25.984691619873047,24.726938247680664,Rice___Blast
+non_plants,dataset/unknown_test/non_plants/images (1).jpeg,Banana___pestalotiopsis,68.01,False,feature_distance,25.920326232910156,22.30856704711914,Banana___healthy
+non_plants,dataset/unknown_test/non_plants/images (10).jpeg,Banana___pestalotiopsis,49.27,False,low_confidence,,,
+non_plants,dataset/unknown_test/non_plants/images (11).jpeg,Mango___Die_Back,99.98,False,feature_distance,24.999103546142578,19.588796615600586,Mango___Die_Back
+non_plants,dataset/unknown_test/non_plants/images (12).jpeg,Rice___Blast,48.47,False,low_confidence,,,
+non_plants,dataset/unknown_test/non_plants/images (13).jpeg,Money_Plant___Bacterial_Wilt,99.77,False,feature_distance,31.268678665161133,19.73740577697754,Banana___healthy
+non_plants,dataset/unknown_test/non_plants/images (14).jpeg,Money_Plant___Bacterial_Wilt,99.97,False,feature_distance,29.182395935058594,19.73740577697754,Money_Plant___Manganese_Toxicity
+non_plants,dataset/unknown_test/non_plants/images (15).jpeg,Tomato___healthy,99.97,False,feature_distance,24.136276245117188,19.565980911254883,Strawberry___Leaf_scorch
+non_plants,dataset/unknown_test/non_plants/images (16).jpeg,Money_Plant___Bacterial_Wilt,99.91,False,feature_distance,22.913658142089844,19.73740577697754,Money_Plant___Manganese_Toxicity
+non_plants,dataset/unknown_test/non_plants/images (17).jpeg,Rice___Blast,99.98,True,matched_profile,24.115285873413086,24.97043228149414,Money_Plant___Manganese_Toxicity
+non_plants,dataset/unknown_test/non_plants/images (18).jpeg,Tomato___Late_blight,65.86,False,feature_distance,23.80490493774414,19.721282958984375,Banana___healthy
+non_plants,dataset/unknown_test/non_plants/images (19).jpeg,Rice___Bacterialblight,96.89,False,feature_distance,25.010133743286133,24.726938247680664,Banana___cordana
+non_plants,dataset/unknown_test/non_plants/images (2).jpeg,Rice___Bacterialblight,99.51,False,feature_distance,26.742921829223633,24.726938247680664,Banana___healthy
+non_plants,dataset/unknown_test/non_plants/images (20).jpeg,Money_Plant___Manganese_Toxicity,65.92,False,feature_distance,23.351394653320312,19.067970275878906,Money_Plant___Manganese_Toxicity
+non_plants,dataset/unknown_test/non_plants/images (21).jpeg,Tomato___Late_blight,68.29,False,feature_distance,22.563030242919922,19.721282958984375,Money_Plant___Manganese_Toxicity
+non_plants,dataset/unknown_test/non_plants/images (22).jpeg,Rice___Bacterialblight,100.0,False,feature_distance,27.383676528930664,24.726938247680664,Tomato___Late_blight
+non_plants,dataset/unknown_test/non_plants/images (23).jpeg,Mango___Powdery_Mildew,76.26,False,feature_distance,27.264001846313477,20.682735443115234,Mango___Die_Back
+non_plants,dataset/unknown_test/non_plants/images (24).jpeg,Rice___Tungro,100.0,False,feature_distance,21.82284164428711,19.94704818725586,Rice___Tungro
+non_plants,dataset/unknown_test/non_plants/images (25).jpeg,Mango___Die_Back,63.17,False,feature_distance,24.26738929748535,19.588796615600586,Grape___Leaf_blight_(Isariopsis_Leaf_Spot)
+non_plants,dataset/unknown_test/non_plants/images (26).jpeg,Rice___Tungro,70.87,False,feature_distance,28.581687927246094,19.94704818725586,Banana___healthy
+non_plants,dataset/unknown_test/non_plants/images (27).jpeg,Tomato___Late_blight,99.4,False,feature_distance,21.007905960083008,19.721282958984375,Tomato___Late_blight
+non_plants,dataset/unknown_test/non_plants/images (28).jpeg,Rice___Bacterialblight,99.91,False,feature_distance,26.66710090637207,24.726938247680664,Rice___Blast
+non_plants,dataset/unknown_test/non_plants/images (29).jpeg,Rice___Blast,95.85,False,feature_distance,26.086320877075195,24.97043228149414,Rice___Blast
+non_plants,dataset/unknown_test/non_plants/images (3).jpeg,Rice___Blast,99.33,False,feature_distance,26.883668899536133,24.97043228149414,Banana___healthy
+non_plants,dataset/unknown_test/non_plants/images (30).jpeg,Rice___Bacterialblight,75.97,False,feature_distance,25.6613826751709,24.726938247680664,Rice___Blast
+non_plants,dataset/unknown_test/non_plants/images (31).jpeg,Rice___Bacterialblight,98.17,True,matched_profile,23.203842163085938,24.726938247680664,Rice___Blast
+non_plants,dataset/unknown_test/non_plants/images (32).jpeg,Rice___Bacterialblight,99.57,False,feature_distance,24.763029098510742,24.726938247680664,Tomato___Late_blight
+non_plants,dataset/unknown_test/non_plants/images (33).jpeg,Rice___Bacterialblight,52.68,False,feature_distance,26.20136833190918,24.726938247680664,Tomato___Late_blight
+non_plants,dataset/unknown_test/non_plants/images (34).jpeg,Rice___Bacterialblight,95.36,False,feature_distance,28.25628089904785,24.726938247680664,Rice___Blast
+non_plants,dataset/unknown_test/non_plants/images (35).jpeg,Rice___Bacterialblight,99.64,False,feature_distance,25.47760581970215,24.726938247680664,Rice___Blast
+non_plants,dataset/unknown_test/non_plants/images (36).jpeg,Rice___Bacterialblight,99.99,False,feature_distance,25.123733520507812,24.726938247680664,Tomato___Late_blight
+non_plants,dataset/unknown_test/non_plants/images (37).jpeg,Rice___Bacterialblight,100.0,False,feature_distance,28.41797637939453,24.726938247680664,Rice___Blast
+non_plants,dataset/unknown_test/non_plants/images (38).jpeg,Rice___Brownspot,90.24,True,matched_profile,23.574420928955078,24.275524139404297,Rice___Blast
+non_plants,dataset/unknown_test/non_plants/images (39).jpeg,Rice___Blast,99.77,True,matched_profile,23.550058364868164,24.97043228149414,Rice___Blast
+non_plants,dataset/unknown_test/non_plants/images (4).jpeg,Rice___Bacterialblight,96.74,True,matched_profile,23.86330795288086,24.726938247680664,Rice___Blast
+non_plants,dataset/unknown_test/non_plants/images (40).jpeg,Rice___Blast,99.61,True,matched_profile,20.47212028503418,24.97043228149414,Rice___Blast
+non_plants,dataset/unknown_test/non_plants/images (41).jpeg,Rice___Bacterialblight,95.86,False,feature_distance,25.66160011291504,24.726938247680664,Rice___Blast
+non_plants,dataset/unknown_test/non_plants/images (42).jpeg,Grape___Esca_(Black_Measles),98.97,False,feature_distance,24.175565719604492,15.867803573608398,Rice___Blast
+non_plants,dataset/unknown_test/non_plants/images (43).jpeg,Rice___Blast,100.0,True,matched_profile,24.851469039916992,24.97043228149414,Rice___Blast
+non_plants,dataset/unknown_test/non_plants/images (44).jpeg,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,88.22,False,feature_distance,27.406728744506836,23.181615829467773,Banana___healthy
+non_plants,dataset/unknown_test/non_plants/images (45).jpeg,Rice___Blast,99.7,True,matched_profile,24.73251724243164,24.97043228149414,Rice___Blast
+non_plants,dataset/unknown_test/non_plants/images (46).jpeg,Rice___Brownspot,70.77,False,feature_distance,25.56471824645996,24.275524139404297,Peach___Bacterial_spot
+non_plants,dataset/unknown_test/non_plants/images (47).jpeg,Rice___Blast,98.71,False,feature_distance,26.623735427856445,24.97043228149414,Rice___Blast
+non_plants,dataset/unknown_test/non_plants/images (5).jpeg,Banana___pestalotiopsis,93.04,False,feature_distance,28.080472946166992,22.30856704711914,Banana___healthy
+non_plants,dataset/unknown_test/non_plants/images (6).jpeg,Rice___Bacterialblight,100.0,False,feature_distance,29.759235382080078,24.726938247680664,Rice___Blast
+non_plants,dataset/unknown_test/non_plants/images (7).jpeg,Rice___Bacterialblight,49.66,False,low_confidence,,,
+non_plants,dataset/unknown_test/non_plants/images (8).jpeg,Tomato___Early_blight,48.75,False,low_confidence,,,
+non_plants,dataset/unknown_test/non_plants/images (9).jpeg,Rice___Bacterialblight,52.3,True,matched_profile,24.340194702148438,24.726938247680664,Tomato___Septoria_leaf_spot
+non_plants,dataset/unknown_test/non_plants/images.jpeg,Rice___Blast,99.99,True,matched_profile,24.92625617980957,24.97043228149414,Banana___healthy

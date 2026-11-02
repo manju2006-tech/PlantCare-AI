@@ -55,9 +55,40 @@ def create_app(config_name=None):
     # --- Database tables + default admin account ---
     init_db(app)
 
-    # --- AI model: loaded once at startup, reused for every request ---
+        # --- AI model: loaded once at startup ---
     with app.app_context():
         model_loader.load_model(app)
+
+        # --- Unknown-plant detector ---
+        app.extensions['unknown_plant_detector'] = None
+
+        if app.config.get('UNKNOWN_PLANT_CHECK', False):
+            try:
+                from utils.unknown_detector import UnknownPlantDetector
+
+                if not model_loader.is_model_ready():
+                    raise RuntimeError(
+                        "The AI model is not ready; unknown-plant "
+                        "detection could not be initialized."
+                    )
+
+                detector = UnknownPlantDetector(
+                    profile_path=app.config['UNKNOWN_PROFILE_PATH'],
+                    min_confidence=app.config.get(
+                        'UNKNOWN_MIN_CONFIDENCE', 50.0
+                    ),
+                )
+                detector.load(model_loader._model)
+
+                app.extensions['unknown_plant_detector'] = detector
+                app.logger.info(
+                    "Unknown-plant detector loaded successfully."
+                )
+
+            except Exception:
+                app.logger.exception(
+                    "Unknown-plant detector initialization failed."
+                )
 
     # --- Template globals available in every Jinja template ---
     @app.context_processor

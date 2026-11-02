@@ -1,0 +1,24 @@
+{
+    "model_name": "PlantCare AI Binary Classifier",
+    "trained_at": "2026-11-01T06:14:26.148330+00:00",
+    "image_size": [
+        224,
+        224
+    ],
+    "class_mapping": {
+        "0": "non_plant",
+        "1": "plant"
+    },
+    "plant_threshold": 0.21,
+    "validation_balanced_accuracy": 0.9834,
+    "test_metrics": {
+        "accuracy": 0.992,
+        "plant_recall": 0.9877,
+        "nonplant_recall": 1.0,
+        "true_negative": 217,
+        "false_positive": 0,
+        "false_negative": 5,
+        "true_positive": 402
+    },
+    "backbone": "MobileNetV2 ImageNet pretrained"
+}
