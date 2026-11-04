@@ -51,9 +51,15 @@
           class="navbar-brand navbar-brand-custom"
           href="{{ url_for('main.landing') }}"
         >
-          <span class="brand-mark"
-            ><i class="bi bi-flower1 text-white"></i
-          ></span>
+          <span class="brand-mark">
+            <svg class="text-white" width="22" height="22" viewBox="0 0 24 24"
+                 fill="none" aria-hidden="true" focusable="false">
+              <path d="M20 4C12 3 5 6.2 5 12.2C5 16 7.8 19 11.6 19C17.8 19 21 12 20 4Z"
+                    stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
+              <path d="M3 21L15 9M8 16V11M11 13H16"
+                    stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </span>
           {{ app_name }}
         </a>
         <button

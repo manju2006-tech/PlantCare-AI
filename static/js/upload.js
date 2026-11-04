@@ -20,6 +20,9 @@ document.addEventListener('DOMContentLoaded', function () {
   var progressLabel = document.getElementById('progressLabel');
   var errorAlert = document.getElementById('uploadError');
   var changeImageBtn = document.getElementById('changeImageBtn');
+  var unsupportedModal = document.getElementById('unsupportedPlantModal');
+  var unsupportedMessage = document.getElementById('unsupportedPlantMessage');
+  var retryUnsupportedBtn = document.getElementById('retryUnsupportedPlantBtn');
 
   var selectedFile = null;
 
@@ -103,6 +106,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   if (changeImageBtn) changeImageBtn.addEventListener('click', resetUpload);
+  if (retryUnsupportedBtn) retryUnsupportedBtn.addEventListener('click', resetUpload);
 
   uploadForm.addEventListener('submit', function (e) {
     e.preventDefault();
@@ -158,6 +162,11 @@ document.addEventListener('DOMContentLoaded', function () {
       } else {
         showError(response.error || 'Something went wrong analyzing your image.');
         progressWrap.classList.add('d-none');
+        if (response.unknown_plant && unsupportedModal && unsupportedMessage &&
+            window.bootstrap && bootstrap.Modal) {
+          unsupportedMessage.textContent = response.error || 'We could not reliably identify a supported plant in this photo.';
+          bootstrap.Modal.getOrCreateInstance(unsupportedModal).show();
+        }
       }
     };
 

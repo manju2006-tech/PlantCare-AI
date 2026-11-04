@@ -69,7 +69,49 @@ def predict():
     except Exception:
         return jsonify({'success': False, 'error': 'Failed to save the uploaded image.'}), 500
 
-    # --- Run AI inference ---
+    
+    # --- Binary plant verification ---
+    try:
+        plant_check = model_loader.predict_plant(filepath)
+
+    except model_loader.ModelNotLoadedError as exc:
+        current_app.logger.error(f"Binary classifier unavailable: {exc}")
+        try:
+            os.remove(filepath)
+        except OSError:
+            pass
+
+        return jsonify({
+            'success': False,
+            'error': 'Plant verification is temporarily unavailable. Please try again later.'
+        }), 503
+
+    except Exception as exc:
+        current_app.logger.exception("Binary plant verification failed.")
+        try:
+            os.remove(filepath)
+        except OSError:
+            pass
+
+        return jsonify({
+            'success': False,
+            'error': 'Could not verify the uploaded image. Please try another image.'
+        }), 500
+
+    # --- Reject non-plant images ---
+    if not plant_check['is_plant']:
+        try:
+            os.remove(filepath)
+        except OSError:
+            pass
+
+        return jsonify({
+            'success': False,
+            'non_plant': True,
+            'error': 'This image does not appear to contain a plant. Please upload a clear plant or leaf image.'
+        }), 422
+
+    # --- Run existing disease prediction ---
     try:
         result = model_loader.predict_image(filepath)
     except model_loader.ModelNotLoadedError as exc:
@@ -81,7 +123,9 @@ def predict():
             'error': 'Failed to analyze the image. Please try a different photo.'
         }), 500
 
-        # --- Reject images that do not match supported plant classes ---
+
+
+    # --- Reject images that do not match supported plant classes ---
     if current_app.config.get('UNKNOWN_PLANT_CHECK', False):
         detector = current_app.extensions.get('unknown_plant_detector')
 
@@ -135,11 +179,12 @@ def predict():
                 'success': False,
                 'unknown_plant': True,
                 'error': (
-                    'This image could not be verified as one of the '
-                    'supported plants. Please upload a clear, close-up '
-                    'leaf photo from a plant included in our dataset.'
+                    "We couldn't reliably identify a supported plant in this photo. "
+                    'This plant may not be supported yet. Please try a clear, '
+                    "close-up photo of a supported plant's leaf."
                 )
             }), 422
+
 
     # --- Continue the existing prediction workflow ---
     class_name = result['class_name']

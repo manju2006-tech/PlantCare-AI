@@ -64,6 +64,9 @@ class Config:
         'trained_model_57class_run2',
         'unknown_profile.npz'
     )
+    SUPPORT_DETECTOR_PATH = os.path.join(
+        basedir, 'trained_model_support', 'support_detector.npz'
+    )
     UNKNOWN_MIN_CONFIDENCE = 50.0        
     
     

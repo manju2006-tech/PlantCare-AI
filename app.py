@@ -59,12 +59,15 @@ def create_app(config_name=None):
     with app.app_context():
         model_loader.load_model(app)
 
+        # Load binary plant classifier
+        model_loader.load_binary_model(app)
+
         # --- Unknown-plant detector ---
         app.extensions['unknown_plant_detector'] = None
 
         if app.config.get('UNKNOWN_PLANT_CHECK', False):
             try:
-                from utils.unknown_detector import UnknownPlantDetector
+                from utils.support_detector import SupportedPlantDetector
 
                 if not model_loader.is_model_ready():
                     raise RuntimeError(
@@ -72,17 +75,22 @@ def create_app(config_name=None):
                         "detection could not be initialized."
                     )
 
-                detector = UnknownPlantDetector(
-                    profile_path=app.config['UNKNOWN_PROFILE_PATH'],
+                detector = SupportedPlantDetector(
+                    artifact_path=app.config['SUPPORT_DETECTOR_PATH'],
                     min_confidence=app.config.get(
                         'UNKNOWN_MIN_CONFIDENCE', 50.0
                     ),
                 )
-                detector.load(model_loader._model)
+                detector.load(
+                    model_loader._model,
+                    class_names=[model_loader._index_to_class[str(i)]
+                                 for i in range(len(model_loader._index_to_class))],
+                    model_path=app.config['MODEL_PATH'],
+                )
 
                 app.extensions['unknown_plant_detector'] = detector
                 app.logger.info(
-                    "Unknown-plant detector loaded successfully."
+                    "Learned supported-plant detector loaded successfully."
                 )
 
             except Exception:

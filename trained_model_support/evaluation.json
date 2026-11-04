@@ -1,0 +1,3849 @@
+{
+  "metadata": {
+    "format_version": 1,
+    "preprocessing": "rgb_bicubic_mobilenet_v2",
+    "disease_model_sha256": "11881b72e62a2b32c4bc8caff8855a64ba34478d13c9a15f483de70d2c595a21",
+    "class_names": [
+      "Apple___Apple_scab",
+      "Apple___Black_rot",
+      "Apple___Cedar_apple_rust",
+      "Apple___healthy",
+      "Banana___cordana",
+      "Banana___healthy",
+      "Banana___pestalotiopsis",
+      "Banana___sigatoka",
+      "Blueberry___healthy",
+      "Cherry_(including_sour)___Powdery_mildew",
+      "Cherry_(including_sour)___healthy",
+      "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot",
+      "Corn_(maize)___Common_rust_",
+      "Corn_(maize)___Northern_Leaf_Blight",
+      "Corn_(maize)___healthy",
+      "Grape___Black_rot",
+      "Grape___Esca_(Black_Measles)",
+      "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)",
+      "Grape___healthy",
+      "Mango___Anthracnose",
+      "Mango___Bacterial_Canker",
+      "Mango___Cutting_Weevil",
+      "Mango___Die_Back",
+      "Mango___Gall_Midge",
+      "Mango___Powdery_Mildew",
+      "Mango___Sooty_Mould",
+      "Mango___healthy",
+      "Money_Plant___Bacterial_Wilt",
+      "Money_Plant___Healthy",
+      "Money_Plant___Manganese_Toxicity",
+      "Orange___Haunglongbing_(Citrus_greening)",
+      "Peach___Bacterial_spot",
+      "Peach___healthy",
+      "Pepper,_bell___Bacterial_spot",
+      "Pepper,_bell___healthy",
+      "Potato___Early_blight",
+      "Potato___Late_blight",
+      "Potato___healthy",
+      "Raspberry___healthy",
+      "Rice___Bacterialblight",
+      "Rice___Blast",
+      "Rice___Brownspot",
+      "Rice___Tungro",
+      "Soybean___healthy",
+      "Squash___Powdery_mildew",
+      "Strawberry___Leaf_scorch",
+      "Strawberry___healthy",
+      "Tomato___Bacterial_spot",
+      "Tomato___Early_blight",
+      "Tomato___Late_blight",
+      "Tomato___Leaf_Mold",
+      "Tomato___Septoria_leaf_spot",
+      "Tomato___Spider_mites Two-spotted_spider_mite",
+      "Tomato___Target_Spot",
+      "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+      "Tomato___Tomato_mosaic_virus",
+      "Tomato___healthy"
+    ],
+    "image_size": [
+      224,
+      224
+    ],
+    "seed": 42,
+    "trained_at": "2026-11-04T01:21:13.707429+00:00",
+    "classifier": "RBF SVM on L2-normalized frozen MobileNetV2 features",
+    "threshold_selection": "validation only; target 95% supported acceptance, 90% rice acceptance",
+    "validation": {
+      "supported_total": 1777,
+      "supported_accepted": 1760,
+      "supported_acceptance": 0.990433,
+      "unsupported_total": 434,
+      "unsupported_accepted": 3,
+      "unsupported_rejection": 0.993088,
+      "wheat_total": 31,
+      "wheat_rejected": 31,
+      "wheat_rejection": 1.0,
+      "rice_total": 40,
+      "rice_accepted": 37,
+      "rice_acceptance": 0.925,
+      "categories": {
+        "Apple___Apple_scab": {
+          "total": 35,
+          "accepted": 35,
+          "acceptance": 1.0
+        },
+        "Apple___Black_rot": {
+          "total": 35,
+          "accepted": 35,
+          "acceptance": 1.0
+        },
+        "Apple___Cedar_apple_rust": {
+          "total": 35,
+          "accepted": 35,
+          "acceptance": 1.0
+        },
+        "Apple___healthy": {
+          "total": 35,
+          "accepted": 35,
+          "acceptance": 1.0
+        },
+        "Azadirachta indica": {
+          "total": 10,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "Banana___cordana": {
+          "total": 21,
+          "accepted": 20,
+          "acceptance": 0.952381
+        },
+        "Banana___healthy": {
+          "total": 15,
+          "accepted": 14,
+          "acceptance": 0.933333
+        },
+        "Banana___pestalotiopsis": {
+          "total": 22,
+          "accepted": 22,
+          "acceptance": 1.0
+        },
+        "Banana___sigatoka": {
+          "total": 35,
+          "accepted": 35,
+          "acceptance": 1.0
+        },
+        "Blueberry___healthy": {
+          "total": 35,
+          "accepted": 35,
+          "acceptance": 1.0
+        },
+        "Carica papaya": {
+          "total": 67,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "Cherry_(including_sour)___Powdery_mildew": {
+          "total": 35,
+          "accepted": 34,
+          "acceptance": 0.971429
+        },
+        "Cherry_(including_sour)___healthy": {
+          "total": 35,
+          "accepted": 35,
+          "acceptance": 1.0
+        },
+        "Cocos nucifera": {
+          "total": 10,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
+          "total": 35,
+          "accepted": 35,
+          "acceptance": 1.0
+        },
+        "Corn_(maize)___Common_rust_": {
+          "total": 35,
+          "accepted": 34,
+          "acceptance": 0.971429
+        },
+        "Corn_(maize)___Northern_Leaf_Blight": {
+          "total": 35,
+          "accepted": 35,
+          "acceptance": 1.0
+        },
+        "Corn_(maize)___healthy": {
+          "total": 35,
+          "accepted": 35,
+          "acceptance": 1.0
+        },
+        "Grape___Black_rot": {
+          "total": 35,
+          "accepted": 35,
+          "acceptance": 1.0
+        },
+        "Grape___Esca_(Black_Measles)": {
+          "total": 35,
+          "accepted": 35,
+          "acceptance": 1.0
+        },
+        "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
+          "total": 35,
+          "accepted": 35,
+          "acceptance": 1.0
+        },
+        "Grape___healthy": {
+          "total": 35,
+          "accepted": 35,
+          "acceptance": 1.0
+        },
+        "Mango___Anthracnose": {
+          "total": 35,
+          "accepted": 35,
+          "acceptance": 1.0
+        },
+        "Mango___Bacterial_Canker": {
+          "total": 35,
+          "accepted": 35,
+          "acceptance": 1.0
+        },
+        "Mango___Cutting_Weevil": {
+          "total": 35,
+          "accepted": 35,
+          "acceptance": 1.0
+        },
+        "Mango___Die_Back": {
+          "total": 35,
+          "accepted": 35,
+          "acceptance": 1.0
+        },
+        "Mango___Gall_Midge": {
+          "total": 35,
+          "accepted": 35,
+          "acceptance": 1.0
+        },
+        "Mango___Powdery_Mildew": {
+          "total": 35,
+          "accepted": 35,
+          "acceptance": 1.0
+        },
+        "Mango___Sooty_Mould": {
+          "total": 35,
+          "accepted": 35,
+          "acceptance": 1.0
+        },
+        "Mango___healthy": {
+          "total": 35,
+          "accepted": 35,
+          "acceptance": 1.0
+        },
+        "Money_Plant___Bacterial_Wilt": {
+          "total": 3,
+          "accepted": 3,
+          "acceptance": 1.0
+        },
+        "Money_Plant___Healthy": {
+          "total": 27,
+          "accepted": 27,
+          "acceptance": 1.0
+        },
+        "Money_Plant___Manganese_Toxicity": {
+          "total": 4,
+          "accepted": 4,
+          "acceptance": 1.0
+        },
+        "Orange___Haunglongbing_(Citrus_greening)": {
+          "total": 35,
+          "accepted": 35,
+          "acceptance": 1.0
+        },
+        "Peach___Bacterial_spot": {
+          "total": 35,
+          "accepted": 35,
+          "acceptance": 1.0
+        },
+        "Peach___healthy": {
+          "total": 35,
+          "accepted": 35,
+          "acceptance": 1.0
+        },
+        "Pepper,_bell___Bacterial_spot": {
+          "total": 35,
+          "accepted": 35,
+          "acceptance": 1.0
+        },
+        "Pepper,_bell___healthy": {
+          "total": 35,
+          "accepted": 34,
+          "acceptance": 0.971429
+        },
+        "Potato___Early_blight": {
+          "total": 35,
+          "accepted": 35,
+          "acceptance": 1.0
+        },
+        "Potato___Late_blight": {
+          "total": 35,
+          "accepted": 35,
+          "acceptance": 1.0
+        },
+        "Potato___healthy": {
+          "total": 35,
+          "accepted": 35,
+          "acceptance": 1.0
+        },
+        "Psidium guajava": {
+          "total": 10,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "Raspberry___healthy": {
+          "total": 35,
+          "accepted": 35,
+          "acceptance": 1.0
+        },
+        "Rice___Bacterialblight": {
+          "total": 10,
+          "accepted": 10,
+          "acceptance": 1.0
+        },
+        "Rice___Blast": {
+          "total": 10,
+          "accepted": 10,
+          "acceptance": 1.0
+        },
+        "Rice___Brownspot": {
+          "total": 10,
+          "accepted": 9,
+          "acceptance": 0.9
+        },
+        "Rice___Tungro": {
+          "total": 10,
+          "accepted": 8,
+          "acceptance": 0.8
+        },
+        "Rosa": {
+          "total": 10,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "Soybean___healthy": {
+          "total": 35,
+          "accepted": 35,
+          "acceptance": 1.0
+        },
+        "Squash___Powdery_mildew": {
+          "total": 35,
+          "accepted": 35,
+          "acceptance": 1.0
+        },
+        "Strawberry___Leaf_scorch": {
+          "total": 35,
+          "accepted": 34,
+          "acceptance": 0.971429
+        },
+        "Strawberry___healthy": {
+          "total": 35,
+          "accepted": 35,
+          "acceptance": 1.0
+        },
+        "Tomato___Bacterial_spot": {
+          "total": 35,
+          "accepted": 35,
+          "acceptance": 1.0
+        },
+        "Tomato___Early_blight": {
+          "total": 35,
+          "accepted": 34,
+          "acceptance": 0.971429
+        },
+        "Tomato___Late_blight": {
+          "total": 35,
+          "accepted": 35,
+          "acceptance": 1.0
+        },
+        "Tomato___Leaf_Mold": {
+          "total": 35,
+          "accepted": 35,
+          "acceptance": 1.0
+        },
+        "Tomato___Septoria_leaf_spot": {
+          "total": 35,
+          "accepted": 33,
+          "acceptance": 0.942857
+        },
+        "Tomato___Spider_mites Two-spotted_spider_mite": {
+          "total": 35,
+          "accepted": 33,
+          "acceptance": 0.942857
+        },
+        "Tomato___Target_Spot": {
+          "total": 35,
+          "accepted": 35,
+          "acceptance": 1.0
+        },
+        "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+          "total": 35,
+          "accepted": 34,
+          "acceptance": 0.971429
+        },
+        "Tomato___Tomato_mosaic_virus": {
+          "total": 35,
+          "accepted": 34,
+          "acceptance": 0.971429
+        },
+        "Tomato___healthy": {
+          "total": 35,
+          "accepted": 34,
+          "acceptance": 0.971429
+        },
+        "inat:Abies sibirica": {
+          "total": 2,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Abutilon grandifolium": {
+          "total": 3,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Acacia extensa": {
+          "total": 4,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Acalypha virginica": {
+          "total": 2,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Acer platanoides": {
+          "total": 1,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Acer rubrum": {
+          "total": 1,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Anthoxanthum odoratum": {
+          "total": 1,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Aristea racemosa": {
+          "total": 2,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Asplenium platyneuron": {
+          "total": 1,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Asteriscium closii": {
+          "total": 1,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Avicennia marina": {
+          "total": 5,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Baccharis halimifolia": {
+          "total": 1,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Banksia attenuata": {
+          "total": 1,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Burchardia umbellata": {
+          "total": 5,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Caladenia pusilla": {
+          "total": 1,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Calamagrostis epigejos": {
+          "total": 1,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Calochilus herbaceus": {
+          "total": 1,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Calochilus robertsonii": {
+          "total": 1,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Carya illinoinensis": {
+          "total": 6,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Cephalanthus occidentalis": {
+          "total": 1,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Chloraea tectata": {
+          "total": 1,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Croton monanthogynus": {
+          "total": 4,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Cytisus scoparius": {
+          "total": 1,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Datura wrightii": {
+          "total": 1,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Encelia actoni": {
+          "total": 1,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Encelia canescens": {
+          "total": 1,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Ephedra nevadensis": {
+          "total": 2,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Equisetum hyemale": {
+          "total": 1,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Eulophia cochlearis": {
+          "total": 5,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Galinsoga quadriradiata": {
+          "total": 2,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Geranium robertianum": {
+          "total": 4,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Grevillea sphacelata": {
+          "total": 6,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Houttuynia cordata": {
+          "total": 1,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Humulus lupulus": {
+          "total": 1,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Ipomoea triloba": {
+          "total": 16,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Isopogon anemonifolius": {
+          "total": 8,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Isotoma hypocrateriformis": {
+          "total": 1,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Jacksonia alata": {
+          "total": 4,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Lamium galeobdolon": {
+          "total": 1,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Lantana urticoides": {
+          "total": 2,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Liquidambar styraciflua": {
+          "total": 2,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Lomandra multiflora": {
+          "total": 1,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Lysimachia arvensis": {
+          "total": 1,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Melaleuca thymifolia": {
+          "total": 6,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Muehlenbeckia complexa": {
+          "total": 1,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Neottia nidus-avis": {
+          "total": 2,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Nyssa sylvatica": {
+          "total": 4,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Oenothera speciosa": {
+          "total": 1,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Paederia foetida": {
+          "total": 1,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Persoonia pinifolia": {
+          "total": 6,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Plantago major": {
+          "total": 3,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Polystichum acrostichoides": {
+          "total": 1,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Pseudotsuga menziesii": {
+          "total": 4,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Quercus macrocarpa": {
+          "total": 8,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Ranunculus acaulis": {
+          "total": 1,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Rivina humilis": {
+          "total": 6,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Rosa woodsii": {
+          "total": 2,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Satureja montana": {
+          "total": 3,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Scaevola canescens": {
+          "total": 1,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Senecio angulatus": {
+          "total": 4,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Senecio vulgaris": {
+          "total": 6,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Sherardia arvensis": {
+          "total": 1,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Sida rhombifolia": {
+          "total": 1,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Smallanthus uvedalia": {
+          "total": 2,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Smilax bona-nox": {
+          "total": 4,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Sorghastrum nutans": {
+          "total": 9,
+          "accepted": 1,
+          "acceptance": 0.111111
+        },
+        "inat:Tetraria thermalis": {
+          "total": 1,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Themeda triandra": {
+          "total": 2,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Tipularia discolor": {
+          "total": 3,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "inat:Ulmus americana": {
+          "total": 7,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "leaf:Acer palmaturu": {
+          "total": 16,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "leaf:Arisarum vulgare": {
+          "total": 9,
+          "accepted": 2,
+          "acceptance": 0.222222
+        },
+        "leaf:Bougainvillea sp": {
+          "total": 13,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "leaf:Crataegus monogyna": {
+          "total": 8,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "leaf:Geranium sp": {
+          "total": 10,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "leaf:Ilex aquifolium": {
+          "total": 10,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "leaf:Nerium oleander": {
+          "total": 11,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "leaf:Populus nigra": {
+          "total": 10,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "leaf:Pseudosasa japonica": {
+          "total": 11,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "wheat:wheat_damaged/septoria": {
+          "total": 8,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "wheat:wheat_damaged/strip_rust": {
+          "total": 8,
+          "accepted": 0,
+          "acceptance": 0.0
+        },
+        "wheat:wheat_healthy": {
+          "total": 15,
+          "accepted": 0,
+          "acceptance": 0.0
+        }
+      }
+    },
+    "limitations": [
+      "Finite unsupported examples cannot guarantee rejection of every unseen plant.",
+      "Known-source augmentation groups are disjoint for this detector; the frozen disease model was previously trained on this corpus.",
+      "The old centroid baseline below uses bicubic preprocessing for a shared comparison; the legacy app used bilinear for centroid extraction."
+    ]
+  },
+  "candidates_validation_only": [
+    {
+      "C": 1.0,
+      "gamma": 1.0,
+      "threshold": 0.46418159610793563,
+      "supported_total": 1777,
+      "supported_accepted": 1758,
+      "supported_acceptance": 0.989308,
+      "unsupported_total": 434,
+      "unsupported_accepted": 4,
+      "unsupported_rejection": 0.990783,
+      "wheat_total": 31,
+      "wheat_rejected": 31,
+      "wheat_rejection": 1.0,
+      "rice_total": 40,
+      "rice_accepted": 36,
+      "rice_acceptance": 0.9
+    },
+    {
+      "C": 1.0,
+      "gamma": 4.0,
+      "threshold": 0.224133978877725,
+      "supported_total": 1777,
+      "supported_accepted": 1761,
+      "supported_acceptance": 0.990996,
+      "unsupported_total": 434,
+      "unsupported_accepted": 8,
+      "unsupported_rejection": 0.981567,
+      "wheat_total": 31,
+      "wheat_rejected": 31,
+      "wheat_rejection": 1.0,
+      "rice_total": 40,
+      "rice_accepted": 36,
+      "rice_acceptance": 0.9
+    },
+    {
+      "C": 10.0,
+      "gamma": 1.0,
+      "threshold": 0.439953955431734,
+      "supported_total": 1777,
+      "supported_accepted": 1760,
+      "supported_acceptance": 0.990433,
+      "unsupported_total": 434,
+      "unsupported_accepted": 3,
+      "unsupported_rejection": 0.993088,
+      "wheat_total": 31,
+      "wheat_rejected": 31,
+      "wheat_rejection": 1.0,
+      "rice_total": 40,
+      "rice_accepted": 37,
+      "rice_acceptance": 0.925
+    },
+    {
+      "C": 10.0,
+      "gamma": 4.0,
+      "threshold": 0.21859100856166744,
+      "supported_total": 1777,
+      "supported_accepted": 1761,
+      "supported_acceptance": 0.990996,
+      "unsupported_total": 434,
+      "unsupported_accepted": 7,
+      "unsupported_rejection": 0.983871,
+      "wheat_total": 31,
+      "wheat_rejected": 31,
+      "wheat_rejection": 1.0,
+      "rice_total": 40,
+      "rice_accepted": 36,
+      "rice_acceptance": 0.9
+    },
+    {
+      "C": 100.0,
+      "gamma": 1.0,
+      "threshold": 0.4400836605775863,
+      "supported_total": 1777,
+      "supported_accepted": 1760,
+      "supported_acceptance": 0.990433,
+      "unsupported_total": 434,
+      "unsupported_accepted": 3,
+      "unsupported_rejection": 0.993088,
+      "wheat_total": 31,
+      "wheat_rejected": 31,
+      "wheat_rejection": 1.0,
+      "rice_total": 40,
+      "rice_accepted": 37,
+      "rice_acceptance": 0.925
+    },
+    {
+      "C": 100.0,
+      "gamma": 4.0,
+      "threshold": 0.21859100856166744,
+      "supported_total": 1777,
+      "supported_accepted": 1761,
+      "supported_acceptance": 0.990996,
+      "unsupported_total": 434,
+      "unsupported_accepted": 7,
+      "unsupported_rejection": 0.983871,
+      "wheat_total": 31,
+      "wheat_rejected": 31,
+      "wheat_rejection": 1.0,
+      "rice_total": 40,
+      "rice_accepted": 36,
+      "rice_acceptance": 0.9
+    }
+  ],
+  "validation": {
+    "supported_total": 1777,
+    "supported_accepted": 1760,
+    "supported_acceptance": 0.990433,
+    "unsupported_total": 434,
+    "unsupported_accepted": 3,
+    "unsupported_rejection": 0.993088,
+    "wheat_total": 31,
+    "wheat_rejected": 31,
+    "wheat_rejection": 1.0,
+    "rice_total": 40,
+    "rice_accepted": 37,
+    "rice_acceptance": 0.925,
+    "categories": {
+      "Apple___Apple_scab": {
+        "total": 35,
+        "accepted": 35,
+        "acceptance": 1.0
+      },
+      "Apple___Black_rot": {
+        "total": 35,
+        "accepted": 35,
+        "acceptance": 1.0
+      },
+      "Apple___Cedar_apple_rust": {
+        "total": 35,
+        "accepted": 35,
+        "acceptance": 1.0
+      },
+      "Apple___healthy": {
+        "total": 35,
+        "accepted": 35,
+        "acceptance": 1.0
+      },
+      "Azadirachta indica": {
+        "total": 10,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "Banana___cordana": {
+        "total": 21,
+        "accepted": 20,
+        "acceptance": 0.952381
+      },
+      "Banana___healthy": {
+        "total": 15,
+        "accepted": 14,
+        "acceptance": 0.933333
+      },
+      "Banana___pestalotiopsis": {
+        "total": 22,
+        "accepted": 22,
+        "acceptance": 1.0
+      },
+      "Banana___sigatoka": {
+        "total": 35,
+        "accepted": 35,
+        "acceptance": 1.0
+      },
+      "Blueberry___healthy": {
+        "total": 35,
+        "accepted": 35,
+        "acceptance": 1.0
+      },
+      "Carica papaya": {
+        "total": 67,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "Cherry_(including_sour)___Powdery_mildew": {
+        "total": 35,
+        "accepted": 34,
+        "acceptance": 0.971429
+      },
+      "Cherry_(including_sour)___healthy": {
+        "total": 35,
+        "accepted": 35,
+        "acceptance": 1.0
+      },
+      "Cocos nucifera": {
+        "total": 10,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
+        "total": 35,
+        "accepted": 35,
+        "acceptance": 1.0
+      },
+      "Corn_(maize)___Common_rust_": {
+        "total": 35,
+        "accepted": 34,
+        "acceptance": 0.971429
+      },
+      "Corn_(maize)___Northern_Leaf_Blight": {
+        "total": 35,
+        "accepted": 35,
+        "acceptance": 1.0
+      },
+      "Corn_(maize)___healthy": {
+        "total": 35,
+        "accepted": 35,
+        "acceptance": 1.0
+      },
+      "Grape___Black_rot": {
+        "total": 35,
+        "accepted": 35,
+        "acceptance": 1.0
+      },
+      "Grape___Esca_(Black_Measles)": {
+        "total": 35,
+        "accepted": 35,
+        "acceptance": 1.0
+      },
+      "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
+        "total": 35,
+        "accepted": 35,
+        "acceptance": 1.0
+      },
+      "Grape___healthy": {
+        "total": 35,
+        "accepted": 35,
+        "acceptance": 1.0
+      },
+      "Mango___Anthracnose": {
+        "total": 35,
+        "accepted": 35,
+        "acceptance": 1.0
+      },
+      "Mango___Bacterial_Canker": {
+        "total": 35,
+        "accepted": 35,
+        "acceptance": 1.0
+      },
+      "Mango___Cutting_Weevil": {
+        "total": 35,
+        "accepted": 35,
+        "acceptance": 1.0
+      },
+      "Mango___Die_Back": {
+        "total": 35,
+        "accepted": 35,
+        "acceptance": 1.0
+      },
+      "Mango___Gall_Midge": {
+        "total": 35,
+        "accepted": 35,
+        "acceptance": 1.0
+      },
+      "Mango___Powdery_Mildew": {
+        "total": 35,
+        "accepted": 35,
+        "acceptance": 1.0
+      },
+      "Mango___Sooty_Mould": {
+        "total": 35,
+        "accepted": 35,
+        "acceptance": 1.0
+      },
+      "Mango___healthy": {
+        "total": 35,
+        "accepted": 35,
+        "acceptance": 1.0
+      },
+      "Money_Plant___Bacterial_Wilt": {
+        "total": 3,
+        "accepted": 3,
+        "acceptance": 1.0
+      },
+      "Money_Plant___Healthy": {
+        "total": 27,
+        "accepted": 27,
+        "acceptance": 1.0
+      },
+      "Money_Plant___Manganese_Toxicity": {
+        "total": 4,
+        "accepted": 4,
+        "acceptance": 1.0
+      },
+      "Orange___Haunglongbing_(Citrus_greening)": {
+        "total": 35,
+        "accepted": 35,
+        "acceptance": 1.0
+      },
+      "Peach___Bacterial_spot": {
+        "total": 35,
+        "accepted": 35,
+        "acceptance": 1.0
+      },
+      "Peach___healthy": {
+        "total": 35,
+        "accepted": 35,
+        "acceptance": 1.0
+      },
+      "Pepper,_bell___Bacterial_spot": {
+        "total": 35,
+        "accepted": 35,
+        "acceptance": 1.0
+      },
+      "Pepper,_bell___healthy": {
+        "total": 35,
+        "accepted": 34,
+        "acceptance": 0.971429
+      },
+      "Potato___Early_blight": {
+        "total": 35,
+        "accepted": 35,
+        "acceptance": 1.0
+      },
+      "Potato___Late_blight": {
+        "total": 35,
+        "accepted": 35,
+        "acceptance": 1.0
+      },
+      "Potato___healthy": {
+        "total": 35,
+        "accepted": 35,
+        "acceptance": 1.0
+      },
+      "Psidium guajava": {
+        "total": 10,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "Raspberry___healthy": {
+        "total": 35,
+        "accepted": 35,
+        "acceptance": 1.0
+      },
+      "Rice___Bacterialblight": {
+        "total": 10,
+        "accepted": 10,
+        "acceptance": 1.0
+      },
+      "Rice___Blast": {
+        "total": 10,
+        "accepted": 10,
+        "acceptance": 1.0
+      },
+      "Rice___Brownspot": {
+        "total": 10,
+        "accepted": 9,
+        "acceptance": 0.9
+      },
+      "Rice___Tungro": {
+        "total": 10,
+        "accepted": 8,
+        "acceptance": 0.8
+      },
+      "Rosa": {
+        "total": 10,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "Soybean___healthy": {
+        "total": 35,
+        "accepted": 35,
+        "acceptance": 1.0
+      },
+      "Squash___Powdery_mildew": {
+        "total": 35,
+        "accepted": 35,
+        "acceptance": 1.0
+      },
+      "Strawberry___Leaf_scorch": {
+        "total": 35,
+        "accepted": 34,
+        "acceptance": 0.971429
+      },
+      "Strawberry___healthy": {
+        "total": 35,
+        "accepted": 35,
+        "acceptance": 1.0
+      },
+      "Tomato___Bacterial_spot": {
+        "total": 35,
+        "accepted": 35,
+        "acceptance": 1.0
+      },
+      "Tomato___Early_blight": {
+        "total": 35,
+        "accepted": 34,
+        "acceptance": 0.971429
+      },
+      "Tomato___Late_blight": {
+        "total": 35,
+        "accepted": 35,
+        "acceptance": 1.0
+      },
+      "Tomato___Leaf_Mold": {
+        "total": 35,
+        "accepted": 35,
+        "acceptance": 1.0
+      },
+      "Tomato___Septoria_leaf_spot": {
+        "total": 35,
+        "accepted": 33,
+        "acceptance": 0.942857
+      },
+      "Tomato___Spider_mites Two-spotted_spider_mite": {
+        "total": 35,
+        "accepted": 33,
+        "acceptance": 0.942857
+      },
+      "Tomato___Target_Spot": {
+        "total": 35,
+        "accepted": 35,
+        "acceptance": 1.0
+      },
+      "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+        "total": 35,
+        "accepted": 34,
+        "acceptance": 0.971429
+      },
+      "Tomato___Tomato_mosaic_virus": {
+        "total": 35,
+        "accepted": 34,
+        "acceptance": 0.971429
+      },
+      "Tomato___healthy": {
+        "total": 35,
+        "accepted": 34,
+        "acceptance": 0.971429
+      },
+      "inat:Abies sibirica": {
+        "total": 2,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Abutilon grandifolium": {
+        "total": 3,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Acacia extensa": {
+        "total": 4,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Acalypha virginica": {
+        "total": 2,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Acer platanoides": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Acer rubrum": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Anthoxanthum odoratum": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Aristea racemosa": {
+        "total": 2,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Asplenium platyneuron": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Asteriscium closii": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Avicennia marina": {
+        "total": 5,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Baccharis halimifolia": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Banksia attenuata": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Burchardia umbellata": {
+        "total": 5,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Caladenia pusilla": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Calamagrostis epigejos": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Calochilus herbaceus": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Calochilus robertsonii": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Carya illinoinensis": {
+        "total": 6,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Cephalanthus occidentalis": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Chloraea tectata": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Croton monanthogynus": {
+        "total": 4,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Cytisus scoparius": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Datura wrightii": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Encelia actoni": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Encelia canescens": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Ephedra nevadensis": {
+        "total": 2,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Equisetum hyemale": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Eulophia cochlearis": {
+        "total": 5,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Galinsoga quadriradiata": {
+        "total": 2,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Geranium robertianum": {
+        "total": 4,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Grevillea sphacelata": {
+        "total": 6,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Houttuynia cordata": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Humulus lupulus": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Ipomoea triloba": {
+        "total": 16,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Isopogon anemonifolius": {
+        "total": 8,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Isotoma hypocrateriformis": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Jacksonia alata": {
+        "total": 4,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Lamium galeobdolon": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Lantana urticoides": {
+        "total": 2,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Liquidambar styraciflua": {
+        "total": 2,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Lomandra multiflora": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Lysimachia arvensis": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Melaleuca thymifolia": {
+        "total": 6,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Muehlenbeckia complexa": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Neottia nidus-avis": {
+        "total": 2,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Nyssa sylvatica": {
+        "total": 4,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Oenothera speciosa": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Paederia foetida": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Persoonia pinifolia": {
+        "total": 6,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Plantago major": {
+        "total": 3,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Polystichum acrostichoides": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Pseudotsuga menziesii": {
+        "total": 4,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Quercus macrocarpa": {
+        "total": 8,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Ranunculus acaulis": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Rivina humilis": {
+        "total": 6,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Rosa woodsii": {
+        "total": 2,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Satureja montana": {
+        "total": 3,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Scaevola canescens": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Senecio angulatus": {
+        "total": 4,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Senecio vulgaris": {
+        "total": 6,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Sherardia arvensis": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Sida rhombifolia": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Smallanthus uvedalia": {
+        "total": 2,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Smilax bona-nox": {
+        "total": 4,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Sorghastrum nutans": {
+        "total": 9,
+        "accepted": 1,
+        "acceptance": 0.111111
+      },
+      "inat:Tetraria thermalis": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Themeda triandra": {
+        "total": 2,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Tipularia discolor": {
+        "total": 3,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Ulmus americana": {
+        "total": 7,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "leaf:Acer palmaturu": {
+        "total": 16,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "leaf:Arisarum vulgare": {
+        "total": 9,
+        "accepted": 2,
+        "acceptance": 0.222222
+      },
+      "leaf:Bougainvillea sp": {
+        "total": 13,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "leaf:Crataegus monogyna": {
+        "total": 8,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "leaf:Geranium sp": {
+        "total": 10,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "leaf:Ilex aquifolium": {
+        "total": 10,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "leaf:Nerium oleander": {
+        "total": 11,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "leaf:Populus nigra": {
+        "total": 10,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "leaf:Pseudosasa japonica": {
+        "total": 11,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "wheat:wheat_damaged/septoria": {
+        "total": 8,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "wheat:wheat_damaged/strip_rust": {
+        "total": 8,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "wheat:wheat_healthy": {
+        "total": 15,
+        "accepted": 0,
+        "acceptance": 0.0
+      }
+    }
+  },
+  "test": {
+    "supported_total": 2531,
+    "supported_accepted": 2508,
+    "supported_acceptance": 0.990913,
+    "unsupported_total": 382,
+    "unsupported_accepted": 0,
+    "unsupported_rejection": 1.0,
+    "wheat_total": 31,
+    "wheat_rejected": 31,
+    "wheat_rejection": 1.0,
+    "rice_total": 40,
+    "rice_accepted": 39,
+    "rice_acceptance": 0.975,
+    "categories": {
+      "Apple___Apple_scab": {
+        "total": 50,
+        "accepted": 50,
+        "acceptance": 1.0
+      },
+      "Apple___Black_rot": {
+        "total": 50,
+        "accepted": 50,
+        "acceptance": 1.0
+      },
+      "Apple___Cedar_apple_rust": {
+        "total": 50,
+        "accepted": 50,
+        "acceptance": 1.0
+      },
+      "Apple___healthy": {
+        "total": 50,
+        "accepted": 50,
+        "acceptance": 1.0
+      },
+      "Azadirachta indica": {
+        "total": 10,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "Banana___cordana": {
+        "total": 21,
+        "accepted": 21,
+        "acceptance": 1.0
+      },
+      "Banana___healthy": {
+        "total": 14,
+        "accepted": 13,
+        "acceptance": 0.928571
+      },
+      "Banana___pestalotiopsis": {
+        "total": 22,
+        "accepted": 21,
+        "acceptance": 0.954545
+      },
+      "Banana___sigatoka": {
+        "total": 50,
+        "accepted": 49,
+        "acceptance": 0.98
+      },
+      "Blueberry___healthy": {
+        "total": 50,
+        "accepted": 50,
+        "acceptance": 1.0
+      },
+      "Cherry_(including_sour)___Powdery_mildew": {
+        "total": 50,
+        "accepted": 50,
+        "acceptance": 1.0
+      },
+      "Cherry_(including_sour)___healthy": {
+        "total": 50,
+        "accepted": 50,
+        "acceptance": 1.0
+      },
+      "Cocos nucifera": {
+        "total": 10,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
+        "total": 50,
+        "accepted": 50,
+        "acceptance": 1.0
+      },
+      "Corn_(maize)___Common_rust_": {
+        "total": 50,
+        "accepted": 50,
+        "acceptance": 1.0
+      },
+      "Corn_(maize)___Northern_Leaf_Blight": {
+        "total": 50,
+        "accepted": 50,
+        "acceptance": 1.0
+      },
+      "Corn_(maize)___healthy": {
+        "total": 50,
+        "accepted": 50,
+        "acceptance": 1.0
+      },
+      "Grape___Black_rot": {
+        "total": 50,
+        "accepted": 50,
+        "acceptance": 1.0
+      },
+      "Grape___Esca_(Black_Measles)": {
+        "total": 50,
+        "accepted": 49,
+        "acceptance": 0.98
+      },
+      "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
+        "total": 50,
+        "accepted": 50,
+        "acceptance": 1.0
+      },
+      "Grape___healthy": {
+        "total": 50,
+        "accepted": 50,
+        "acceptance": 1.0
+      },
+      "Hibiscus": {
+        "total": 67,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "Mango___Anthracnose": {
+        "total": 50,
+        "accepted": 50,
+        "acceptance": 1.0
+      },
+      "Mango___Bacterial_Canker": {
+        "total": 50,
+        "accepted": 50,
+        "acceptance": 1.0
+      },
+      "Mango___Cutting_Weevil": {
+        "total": 50,
+        "accepted": 50,
+        "acceptance": 1.0
+      },
+      "Mango___Die_Back": {
+        "total": 50,
+        "accepted": 50,
+        "acceptance": 1.0
+      },
+      "Mango___Gall_Midge": {
+        "total": 50,
+        "accepted": 50,
+        "acceptance": 1.0
+      },
+      "Mango___Powdery_Mildew": {
+        "total": 50,
+        "accepted": 50,
+        "acceptance": 1.0
+      },
+      "Mango___Sooty_Mould": {
+        "total": 50,
+        "accepted": 50,
+        "acceptance": 1.0
+      },
+      "Mango___healthy": {
+        "total": 50,
+        "accepted": 50,
+        "acceptance": 1.0
+      },
+      "Money_Plant___Bacterial_Wilt": {
+        "total": 20,
+        "accepted": 20,
+        "acceptance": 1.0
+      },
+      "Money_Plant___Healthy": {
+        "total": 40,
+        "accepted": 40,
+        "acceptance": 1.0
+      },
+      "Money_Plant___Manganese_Toxicity": {
+        "total": 24,
+        "accepted": 24,
+        "acceptance": 1.0
+      },
+      "Orange___Haunglongbing_(Citrus_greening)": {
+        "total": 50,
+        "accepted": 50,
+        "acceptance": 1.0
+      },
+      "Peach___Bacterial_spot": {
+        "total": 50,
+        "accepted": 50,
+        "acceptance": 1.0
+      },
+      "Peach___healthy": {
+        "total": 50,
+        "accepted": 50,
+        "acceptance": 1.0
+      },
+      "Pepper,_bell___Bacterial_spot": {
+        "total": 50,
+        "accepted": 50,
+        "acceptance": 1.0
+      },
+      "Pepper,_bell___healthy": {
+        "total": 50,
+        "accepted": 49,
+        "acceptance": 0.98
+      },
+      "Potato___Early_blight": {
+        "total": 50,
+        "accepted": 49,
+        "acceptance": 0.98
+      },
+      "Potato___Late_blight": {
+        "total": 50,
+        "accepted": 50,
+        "acceptance": 1.0
+      },
+      "Potato___healthy": {
+        "total": 50,
+        "accepted": 50,
+        "acceptance": 1.0
+      },
+      "Psidium guajava": {
+        "total": 10,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "Raspberry___healthy": {
+        "total": 50,
+        "accepted": 50,
+        "acceptance": 1.0
+      },
+      "Rice___Bacterialblight": {
+        "total": 10,
+        "accepted": 10,
+        "acceptance": 1.0
+      },
+      "Rice___Blast": {
+        "total": 10,
+        "accepted": 10,
+        "acceptance": 1.0
+      },
+      "Rice___Brownspot": {
+        "total": 10,
+        "accepted": 10,
+        "acceptance": 1.0
+      },
+      "Rice___Tungro": {
+        "total": 10,
+        "accepted": 9,
+        "acceptance": 0.9
+      },
+      "Rosa": {
+        "total": 10,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "Soybean___healthy": {
+        "total": 50,
+        "accepted": 50,
+        "acceptance": 1.0
+      },
+      "Squash___Powdery_mildew": {
+        "total": 50,
+        "accepted": 50,
+        "acceptance": 1.0
+      },
+      "Strawberry___Leaf_scorch": {
+        "total": 50,
+        "accepted": 49,
+        "acceptance": 0.98
+      },
+      "Strawberry___healthy": {
+        "total": 50,
+        "accepted": 50,
+        "acceptance": 1.0
+      },
+      "Tomato___Bacterial_spot": {
+        "total": 50,
+        "accepted": 49,
+        "acceptance": 0.98
+      },
+      "Tomato___Early_blight": {
+        "total": 50,
+        "accepted": 48,
+        "acceptance": 0.96
+      },
+      "Tomato___Late_blight": {
+        "total": 50,
+        "accepted": 46,
+        "acceptance": 0.92
+      },
+      "Tomato___Leaf_Mold": {
+        "total": 50,
+        "accepted": 49,
+        "acceptance": 0.98
+      },
+      "Tomato___Septoria_leaf_spot": {
+        "total": 50,
+        "accepted": 46,
+        "acceptance": 0.92
+      },
+      "Tomato___Spider_mites Two-spotted_spider_mite": {
+        "total": 50,
+        "accepted": 48,
+        "acceptance": 0.96
+      },
+      "Tomato___Target_Spot": {
+        "total": 50,
+        "accepted": 50,
+        "acceptance": 1.0
+      },
+      "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+        "total": 50,
+        "accepted": 49,
+        "acceptance": 0.98
+      },
+      "Tomato___Tomato_mosaic_virus": {
+        "total": 50,
+        "accepted": 50,
+        "acceptance": 1.0
+      },
+      "Tomato___healthy": {
+        "total": 50,
+        "accepted": 50,
+        "acceptance": 1.0
+      },
+      "inat:Acacia mearnsii": {
+        "total": 2,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Ageratina altissima": {
+        "total": 4,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Alliaria petiolata": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Anatherum virginicum": {
+        "total": 5,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Aristea simplex": {
+        "total": 4,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Asplenium rhizophyllum": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Atriplex canescens": {
+        "total": 2,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Beta vulgaris maritima": {
+        "total": 5,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Bothriochloa ischaemum": {
+        "total": 2,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Caladenia transitoria": {
+        "total": 2,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Calochilus paludosus": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Calytrix angulata": {
+        "total": 2,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Capsella bursa-pastoris": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Celtis reticulata": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Centranthus ruber": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Coptis trifolia": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Cymbidium suave": {
+        "total": 4,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Daphne laureola": {
+        "total": 3,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Dipodium variegatum": {
+        "total": 2,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Disa bracteata": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Drosera binata": {
+        "total": 6,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Erigeron canadensis": {
+        "total": 4,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Forestiera pubescens": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Gaudium laevigatum": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Geranium dissectum": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Goodenia fasciculata": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Hakea prostrata": {
+        "total": 2,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Hibbertia aspera": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Hibbertia scandens": {
+        "total": 3,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Hydrocotyle heteromeria": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Ipomoea cordatotriloba": {
+        "total": 2,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Juncus vaginatus": {
+        "total": 7,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Kunzea ambigua": {
+        "total": 4,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Lamium galeobdolon argentatum": {
+        "total": 3,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Lanaria lanata": {
+        "total": 2,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Lepidium sativum": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Levenhookia pusilla": {
+        "total": 3,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Lindera benzoin": {
+        "total": 5,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Lycium chinense": {
+        "total": 2,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Lysimachia nummularia": {
+        "total": 2,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Maclura cochinchinensis": {
+        "total": 2,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Melaleuca huegelii": {
+        "total": 3,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Mesomelaena pseudostygia": {
+        "total": 2,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Oldenlandia hedyotidea": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Onoclea sensibilis": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Orobanche minor": {
+        "total": 4,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Orthilia secunda": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Oxalis articulata": {
+        "total": 5,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Passiflora incarnata": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Pavonia lasiopetala": {
+        "total": 3,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Pelargonium tricolor": {
+        "total": 3,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Perityle emoryi": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Pimelea villosa": {
+        "total": 4,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Pinus rigida": {
+        "total": 16,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Pittosporum undulatum": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Polycarpon tetraphyllum": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Poranthera microphylla": {
+        "total": 2,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Pseudognaphalium obtusifolium": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Pterochaeta paniculata": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Rudbeckia amplexicaulis": {
+        "total": 2,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Salicornia quinqueflora": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Senecio squalidus": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Solidago altissima": {
+        "total": 3,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Symphyotrichum divaricatum": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Symphyotrichum eulae": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Symphyotrichum praealtum": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Syncarpha milleflora": {
+        "total": 2,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Ulmus crassifolia": {
+        "total": 7,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Viburnum acerifolium": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Wachendorfia thyrsiflora": {
+        "total": 3,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "leaf:Alnus sp": {
+        "total": 8,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "leaf:Corylus avellana": {
+        "total": 13,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "leaf:Hydrangea sp": {
+        "total": 11,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "leaf:Papaver sp": {
+        "total": 12,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "leaf:Schinus terebinthifolius": {
+        "total": 10,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "leaf:Taxus bacatta": {
+        "total": 5,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "leaf:Urtica dioica": {
+        "total": 12,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "wheat:wheat_damaged/septoria": {
+        "total": 8,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "wheat:wheat_damaged/strip_rust": {
+        "total": 8,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "wheat:wheat_healthy": {
+        "total": 15,
+        "accepted": 0,
+        "acceptance": 0.0
+      }
+    }
+  },
+  "baseline_validation": {
+    "supported_total": 1777,
+    "supported_accepted": 1678,
+    "supported_acceptance": 0.944288,
+    "unsupported_total": 434,
+    "unsupported_accepted": 168,
+    "unsupported_rejection": 0.612903,
+    "wheat_total": 31,
+    "wheat_rejected": 5,
+    "wheat_rejection": 0.16129,
+    "rice_total": 40,
+    "rice_accepted": 38,
+    "rice_acceptance": 0.95,
+    "categories": {
+      "Apple___Apple_scab": {
+        "total": 35,
+        "accepted": 34,
+        "acceptance": 0.971429
+      },
+      "Apple___Black_rot": {
+        "total": 35,
+        "accepted": 31,
+        "acceptance": 0.885714
+      },
+      "Apple___Cedar_apple_rust": {
+        "total": 35,
+        "accepted": 34,
+        "acceptance": 0.971429
+      },
+      "Apple___healthy": {
+        "total": 35,
+        "accepted": 35,
+        "acceptance": 1.0
+      },
+      "Azadirachta indica": {
+        "total": 10,
+        "accepted": 3,
+        "acceptance": 0.3
+      },
+      "Banana___cordana": {
+        "total": 21,
+        "accepted": 18,
+        "acceptance": 0.857143
+      },
+      "Banana___healthy": {
+        "total": 15,
+        "accepted": 15,
+        "acceptance": 1.0
+      },
+      "Banana___pestalotiopsis": {
+        "total": 22,
+        "accepted": 21,
+        "acceptance": 0.954545
+      },
+      "Banana___sigatoka": {
+        "total": 35,
+        "accepted": 34,
+        "acceptance": 0.971429
+      },
+      "Blueberry___healthy": {
+        "total": 35,
+        "accepted": 35,
+        "acceptance": 1.0
+      },
+      "Carica papaya": {
+        "total": 67,
+        "accepted": 28,
+        "acceptance": 0.41791
+      },
+      "Cherry_(including_sour)___Powdery_mildew": {
+        "total": 35,
+        "accepted": 31,
+        "acceptance": 0.885714
+      },
+      "Cherry_(including_sour)___healthy": {
+        "total": 35,
+        "accepted": 32,
+        "acceptance": 0.914286
+      },
+      "Cocos nucifera": {
+        "total": 10,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
+        "total": 35,
+        "accepted": 31,
+        "acceptance": 0.885714
+      },
+      "Corn_(maize)___Common_rust_": {
+        "total": 35,
+        "accepted": 32,
+        "acceptance": 0.914286
+      },
+      "Corn_(maize)___Northern_Leaf_Blight": {
+        "total": 35,
+        "accepted": 33,
+        "acceptance": 0.942857
+      },
+      "Corn_(maize)___healthy": {
+        "total": 35,
+        "accepted": 34,
+        "acceptance": 0.971429
+      },
+      "Grape___Black_rot": {
+        "total": 35,
+        "accepted": 31,
+        "acceptance": 0.885714
+      },
+      "Grape___Esca_(Black_Measles)": {
+        "total": 35,
+        "accepted": 32,
+        "acceptance": 0.914286
+      },
+      "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
+        "total": 35,
+        "accepted": 31,
+        "acceptance": 0.885714
+      },
+      "Grape___healthy": {
+        "total": 35,
+        "accepted": 34,
+        "acceptance": 0.971429
+      },
+      "Mango___Anthracnose": {
+        "total": 35,
+        "accepted": 34,
+        "acceptance": 0.971429
+      },
+      "Mango___Bacterial_Canker": {
+        "total": 35,
+        "accepted": 34,
+        "acceptance": 0.971429
+      },
+      "Mango___Cutting_Weevil": {
+        "total": 35,
+        "accepted": 34,
+        "acceptance": 0.971429
+      },
+      "Mango___Die_Back": {
+        "total": 35,
+        "accepted": 33,
+        "acceptance": 0.942857
+      },
+      "Mango___Gall_Midge": {
+        "total": 35,
+        "accepted": 35,
+        "acceptance": 1.0
+      },
+      "Mango___Powdery_Mildew": {
+        "total": 35,
+        "accepted": 33,
+        "acceptance": 0.942857
+      },
+      "Mango___Sooty_Mould": {
+        "total": 35,
+        "accepted": 34,
+        "acceptance": 0.971429
+      },
+      "Mango___healthy": {
+        "total": 35,
+        "accepted": 35,
+        "acceptance": 1.0
+      },
+      "Money_Plant___Bacterial_Wilt": {
+        "total": 3,
+        "accepted": 3,
+        "acceptance": 1.0
+      },
+      "Money_Plant___Healthy": {
+        "total": 27,
+        "accepted": 27,
+        "acceptance": 1.0
+      },
+      "Money_Plant___Manganese_Toxicity": {
+        "total": 4,
+        "accepted": 4,
+        "acceptance": 1.0
+      },
+      "Orange___Haunglongbing_(Citrus_greening)": {
+        "total": 35,
+        "accepted": 33,
+        "acceptance": 0.942857
+      },
+      "Peach___Bacterial_spot": {
+        "total": 35,
+        "accepted": 33,
+        "acceptance": 0.942857
+      },
+      "Peach___healthy": {
+        "total": 35,
+        "accepted": 33,
+        "acceptance": 0.942857
+      },
+      "Pepper,_bell___Bacterial_spot": {
+        "total": 35,
+        "accepted": 33,
+        "acceptance": 0.942857
+      },
+      "Pepper,_bell___healthy": {
+        "total": 35,
+        "accepted": 32,
+        "acceptance": 0.914286
+      },
+      "Potato___Early_blight": {
+        "total": 35,
+        "accepted": 33,
+        "acceptance": 0.942857
+      },
+      "Potato___Late_blight": {
+        "total": 35,
+        "accepted": 35,
+        "acceptance": 1.0
+      },
+      "Potato___healthy": {
+        "total": 35,
+        "accepted": 32,
+        "acceptance": 0.914286
+      },
+      "Psidium guajava": {
+        "total": 10,
+        "accepted": 3,
+        "acceptance": 0.3
+      },
+      "Raspberry___healthy": {
+        "total": 35,
+        "accepted": 32,
+        "acceptance": 0.914286
+      },
+      "Rice___Bacterialblight": {
+        "total": 10,
+        "accepted": 9,
+        "acceptance": 0.9
+      },
+      "Rice___Blast": {
+        "total": 10,
+        "accepted": 10,
+        "acceptance": 1.0
+      },
+      "Rice___Brownspot": {
+        "total": 10,
+        "accepted": 9,
+        "acceptance": 0.9
+      },
+      "Rice___Tungro": {
+        "total": 10,
+        "accepted": 10,
+        "acceptance": 1.0
+      },
+      "Rosa": {
+        "total": 10,
+        "accepted": 1,
+        "acceptance": 0.1
+      },
+      "Soybean___healthy": {
+        "total": 35,
+        "accepted": 34,
+        "acceptance": 0.971429
+      },
+      "Squash___Powdery_mildew": {
+        "total": 35,
+        "accepted": 32,
+        "acceptance": 0.914286
+      },
+      "Strawberry___Leaf_scorch": {
+        "total": 35,
+        "accepted": 33,
+        "acceptance": 0.942857
+      },
+      "Strawberry___healthy": {
+        "total": 35,
+        "accepted": 34,
+        "acceptance": 0.971429
+      },
+      "Tomato___Bacterial_spot": {
+        "total": 35,
+        "accepted": 32,
+        "acceptance": 0.914286
+      },
+      "Tomato___Early_blight": {
+        "total": 35,
+        "accepted": 33,
+        "acceptance": 0.942857
+      },
+      "Tomato___Late_blight": {
+        "total": 35,
+        "accepted": 34,
+        "acceptance": 0.971429
+      },
+      "Tomato___Leaf_Mold": {
+        "total": 35,
+        "accepted": 32,
+        "acceptance": 0.914286
+      },
+      "Tomato___Septoria_leaf_spot": {
+        "total": 35,
+        "accepted": 33,
+        "acceptance": 0.942857
+      },
+      "Tomato___Spider_mites Two-spotted_spider_mite": {
+        "total": 35,
+        "accepted": 33,
+        "acceptance": 0.942857
+      },
+      "Tomato___Target_Spot": {
+        "total": 35,
+        "accepted": 35,
+        "acceptance": 1.0
+      },
+      "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+        "total": 35,
+        "accepted": 32,
+        "acceptance": 0.914286
+      },
+      "Tomato___Tomato_mosaic_virus": {
+        "total": 35,
+        "accepted": 31,
+        "acceptance": 0.885714
+      },
+      "Tomato___healthy": {
+        "total": 35,
+        "accepted": 32,
+        "acceptance": 0.914286
+      },
+      "inat:Abies sibirica": {
+        "total": 2,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Abutilon grandifolium": {
+        "total": 3,
+        "accepted": 1,
+        "acceptance": 0.333333
+      },
+      "inat:Acacia extensa": {
+        "total": 4,
+        "accepted": 1,
+        "acceptance": 0.25
+      },
+      "inat:Acalypha virginica": {
+        "total": 2,
+        "accepted": 1,
+        "acceptance": 0.5
+      },
+      "inat:Acer platanoides": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Acer rubrum": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Anthoxanthum odoratum": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Aristea racemosa": {
+        "total": 2,
+        "accepted": 1,
+        "acceptance": 0.5
+      },
+      "inat:Asplenium platyneuron": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Asteriscium closii": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Avicennia marina": {
+        "total": 5,
+        "accepted": 1,
+        "acceptance": 0.2
+      },
+      "inat:Baccharis halimifolia": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Banksia attenuata": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Burchardia umbellata": {
+        "total": 5,
+        "accepted": 2,
+        "acceptance": 0.4
+      },
+      "inat:Caladenia pusilla": {
+        "total": 1,
+        "accepted": 1,
+        "acceptance": 1.0
+      },
+      "inat:Calamagrostis epigejos": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Calochilus herbaceus": {
+        "total": 1,
+        "accepted": 1,
+        "acceptance": 1.0
+      },
+      "inat:Calochilus robertsonii": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Carya illinoinensis": {
+        "total": 6,
+        "accepted": 2,
+        "acceptance": 0.333333
+      },
+      "inat:Cephalanthus occidentalis": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Chloraea tectata": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Croton monanthogynus": {
+        "total": 4,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Cytisus scoparius": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Datura wrightii": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Encelia actoni": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Encelia canescens": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Ephedra nevadensis": {
+        "total": 2,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Equisetum hyemale": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Eulophia cochlearis": {
+        "total": 5,
+        "accepted": 1,
+        "acceptance": 0.2
+      },
+      "inat:Galinsoga quadriradiata": {
+        "total": 2,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Geranium robertianum": {
+        "total": 4,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Grevillea sphacelata": {
+        "total": 6,
+        "accepted": 3,
+        "acceptance": 0.5
+      },
+      "inat:Houttuynia cordata": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Humulus lupulus": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Ipomoea triloba": {
+        "total": 16,
+        "accepted": 3,
+        "acceptance": 0.1875
+      },
+      "inat:Isopogon anemonifolius": {
+        "total": 8,
+        "accepted": 3,
+        "acceptance": 0.375
+      },
+      "inat:Isotoma hypocrateriformis": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Jacksonia alata": {
+        "total": 4,
+        "accepted": 1,
+        "acceptance": 0.25
+      },
+      "inat:Lamium galeobdolon": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Lantana urticoides": {
+        "total": 2,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Liquidambar styraciflua": {
+        "total": 2,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Lomandra multiflora": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Lysimachia arvensis": {
+        "total": 1,
+        "accepted": 1,
+        "acceptance": 1.0
+      },
+      "inat:Melaleuca thymifolia": {
+        "total": 6,
+        "accepted": 2,
+        "acceptance": 0.333333
+      },
+      "inat:Muehlenbeckia complexa": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Neottia nidus-avis": {
+        "total": 2,
+        "accepted": 2,
+        "acceptance": 1.0
+      },
+      "inat:Nyssa sylvatica": {
+        "total": 4,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Oenothera speciosa": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Paederia foetida": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Persoonia pinifolia": {
+        "total": 6,
+        "accepted": 2,
+        "acceptance": 0.333333
+      },
+      "inat:Plantago major": {
+        "total": 3,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Polystichum acrostichoides": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Pseudotsuga menziesii": {
+        "total": 4,
+        "accepted": 1,
+        "acceptance": 0.25
+      },
+      "inat:Quercus macrocarpa": {
+        "total": 8,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Ranunculus acaulis": {
+        "total": 1,
+        "accepted": 1,
+        "acceptance": 1.0
+      },
+      "inat:Rivina humilis": {
+        "total": 6,
+        "accepted": 3,
+        "acceptance": 0.5
+      },
+      "inat:Rosa woodsii": {
+        "total": 2,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Satureja montana": {
+        "total": 3,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Scaevola canescens": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Senecio angulatus": {
+        "total": 4,
+        "accepted": 1,
+        "acceptance": 0.25
+      },
+      "inat:Senecio vulgaris": {
+        "total": 6,
+        "accepted": 1,
+        "acceptance": 0.166667
+      },
+      "inat:Sherardia arvensis": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Sida rhombifolia": {
+        "total": 1,
+        "accepted": 1,
+        "acceptance": 1.0
+      },
+      "inat:Smallanthus uvedalia": {
+        "total": 2,
+        "accepted": 1,
+        "acceptance": 0.5
+      },
+      "inat:Smilax bona-nox": {
+        "total": 4,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Sorghastrum nutans": {
+        "total": 9,
+        "accepted": 4,
+        "acceptance": 0.444444
+      },
+      "inat:Tetraria thermalis": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Themeda triandra": {
+        "total": 2,
+        "accepted": 1,
+        "acceptance": 0.5
+      },
+      "inat:Tipularia discolor": {
+        "total": 3,
+        "accepted": 1,
+        "acceptance": 0.333333
+      },
+      "inat:Ulmus americana": {
+        "total": 7,
+        "accepted": 1,
+        "acceptance": 0.142857
+      },
+      "leaf:Acer palmaturu": {
+        "total": 16,
+        "accepted": 16,
+        "acceptance": 1.0
+      },
+      "leaf:Arisarum vulgare": {
+        "total": 9,
+        "accepted": 9,
+        "acceptance": 1.0
+      },
+      "leaf:Bougainvillea sp": {
+        "total": 13,
+        "accepted": 7,
+        "acceptance": 0.538462
+      },
+      "leaf:Crataegus monogyna": {
+        "total": 8,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "leaf:Geranium sp": {
+        "total": 10,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "leaf:Ilex aquifolium": {
+        "total": 10,
+        "accepted": 6,
+        "acceptance": 0.6
+      },
+      "leaf:Nerium oleander": {
+        "total": 11,
+        "accepted": 11,
+        "acceptance": 1.0
+      },
+      "leaf:Populus nigra": {
+        "total": 10,
+        "accepted": 5,
+        "acceptance": 0.5
+      },
+      "leaf:Pseudosasa japonica": {
+        "total": 11,
+        "accepted": 8,
+        "acceptance": 0.727273
+      },
+      "wheat:wheat_damaged/septoria": {
+        "total": 8,
+        "accepted": 8,
+        "acceptance": 1.0
+      },
+      "wheat:wheat_damaged/strip_rust": {
+        "total": 8,
+        "accepted": 4,
+        "acceptance": 0.5
+      },
+      "wheat:wheat_healthy": {
+        "total": 15,
+        "accepted": 14,
+        "acceptance": 0.933333
+      }
+    }
+  },
+  "baseline_test": {
+    "supported_total": 2531,
+    "supported_accepted": 2388,
+    "supported_acceptance": 0.943501,
+    "unsupported_total": 382,
+    "unsupported_accepted": 102,
+    "unsupported_rejection": 0.732984,
+    "wheat_total": 31,
+    "wheat_rejected": 4,
+    "wheat_rejection": 0.129032,
+    "rice_total": 40,
+    "rice_accepted": 40,
+    "rice_acceptance": 1.0,
+    "categories": {
+      "Apple___Apple_scab": {
+        "total": 50,
+        "accepted": 47,
+        "acceptance": 0.94
+      },
+      "Apple___Black_rot": {
+        "total": 50,
+        "accepted": 47,
+        "acceptance": 0.94
+      },
+      "Apple___Cedar_apple_rust": {
+        "total": 50,
+        "accepted": 45,
+        "acceptance": 0.9
+      },
+      "Apple___healthy": {
+        "total": 50,
+        "accepted": 46,
+        "acceptance": 0.92
+      },
+      "Azadirachta indica": {
+        "total": 10,
+        "accepted": 4,
+        "acceptance": 0.4
+      },
+      "Banana___cordana": {
+        "total": 21,
+        "accepted": 18,
+        "acceptance": 0.857143
+      },
+      "Banana___healthy": {
+        "total": 14,
+        "accepted": 14,
+        "acceptance": 1.0
+      },
+      "Banana___pestalotiopsis": {
+        "total": 22,
+        "accepted": 21,
+        "acceptance": 0.954545
+      },
+      "Banana___sigatoka": {
+        "total": 50,
+        "accepted": 49,
+        "acceptance": 0.98
+      },
+      "Blueberry___healthy": {
+        "total": 50,
+        "accepted": 49,
+        "acceptance": 0.98
+      },
+      "Cherry_(including_sour)___Powdery_mildew": {
+        "total": 50,
+        "accepted": 50,
+        "acceptance": 1.0
+      },
+      "Cherry_(including_sour)___healthy": {
+        "total": 50,
+        "accepted": 50,
+        "acceptance": 1.0
+      },
+      "Cocos nucifera": {
+        "total": 10,
+        "accepted": 1,
+        "acceptance": 0.1
+      },
+      "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
+        "total": 50,
+        "accepted": 47,
+        "acceptance": 0.94
+      },
+      "Corn_(maize)___Common_rust_": {
+        "total": 50,
+        "accepted": 46,
+        "acceptance": 0.92
+      },
+      "Corn_(maize)___Northern_Leaf_Blight": {
+        "total": 50,
+        "accepted": 49,
+        "acceptance": 0.98
+      },
+      "Corn_(maize)___healthy": {
+        "total": 50,
+        "accepted": 46,
+        "acceptance": 0.92
+      },
+      "Grape___Black_rot": {
+        "total": 50,
+        "accepted": 49,
+        "acceptance": 0.98
+      },
+      "Grape___Esca_(Black_Measles)": {
+        "total": 50,
+        "accepted": 49,
+        "acceptance": 0.98
+      },
+      "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
+        "total": 50,
+        "accepted": 46,
+        "acceptance": 0.92
+      },
+      "Grape___healthy": {
+        "total": 50,
+        "accepted": 47,
+        "acceptance": 0.94
+      },
+      "Hibiscus": {
+        "total": 67,
+        "accepted": 13,
+        "acceptance": 0.19403
+      },
+      "Mango___Anthracnose": {
+        "total": 50,
+        "accepted": 43,
+        "acceptance": 0.86
+      },
+      "Mango___Bacterial_Canker": {
+        "total": 50,
+        "accepted": 48,
+        "acceptance": 0.96
+      },
+      "Mango___Cutting_Weevil": {
+        "total": 50,
+        "accepted": 49,
+        "acceptance": 0.98
+      },
+      "Mango___Die_Back": {
+        "total": 50,
+        "accepted": 48,
+        "acceptance": 0.96
+      },
+      "Mango___Gall_Midge": {
+        "total": 50,
+        "accepted": 48,
+        "acceptance": 0.96
+      },
+      "Mango___Powdery_Mildew": {
+        "total": 50,
+        "accepted": 49,
+        "acceptance": 0.98
+      },
+      "Mango___Sooty_Mould": {
+        "total": 50,
+        "accepted": 48,
+        "acceptance": 0.96
+      },
+      "Mango___healthy": {
+        "total": 50,
+        "accepted": 47,
+        "acceptance": 0.94
+      },
+      "Money_Plant___Bacterial_Wilt": {
+        "total": 20,
+        "accepted": 19,
+        "acceptance": 0.95
+      },
+      "Money_Plant___Healthy": {
+        "total": 40,
+        "accepted": 36,
+        "acceptance": 0.9
+      },
+      "Money_Plant___Manganese_Toxicity": {
+        "total": 24,
+        "accepted": 23,
+        "acceptance": 0.958333
+      },
+      "Orange___Haunglongbing_(Citrus_greening)": {
+        "total": 50,
+        "accepted": 46,
+        "acceptance": 0.92
+      },
+      "Peach___Bacterial_spot": {
+        "total": 50,
+        "accepted": 46,
+        "acceptance": 0.92
+      },
+      "Peach___healthy": {
+        "total": 50,
+        "accepted": 47,
+        "acceptance": 0.94
+      },
+      "Pepper,_bell___Bacterial_spot": {
+        "total": 50,
+        "accepted": 46,
+        "acceptance": 0.92
+      },
+      "Pepper,_bell___healthy": {
+        "total": 50,
+        "accepted": 47,
+        "acceptance": 0.94
+      },
+      "Potato___Early_blight": {
+        "total": 50,
+        "accepted": 45,
+        "acceptance": 0.9
+      },
+      "Potato___Late_blight": {
+        "total": 50,
+        "accepted": 50,
+        "acceptance": 1.0
+      },
+      "Potato___healthy": {
+        "total": 50,
+        "accepted": 46,
+        "acceptance": 0.92
+      },
+      "Psidium guajava": {
+        "total": 10,
+        "accepted": 3,
+        "acceptance": 0.3
+      },
+      "Raspberry___healthy": {
+        "total": 50,
+        "accepted": 48,
+        "acceptance": 0.96
+      },
+      "Rice___Bacterialblight": {
+        "total": 10,
+        "accepted": 10,
+        "acceptance": 1.0
+      },
+      "Rice___Blast": {
+        "total": 10,
+        "accepted": 10,
+        "acceptance": 1.0
+      },
+      "Rice___Brownspot": {
+        "total": 10,
+        "accepted": 10,
+        "acceptance": 1.0
+      },
+      "Rice___Tungro": {
+        "total": 10,
+        "accepted": 10,
+        "acceptance": 1.0
+      },
+      "Rosa": {
+        "total": 10,
+        "accepted": 3,
+        "acceptance": 0.3
+      },
+      "Soybean___healthy": {
+        "total": 50,
+        "accepted": 48,
+        "acceptance": 0.96
+      },
+      "Squash___Powdery_mildew": {
+        "total": 50,
+        "accepted": 49,
+        "acceptance": 0.98
+      },
+      "Strawberry___Leaf_scorch": {
+        "total": 50,
+        "accepted": 46,
+        "acceptance": 0.92
+      },
+      "Strawberry___healthy": {
+        "total": 50,
+        "accepted": 47,
+        "acceptance": 0.94
+      },
+      "Tomato___Bacterial_spot": {
+        "total": 50,
+        "accepted": 45,
+        "acceptance": 0.9
+      },
+      "Tomato___Early_blight": {
+        "total": 50,
+        "accepted": 48,
+        "acceptance": 0.96
+      },
+      "Tomato___Late_blight": {
+        "total": 50,
+        "accepted": 44,
+        "acceptance": 0.88
+      },
+      "Tomato___Leaf_Mold": {
+        "total": 50,
+        "accepted": 45,
+        "acceptance": 0.9
+      },
+      "Tomato___Septoria_leaf_spot": {
+        "total": 50,
+        "accepted": 44,
+        "acceptance": 0.88
+      },
+      "Tomato___Spider_mites Two-spotted_spider_mite": {
+        "total": 50,
+        "accepted": 47,
+        "acceptance": 0.94
+      },
+      "Tomato___Target_Spot": {
+        "total": 50,
+        "accepted": 49,
+        "acceptance": 0.98
+      },
+      "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+        "total": 50,
+        "accepted": 47,
+        "acceptance": 0.94
+      },
+      "Tomato___Tomato_mosaic_virus": {
+        "total": 50,
+        "accepted": 46,
+        "acceptance": 0.92
+      },
+      "Tomato___healthy": {
+        "total": 50,
+        "accepted": 49,
+        "acceptance": 0.98
+      },
+      "inat:Acacia mearnsii": {
+        "total": 2,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Ageratina altissima": {
+        "total": 4,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Alliaria petiolata": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Anatherum virginicum": {
+        "total": 5,
+        "accepted": 2,
+        "acceptance": 0.4
+      },
+      "inat:Aristea simplex": {
+        "total": 4,
+        "accepted": 2,
+        "acceptance": 0.5
+      },
+      "inat:Asplenium rhizophyllum": {
+        "total": 1,
+        "accepted": 1,
+        "acceptance": 1.0
+      },
+      "inat:Atriplex canescens": {
+        "total": 2,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Beta vulgaris maritima": {
+        "total": 5,
+        "accepted": 1,
+        "acceptance": 0.2
+      },
+      "inat:Bothriochloa ischaemum": {
+        "total": 2,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Caladenia transitoria": {
+        "total": 2,
+        "accepted": 1,
+        "acceptance": 0.5
+      },
+      "inat:Calochilus paludosus": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Calytrix angulata": {
+        "total": 2,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Capsella bursa-pastoris": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Celtis reticulata": {
+        "total": 1,
+        "accepted": 1,
+        "acceptance": 1.0
+      },
+      "inat:Centranthus ruber": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Coptis trifolia": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Cymbidium suave": {
+        "total": 4,
+        "accepted": 2,
+        "acceptance": 0.5
+      },
+      "inat:Daphne laureola": {
+        "total": 3,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Dipodium variegatum": {
+        "total": 2,
+        "accepted": 1,
+        "acceptance": 0.5
+      },
+      "inat:Disa bracteata": {
+        "total": 1,
+        "accepted": 1,
+        "acceptance": 1.0
+      },
+      "inat:Drosera binata": {
+        "total": 6,
+        "accepted": 1,
+        "acceptance": 0.166667
+      },
+      "inat:Erigeron canadensis": {
+        "total": 4,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Forestiera pubescens": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Gaudium laevigatum": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Geranium dissectum": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Goodenia fasciculata": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Hakea prostrata": {
+        "total": 2,
+        "accepted": 1,
+        "acceptance": 0.5
+      },
+      "inat:Hibbertia aspera": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Hibbertia scandens": {
+        "total": 3,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Hydrocotyle heteromeria": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Ipomoea cordatotriloba": {
+        "total": 2,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Juncus vaginatus": {
+        "total": 7,
+        "accepted": 1,
+        "acceptance": 0.142857
+      },
+      "inat:Kunzea ambigua": {
+        "total": 4,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Lamium galeobdolon argentatum": {
+        "total": 3,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Lanaria lanata": {
+        "total": 2,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Lepidium sativum": {
+        "total": 1,
+        "accepted": 1,
+        "acceptance": 1.0
+      },
+      "inat:Levenhookia pusilla": {
+        "total": 3,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Lindera benzoin": {
+        "total": 5,
+        "accepted": 1,
+        "acceptance": 0.2
+      },
+      "inat:Lycium chinense": {
+        "total": 2,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Lysimachia nummularia": {
+        "total": 2,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Maclura cochinchinensis": {
+        "total": 2,
+        "accepted": 1,
+        "acceptance": 0.5
+      },
+      "inat:Melaleuca huegelii": {
+        "total": 3,
+        "accepted": 1,
+        "acceptance": 0.333333
+      },
+      "inat:Mesomelaena pseudostygia": {
+        "total": 2,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Oldenlandia hedyotidea": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Onoclea sensibilis": {
+        "total": 1,
+        "accepted": 1,
+        "acceptance": 1.0
+      },
+      "inat:Orobanche minor": {
+        "total": 4,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Orthilia secunda": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Oxalis articulata": {
+        "total": 5,
+        "accepted": 1,
+        "acceptance": 0.2
+      },
+      "inat:Passiflora incarnata": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Pavonia lasiopetala": {
+        "total": 3,
+        "accepted": 1,
+        "acceptance": 0.333333
+      },
+      "inat:Pelargonium tricolor": {
+        "total": 3,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Perityle emoryi": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Pimelea villosa": {
+        "total": 4,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Pinus rigida": {
+        "total": 16,
+        "accepted": 4,
+        "acceptance": 0.25
+      },
+      "inat:Pittosporum undulatum": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Polycarpon tetraphyllum": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Poranthera microphylla": {
+        "total": 2,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Pseudognaphalium obtusifolium": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Pterochaeta paniculata": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Rudbeckia amplexicaulis": {
+        "total": 2,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Salicornia quinqueflora": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Senecio squalidus": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Solidago altissima": {
+        "total": 3,
+        "accepted": 1,
+        "acceptance": 0.333333
+      },
+      "inat:Symphyotrichum divaricatum": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Symphyotrichum eulae": {
+        "total": 1,
+        "accepted": 1,
+        "acceptance": 1.0
+      },
+      "inat:Symphyotrichum praealtum": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Syncarpha milleflora": {
+        "total": 2,
+        "accepted": 1,
+        "acceptance": 0.5
+      },
+      "inat:Ulmus crassifolia": {
+        "total": 7,
+        "accepted": 1,
+        "acceptance": 0.142857
+      },
+      "inat:Viburnum acerifolium": {
+        "total": 1,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "inat:Wachendorfia thyrsiflora": {
+        "total": 3,
+        "accepted": 2,
+        "acceptance": 0.666667
+      },
+      "leaf:Alnus sp": {
+        "total": 8,
+        "accepted": 5,
+        "acceptance": 0.625
+      },
+      "leaf:Corylus avellana": {
+        "total": 13,
+        "accepted": 4,
+        "acceptance": 0.307692
+      },
+      "leaf:Hydrangea sp": {
+        "total": 11,
+        "accepted": 3,
+        "acceptance": 0.272727
+      },
+      "leaf:Papaver sp": {
+        "total": 12,
+        "accepted": 4,
+        "acceptance": 0.333333
+      },
+      "leaf:Schinus terebinthifolius": {
+        "total": 10,
+        "accepted": 2,
+        "acceptance": 0.2
+      },
+      "leaf:Taxus bacatta": {
+        "total": 5,
+        "accepted": 0,
+        "acceptance": 0.0
+      },
+      "leaf:Urtica dioica": {
+        "total": 12,
+        "accepted": 1,
+        "acceptance": 0.083333
+      },
+      "wheat:wheat_damaged/septoria": {
+        "total": 8,
+        "accepted": 8,
+        "acceptance": 1.0
+      },
+      "wheat:wheat_damaged/strip_rust": {
+        "total": 8,
+        "accepted": 7,
+        "acceptance": 0.875
+      },
+      "wheat:wheat_healthy": {
+        "total": 15,
+        "accepted": 12,
+        "acceptance": 0.8
+      }
+    }
+  },
+  "counts": {
+    "train": 6418,
+    "validation": 2211,
+    "test": 2913
+  },
+  "deployment_checks_passed": true
+}

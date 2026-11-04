@@ -31,3 +31,6 @@ Thumbs.db
 
 # Local Python virtual environment
 .venv/
+
+# Reproducible intermediate features; keep the small detector artifact instead.
+/trained_model_support*/feature_cache.npz
